@@ -1,0 +1,33 @@
+{
+  "status": "layout_preview_waiting_for_new_voiceover",
+  "timing_status": "provisional_scene_windows_not_audio_aligned",
+  "duration": 22,
+  "voiceover": null,
+  "voiceover_volume": 1,
+  "case_capture": null,
+  "case_clip": "brand/composite-scroll.mp4",
+  "case_scroll_pixels": 0,
+  "scenes": [
+    {"id": "01-problem", "start": 0, "end": 3},
+    {"id": "02-waiting", "start": 3, "end": 6},
+    {"id": "03-solution", "start": 6, "end": 10},
+    {"id": "04-case", "start": 10, "end": 14},
+    {"id": "05-offer", "start": 14, "end": 18},
+    {"id": "06-action", "start": 18, "end": 22}
+  ],
+  "captions": [
+    {"start": 0, "end": 1.45, "text": "Клієнт не знаходить ціну"},
+    {"start": 1.45, "end": 3, "text": "у твоєму Instagram?"},
+    {"start": 3, "end": 4.35, "text": "Не кожен готовий писати"},
+    {"start": 4.35, "end": 6, "text": "й чекати відповіді."},
+    {"start": 6, "end": 7.6, "text": "Збери послуги, роботи, ціни"},
+    {"start": 7.6, "end": 10, "text": "та форму заявки на одному сайті."},
+    {"start": 10, "end": 11.6, "text": "Ось один із сайтів,"},
+    {"start": 11.6, "end": 14, "text": "який ми створили."},
+    {"start": 14, "end": 15.5, "text": "Лендінг за 150 доларів."},
+    {"start": 15.5, "end": 16.55, "text": "Перші 50 відсотків —"},
+    {"start": 16.55, "end": 18, "text": "після затвердження дизайну."},
+    {"start": 18, "end": 19.5, "text": "Залиш заявку —"},
+    {"start": 19.5, "end": 21.5, "text": "обговоримо сайт для твого бізнесу."}
+  ]
+}

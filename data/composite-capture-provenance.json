@@ -1,0 +1,16 @@
+{
+  "source_url": "https://rosticmel-07.github.io/KompoSite/",
+  "viewport": [
+    600,
+    450
+  ],
+  "device_scale_factor": 2,
+  "frames": 120,
+  "fps": 30,
+  "scroll_start_css_px": 14.765625,
+  "scroll_end_css_px": 7390.734375,
+  "form_height": 405.578125,
+  "notes": "Original source rendered locally; original fonts loaded locally; reveal animations completed for capture; external requests blocked; no form submitted.",
+  "source_commit": "414ae169d64f4b313073d7c987e7a091e0a756ee",
+  "asset": "public/brand/composite-scroll.mp4"
+}

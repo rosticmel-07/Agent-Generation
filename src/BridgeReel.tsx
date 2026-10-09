@@ -261,6 +261,9 @@ const Header: React.FC = () => {
 
 const components = [ProfileScene, PriceScene, CompetitorScene, DirectScene, AnswersScene, WebsiteScene, PortfolioScene, CtaScene];
 
+// Shared V2 visual primitives for subsequent adverts.
+export {Background, Icon, PostArt, C, shadow, smooth, reveal};
+
 export const BridgeReel: React.FC = () => {
   const {fps} = useVideoConfig();
   return <AbsoluteFill className="brand-font" style={{color: C.white, overflow: 'hidden'}}>
