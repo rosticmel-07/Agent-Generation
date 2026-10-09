@@ -11,20 +11,20 @@ body { margin: 0; background: #080909; }
 
 .brand-font {
   font-family: Manrope, sans-serif;
-  font-variation-settings: 'wght' 800;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
 }
 
 .heading {
-  font-size: 105px;
-  font-weight: 800;
-  letter-spacing: -5.5px;
-  line-height: 1.04;
+  font-size: 100px;
+  font-weight: 750;
+  letter-spacing: -4.8px;
+  line-height: 1.08;
 }
 
 .small-label {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3.2px;
   text-transform: uppercase;
 }

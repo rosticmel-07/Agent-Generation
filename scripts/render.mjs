@@ -14,7 +14,7 @@ const options = {serveUrl, id: 'BridgeReel', browserExecutable};
 const composition = await selectComposition(options);
 const targets = [
   ['01-profile', 1.1], ['02-price', 2.8], ['03-competitor', 3.95],
-  ['04-direct', 7.4], ['05-answers', 13], ['06-website', 16.7],
+  ['04-direct', 7.4], ['05-answers', 13], ['06-website', 15.1],
   ['07-portfolio', 18.5], ['08-cta', 23.6],
 ];
 
@@ -33,7 +33,9 @@ if (process.argv.includes('--stills')) {
   }
 } else {
   let lastMilestone = -1;
-  const outputLocation = resolve(previews, 'bridge-reel-v1.mp4');
+  const version = process.argv.find(arg => arg.startsWith('--version='))?.split('=')[1] ?? 'v2';
+  if (!/^v[1-9]\d*$/.test(version)) throw new Error(`Invalid version: ${version}`);
+  const outputLocation = resolve(previews, `bridge-reel-${version}.mp4`);
   await renderMedia({
     serveUrl, composition, browserExecutable, outputLocation,
     codec: 'h264', audioCodec: 'aac', crf: 18, pixelFormat: 'yuv420p', colorSpace: 'bt709',

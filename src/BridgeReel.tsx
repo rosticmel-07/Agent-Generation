@@ -7,15 +7,15 @@ import wordData from '../data/words.json';
 import captionData from '../data/captions.json';
 import sceneData from '../data/scenes.json';
 
-const C = {red: '#ff2535', white: '#f5f4ef', muted: '#939594', bg: '#080a0a', panel: '#121515', line: '#282b2b'};
+const C = {red: '#f32335', white: '#f2f0eb', muted: '#a0a39f', bg: '#090b0b', panel: '#131715', line: '#2b302d'};
 const clamp = {extrapolateLeft: 'clamp' as const, extrapolateRight: 'clamp' as const};
 const smooth = (frame: number, from: number, to: number) =>
   interpolate(frame, [from, to], [0, 1], {...clamp, easing: Easing.bezier(.22, 1, .36, 1)});
 const reveal = (frame: number, delay = 0) => ({
   opacity: smooth(frame, delay, delay + 10),
-  transform: `translateY(${(1 - smooth(frame, delay, delay + 16)) * 38}px)`,
+  transform: `translateY(${(1 - smooth(frame, delay, delay + 18)) * 22}px)`,
 });
-const shadow = '0 28px 90px rgba(0,0,0,.42)';
+const shadow = '0 32px 100px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.035)';
 
 type IconName = 'arrow' | 'search' | 'send' | 'clock' | 'cursor' | 'site' | 'price' | 'bag' | 'check' | 'message' | 'heart' | 'grid' | 'close' | 'chevron' | 'user' | 'pin';
 const paths: Record<IconName, React.ReactNode> = {
@@ -56,12 +56,11 @@ const Heading: React.FC<{children: React.ReactNode; frame: number; label?: strin
 const BridgeArc: React.FC<{progress: number; width?: number; height?: number; dim?: boolean}> = ({progress, width = 760, height = 280, dim}) => (
   <svg width={width} height={height} viewBox="0 0 760 280" overflow="visible">
     <defs><filter id="arc-glow"><feGaussianBlur stdDeviation="7"/></filter></defs>
-    {Array.from({length: 13}, (_, i) => <path key={i} d={`M${60 + i * 53.33} 238V${92 + Math.abs(6 - i) * 12}`} stroke="#333635" strokeWidth="1" opacity=".48"/>)}
-    <path d="M60 238C85 32 675 32 700 238" stroke={C.red} strokeWidth="2" fill="none" opacity=".13"/>
-    <path d="M60 238C85 32 675 32 700 238" stroke={C.red} strokeWidth="10" fill="none" pathLength="1" strokeDasharray="1" strokeDashoffset={1 - progress} opacity={dim ? .1 : .4} filter="url(#arc-glow)"/>
-    <path d="M60 238C85 32 675 32 700 238" stroke={C.red} strokeWidth="4" fill="none" pathLength="1" strokeDasharray="1" strokeDashoffset={1 - progress} opacity={dim ? .35 : 1}/>
-    <circle cx="60" cy="238" r="7" fill={C.red}/>
-    <circle cx="700" cy="238" r="7" fill={progress > .96 ? C.red : C.bg} stroke={C.red} strokeWidth="2"/>
+    <path d="M60 238C85 32 675 32 700 238" stroke={C.red} strokeWidth="1" fill="none" opacity=".08"/>
+    <path d="M60 238C85 32 675 32 700 238" stroke={C.red} strokeWidth="8" fill="none" pathLength="1" strokeDasharray="1" strokeDashoffset={1 - progress} opacity={dim ? .05 : .12} filter="url(#arc-glow)"/>
+    <path d="M60 238C85 32 675 32 700 238" stroke={C.red} strokeWidth="1.8" fill="none" pathLength="1" strokeDasharray="1" strokeDashoffset={1 - progress} opacity={dim ? .2 : .75}/>
+    <circle cx="60" cy="238" r="3.5" fill={C.red}/>
+    <circle cx="700" cy="238" r="3.5" fill={progress > .96 ? C.red : C.bg} stroke={C.red} strokeWidth="1"/>
   </svg>
 );
 
@@ -111,7 +110,6 @@ const PriceScene: React.FC = () => {
       <div style={{height: 305, background: '#1c2420', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative'}}><div style={{transform: 'rotate(-12deg) scale(1.5)'}}><PostArt variant={0} size={305}/></div><div style={{position: 'absolute', top: 24, left: 30, fontSize: 21, color: '#d6dfd4'}}>your.business</div><Icon name="heart" size={34} style={{position: 'absolute', top: 24, right: 30}}/></div>
       <div style={{padding: '35px 40px'}}><div style={{fontSize: 45, fontWeight: 800, letterSpacing: -2}}>Ваші послуги</div><div style={{fontSize: 27, color: C.muted, marginTop: 12}}>Деталі — у повідомленнях</div><div style={{marginTop: 30, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '22px 28px', border: `1px solid ${seconds >= 2.6 ? C.red : C.line}`, borderRadius: 15, background: seconds >= 2.6 ? '#251114' : '#181b1b'}}><span style={{fontSize: 34, fontWeight: 700}}>Ціна</span><span style={{fontSize: 64, color: C.red, fontWeight: 800, lineHeight: 1}}>?</span></div></div>
     </div>
-    <div style={{position: 'absolute', left: 155, top: 1370, width: 710, height: 5, background: '#272b29'}}><div style={{height: 5, width: `${smooth(f, 0, 21) * 50}%`, background: C.red}}/><span style={{position: 'absolute', left: '50%', top: -11, width: 26, height: 26, background: C.bg, border: `2px solid ${C.red}`, transform: 'rotate(45deg)'}}/></div>
   </AbsoluteFill>;
 };
 
@@ -122,7 +120,6 @@ const CompetitorScene: React.FC = () => {
     <div style={{position: 'absolute', top: 0, left: -smooth(f, 0, 14) * 1100, opacity: 1 - smooth(f, 0, 14)}}><ProfilePhone frame={25}/></div>
     <div style={{position: 'absolute', left: 100, top: 910, width: 820, ...reveal(f, 5)}}>
       <div style={{display: 'flex', gap: 30, alignItems: 'center', padding: '36px', background: C.panel, border: `1px solid ${C.line}`, borderRadius: 25}}><div style={{width: 92, height: 92, background: '#27372f', borderRadius: 22, display: 'grid', placeItems: 'center'}}><Icon name="site" size={53} color="#c7dbc9"/></div><div style={{flex: 1}}><div style={{fontSize: 36, fontWeight: 800}}>Інший бізнес</div><div style={{fontSize: 25, marginTop: 8, color: C.muted}}>Послуга · ціна · замовлення</div></div><Icon name="arrow" color={C.red}/></div>
-      <div style={{marginTop: 50, display: 'flex', alignItems: 'center', gap: 20}}><div style={{width: 18, height: 18, background: C.red, borderRadius: '50%'}}/><div style={{height: 2, background: C.red, width: smooth(f, 6, 26) * 660}}/><Icon name="arrow" color={C.red}/></div>
     </div>
   </AbsoluteFill>;
 };
@@ -147,11 +144,11 @@ const DirectScene: React.FC = () => {
 const AnswerCard: React.FC<{label: string; icon: IconName; index: number; frame: number; revealAt: number}> = ({label, icon, index, frame, revealAt}) => {
   const {fps} = useVideoConfig();
   const local = frame - revealAt;
-  const enter = spring({frame: Math.max(local, 0), fps, config: {damping: 20, stiffness: 110}});
-  return <div style={{height: 172, position: 'relative', display: 'flex', gap: 29, alignItems: 'center', padding: '30px 36px', background: 'linear-gradient(105deg,#1e1315,#111615 68%)', border: `1px solid ${local >= 0 ? '#6a2830' : C.line}`, borderRadius: 22, opacity: local < 0 ? .16 : interpolate(enter, [0, 1], [.16, 1]), transform: `translateX(${local < 0 ? 28 : (1 - enter) * 28}px)`}}>
-    <div style={{width: 90, height: 90, borderRadius: 21, background: '#2c1419', display: 'grid', placeItems: 'center'}}><Icon name={icon} size={50} color={C.red}/></div>
-    <span style={{fontSize: 49, fontWeight: 800, letterSpacing: -2}}>{label}</span>
-    <span style={{marginLeft: 'auto', fontSize: 25, color: C.muted, fontWeight: 700}}>0{index + 1}</span>
+  const enter = spring({frame: Math.max(local, 0), fps, config: {damping: 24, stiffness: 95}});
+  return <div style={{height: 172, position: 'relative', display: 'flex', gap: 29, alignItems: 'center', padding: '30px 36px', background: 'linear-gradient(115deg,#191e1b,#111513)', border: `1px solid ${local >= 0 ? '#394039' : C.line}`, boxShadow: 'inset 0 1px 0 #ffffff04', borderRadius: 22, opacity: local < 0 ? .1 : interpolate(enter, [0, 1], [.1, 1]), transform: `translateX(${local < 0 ? 18 : (1 - enter) * 18}px)`}}>
+    <div style={{width: 84, height: 84, borderRadius: 19, background: '#202722', display: 'grid', placeItems: 'center'}}><Icon name={icon} size={43} color={C.red}/></div>
+    <span style={{fontSize: 47, fontWeight: 700, letterSpacing: -1.5}}>{label}</span>
+    <span style={{marginLeft: 'auto', fontSize: 22, color: '#737c72', fontWeight: 600}}>0{index + 1}</span>
   </div>;
 };
 
@@ -170,14 +167,14 @@ const AnswersScene: React.FC = () => {
 const SiteCard: React.FC<{frame: number}> = ({frame}) => {
   const globalTime = frame / 30 + 13.66;
   const form = smooth(frame, Math.round((16.24 - 13.66) * 30), Math.round((16.24 - 13.66) * 30) + 9);
-  return <div style={{position: 'relative', width: 820, height: 583, borderRadius: 27, border: `1px solid #353b37`, background: '#101614', boxShadow: shadow, overflow: 'hidden'}}>
+  return <div style={{position: 'relative', width: 820, height: 583, borderRadius: 27, border: `1px solid #353b37`, background: '#101614', boxShadow: shadow, overflow: 'hidden', transform: `scale(${.985 + smooth(frame, 0, 26) * .015})`, transformOrigin: 'center'}}>
     <div style={{height: 57, background: '#1d2420', display: 'flex', alignItems: 'center', padding: '0 24px', gap: 8}}>{['#575f5a', '#575f5a', '#575f5a'].map((v, i) => <span key={i} style={{width: 10, height: 10, borderRadius: '50%', background: v}}/>)}<div style={{fontSize: 19, color: '#a9b2ab', textAlign: 'center', flex: 1}}>ваш-бізнес.ua</div><Icon name="site" size={22} color="#a9b2ab"/></div>
     <div style={{position: 'absolute', inset: '57px 0 0', opacity: 1 - form, transform: `translateY(${-form * 35}px)`, padding: '42px'}}>
       <div style={{fontSize: 19, color: '#b5c9bb', letterSpacing: 2}}>ВАШ БІЗНЕС</div>
       <div style={{marginTop: 15, fontSize: 65, fontWeight: 800, letterSpacing: -3, lineHeight: 1.05}}>Ваша послуга.<br/><span style={{color: '#b1c8a9'}}>Чітка пропозиція.</span></div>
       <div style={{marginTop: 22, fontSize: 25, color: '#abb6ae'}}>Усе, що потрібно знати для замовлення.</div>
       <div style={{marginTop: 29, display: 'flex', gap: 15}}>{['Що входить', 'Вартість', 'Як замовити'].map((v, i) => <div key={v} style={{padding: '14px 18px', border: '1px solid #35463c', borderRadius: 13, fontSize: 21, color: '#c9d5cc', background: '#1c2922', opacity: smooth(frame, 7 + i * 4, 17 + i * 4)}}>{v}</div>)}</div>
-      <div style={{marginTop: 34, width: 369, height: 75, borderRadius: 15, background: C.red, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 25px', fontSize: 27, fontWeight: 800, boxShadow: globalTime > 15.72 ? '0 0 45px #ff253533' : undefined}}>Залишити заявку<Icon name="arrow" size={32}/></div>
+      <div style={{marginTop: 34, width: 369, height: 75, borderRadius: 15, background: C.red, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 25px', fontSize: 27, fontWeight: 700, boxShadow: globalTime > 15.72 ? 'inset 0 1px 0 #ffffff25, 0 12px 30px #00000020' : undefined}}>Залишити заявку<Icon name="arrow" size={32}/></div>
       <div style={{position: 'absolute', top: 420, left: 360, opacity: smooth(frame, 58, 66), transform: `translate(${(1 - smooth(frame, 60, 77)) * 90}px,${(1 - smooth(frame, 60, 77)) * 70}px)`}}><Icon name="cursor" size={62}/></div>
     </div>
     <div style={{position: 'absolute', inset: '57px 0 0', opacity: form, transform: `translateY(${(1 - form) * 25}px)`, padding: '35px 42px'}}>
@@ -193,7 +190,6 @@ const WebsiteScene: React.FC = () => {
   return <AbsoluteFill>
     <Heading frame={f} label="Від першого кліку">В одному місці.<br/><span style={{color: C.red}}>До заявки.</span></Heading>
     <div style={{position: 'absolute', left: 100, top: 691, ...reveal(f)}}><SiteCard frame={f}/></div>
-    <div style={{position: 'absolute', left: 120, top: 1194, transform: 'scaleY(.5)', transformOrigin: 'top', pointerEvents: 'none'}}><BridgeArc progress={smooth(f, 28, 73)}/></div>
   </AbsoluteFill>;
 };
 
@@ -202,7 +198,7 @@ const PortfolioScene: React.FC = () => {
   return <AbsoluteFill>
     <Heading frame={f} label="Bridge Agency">Створюємо<br/><span style={{color: C.red}}>такі сайти.</span></Heading>
     <div style={{position: 'absolute', left: 100, top: 703, width: 820, border: '1px solid #3b413d', borderRadius: 27, overflow: 'hidden', boxShadow: shadow, ...reveal(f, 3)}}>
-      <div style={{height: 58, background: '#202522', display: 'flex', alignItems: 'center', gap: 9, padding: '0 26px'}}>{[0, 1, 2].map(i => <span key={i} style={{width: 10, height: 10, background: '#6a756d', borderRadius: '50%'}}/>)}<span style={{fontSize: 20, color: '#bdc7be', marginLeft: 'auto'}}>Лендинг · реальний проєкт</span></div>
+      <div style={{height: 58, background: 'linear-gradient(#232925,#1b211d)', display: 'flex', alignItems: 'center', gap: 9, padding: '0 26px', boxShadow: 'inset 0 1px 0 #ffffff0b'}}>{[0, 1, 2].map(i => <span key={i} style={{width: 8, height: 8, background: '#697369', borderRadius: '50%'}}/>)}<span style={{fontSize: 20, color: '#bdc7be', marginLeft: 'auto'}}>Лендинг · реальний проєкт</span></div>
       <div style={{height: 400, overflow: 'hidden', position: 'relative'}}><Img src={staticFile('brand/portfolio.png')} style={{width: '100%', height: 'auto', transform: `scale(${1.02 + smooth(f, 0, 69) * .045}) translateY(${-smooth(f, 0, 69) * 7}px)`, transformOrigin: 'center top'}}/></div>
     </div>
     <div style={{position: 'absolute', left: 104, top: 1220, display: 'flex', gap: 18, alignItems: 'center', ...reveal(f, 9)}}><div style={{width: 10, height: 10, background: C.red, borderRadius: '50%'}}/><span style={{fontSize: 28, color: '#b7bdb7'}}>Композитна сітка — лендинг під заявки</span></div>
@@ -221,7 +217,7 @@ const CtaScene: React.FC = () => {
     <div style={{position: 'absolute', top: 787, left: 130, opacity: smooth(f, 8, 18)}}><BridgeArc progress={smooth(f, 10, 68)}/></div>
     <div style={{position: 'absolute', top: 1100, left: 100, width: 820, ...reveal(f, 7)}}>
       <div style={{fontSize: 43, fontWeight: 700, letterSpacing: -1.7, color: C.white, marginBottom: 32}}>bridgeagency.com.ua</div>
-      <div style={{height: 130, borderRadius: 65, padding: '0 45px', background: 'linear-gradient(100deg,#ff2739,#e9091c)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', boxShadow: '0 18px 65px #ff253529', fontSize: 41, fontWeight: 800, letterSpacing: -1}}>Залишити заявку<Icon name="arrow" size={52}/></div>
+      <div style={{height: 130, borderRadius: 65, padding: '0 45px', background: 'linear-gradient(105deg,#f52739,#dc1024)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', boxShadow: 'inset 0 1px 0 #ffffff20, 0 18px 45px #00000030', fontSize: 39, fontWeight: 700, letterSpacing: -.8}}>Залишити заявку<Icon name="arrow" size={48}/></div>
     </div>
   </AbsoluteFill>;
 };
@@ -234,7 +230,7 @@ const Captions: React.FC = () => {
   if (!cue || (t >= 3.34 && t < 4.62)) return null;
   const frameInCue = f - Math.round(cue.start * fps);
   return <div style={{position: 'absolute', top: 1455, left: 83, width: 854, textAlign: 'center', zIndex: 30, opacity: smooth(frameInCue, 0, 3)}}>
-    <div style={{display: 'inline-flex', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center', columnGap: 14, rowGap: 5, fontSize: 51, fontWeight: 800, letterSpacing: -1.6, lineHeight: 1.27, padding: '17px 25px', background: '#080a0aee', border: '1px solid #ffffff0b', borderRadius: 19}}>
+    <div style={{display: 'inline-flex', maxWidth: '100%', flexWrap: 'wrap', justifyContent: 'center', columnGap: 14, rowGap: 5, fontSize: 49, fontWeight: 650, letterSpacing: -1.1, lineHeight: 1.3, padding: '17px 25px', textShadow: '0 2px 12px #000000a0'}}>
       {cue.word_ids.map(id => {
         const word = wordData.words[id];
         const active = t >= word.start && t < word.end;
@@ -246,9 +242,8 @@ const Captions: React.FC = () => {
 
 const Background: React.FC = () => (
   <AbsoluteFill style={{background: C.bg}}>
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 80% 47%,#64131c29,transparent 48%),radial-gradient(ellipse at 5% 90%,#162c221a,transparent 42%)'}}/>
-    <AbsoluteFill style={{backgroundImage: 'linear-gradient(#ffffff04 1px,transparent 1px),linear-gradient(90deg,#ffffff04 1px,transparent 1px)', backgroundSize: '108px 108px', maskImage: 'linear-gradient(#000,transparent 80%)'}}/>
-    <div style={{position: 'absolute', top: 1667, left: -15, whiteSpace: 'nowrap', fontSize: 151, fontWeight: 800, letterSpacing: -9, color: '#ffffff03'}}>BRIDGE AGENCY</div>
+    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 76% 44%,#57212a18,transparent 56%),radial-gradient(ellipse at 12% 75%,#24433012,transparent 52%)'}}/>
+    <AbsoluteFill style={{backgroundImage: 'linear-gradient(#ffffff02 1px,transparent 1px),linear-gradient(90deg,#ffffff02 1px,transparent 1px)', backgroundSize: '108px 108px', maskImage: 'linear-gradient(#000,transparent 65%)'}}/>
   </AbsoluteFill>
 );
 
@@ -259,9 +254,8 @@ const Header: React.FC = () => {
   const index = sceneData.scenes.findIndex(s => t >= s.start && t < s.end);
   const closing = index === 7;
   return <>
-    {!closing ? <div style={{position: 'absolute', left: 100, right: 160, top: 149, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><Img src={staticFile('brand/logo.png')} style={{width: 142, height: 94, objectFit: 'contain'}}/><div style={{textAlign: 'right'}}><div style={{fontSize: 20, letterSpacing: 3.4, color: '#b8beb8', fontWeight: 700}}>САЙТИ ДЛЯ БІЗНЕСУ</div><div style={{fontSize: 20, letterSpacing: 2, color: '#6c726e', marginTop: 9}}>BRIDGE AGENCY</div></div></div> : null}
+    {!closing ? <div style={{position: 'absolute', left: 100, right: 160, top: 149, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}><Img src={staticFile('brand/logo.png')} style={{width: 142, height: 94, objectFit: 'contain'}}/><div style={{fontSize: 19, letterSpacing: 3, color: '#a6afa4', fontWeight: 600}}>САЙТИ ДЛЯ БІЗНЕСУ</div></div> : null}
     {!closing ? <div style={{position: 'absolute', top: 276, left: 100, width: 820, height: 1, background: '#ffffff12'}}><div style={{width: 53, height: 2, background: C.red}}/></div> : null}
-    <div style={{position: 'absolute', left: 100, top: 1640, width: 820, display: 'flex', gap: 10}}>{sceneData.scenes.map((_, i) => <div key={i} style={{height: 3, flex: 1, background: i <= index ? C.red : '#262c28', opacity: i === index ? 1 : .5}}/>)}</div>
   </>;
 };
 
@@ -272,6 +266,7 @@ export const BridgeReel: React.FC = () => {
   return <AbsoluteFill className="brand-font" style={{color: C.white, overflow: 'hidden'}}>
     <Background/>
     <Audio src={staticFile('audio/voiceover.mp3')} volume={1.5}/>
+    <Audio src={staticFile('audio/atmosphere-v2.wav')} volume={1}/>
     {sceneData.scenes.map((scene, i) => {
       const Component = components[i];
       const from = Math.round(scene.start * fps);
