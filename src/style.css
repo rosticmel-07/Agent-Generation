@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Manrope;
+  src: url('../public/fonts/Manrope.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: block;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #080909; }
+
+.brand-font {
+  font-family: Manrope, sans-serif;
+  font-variation-settings: 'wght' 800;
+  -webkit-font-smoothing: antialiased;
+}
+
+.heading {
+  font-size: 105px;
+  font-weight: 800;
+  letter-spacing: -5.5px;
+  line-height: 1.04;
+}
+
+.small-label {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Bridge — перший ролик</title>
+  <style>
+    @font-face{font-family:Manrope;src:url('../public/fonts/Manrope.ttf');font-weight:200 800}
+    *{box-sizing:border-box}body{margin:0;padding:48px 24px;background:#080a0a;color:#f5f4ef;font-family:Manrope,Arial,sans-serif}
+    main{max-width:1160px;margin:auto}header{border-bottom:1px solid #272a28;padding-bottom:28px;margin-bottom:36px}
+    .label{color:#ff2535;font-size:12px;letter-spacing:3px;font-weight:800}h1{font-size:clamp(32px,5vw,54px);letter-spacing:-2px;margin:13px 0 8px}p{color:#a6aaa5;line-height:1.6}
+    video{display:block;max-width:370px;width:100%;max-height:78vh;margin:0 auto 40px;border:1px solid #343b35;border-radius:18px;background:#000}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.scene{margin:0}.scene img{width:100%;display:block;border:1px solid #262d28;border-radius:12px}.scene a{display:block}figcaption{font-size:13px;line-height:1.5;margin:12px 0 5px;color:#c7ccc6}small{font-size:11px;color:#777f76}
+    @media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}body{padding:28px 16px}}
+  </style>
+</head>
+<body><main>
+  <header><div class="label">BRIDGE AGENCY</div><h1>Перший ролик.</h1><p>Версія 1 · 25 секунд · вертикальний формат<br/>Переглянь відео та залиш одне зауваження із часом або номером сцени.</p></header>
+  <video controls preload="metadata" playsinline poster="01-profile.png" src="bridge-reel-v1.mp4"></video>
+  <div class="grid">
+    <figure class="scene"><a href="01-profile.png"><img src="01-profile.png" alt="Клієнт відкриває профіль бізнесу"/></a><figcaption>01 · Клієнт уже тут</figcaption><small>0–2,00 с</small></figure>
+    <figure class="scene"><a href="02-price.png"><img src="02-price.png" alt="У картці послуги немає ціни"/></a><figcaption>02 · А ціна де?</figcaption><small>2,00–3,34 с</small></figure>
+    <figure class="scene"><a href="03-competitor.png"><img src="03-competitor.png" alt="Клієнт переходить до іншого бізнесу"/></a><figcaption>03 · Пішов до конкурента</figcaption><small>3,34–4,62 с</small></figure>
+    <figure class="scene"><a href="04-direct.png"><img src="04-direct.png" alt="Повідомлення в директ і очікування відповіді"/></a><figcaption>04 · Ще писати. Ще чекати</figcaption><small>4,62–8,26 с</small></figure>
+    <figure class="scene"><a href="05-answers.png"><img src="05-answers.png" alt="Послуга, ціна та замовлення"/></a><figcaption>05 · Три відповіді</figcaption><small>8,26–13,66 с</small></figure>
+    <figure class="scene"><a href="06-website.png"><img src="06-website.png" alt="Сайт із формою заявки"/></a><figcaption>06 · До заявки</figcaption><small>13,66–17,04 с</small></figure>
+    <figure class="scene"><a href="07-portfolio.png"><img src="07-portfolio.png" alt="Реальний лендинг композитної сітки"/></a><figcaption>07 · Робота Bridge</figcaption><small>17,04–19,36 с</small></figure>
+    <figure class="scene"><a href="08-cta.png"><img src="08-cta.png" alt="Обговоримо твій бізнес. Залишити заявку"/></a><figcaption>08 · Обговоримо твій бізнес</figcaption><small>19,36–25,00 с</small></figure>
+  </div>
+</main></body></html>

@@ -1,0 +1,426 @@
+{
+  "schema_version": 1,
+  "language": "uk",
+  "duration": 23.170625,
+  "method": "Whisper small cross-attention DTW; known script corrected against independent ASR; punctuation merged",
+  "review_status": "automatic_alignment_pending_visual_sync_review",
+  "notes": [
+    "Boundary estimates use a 20 ms grid; this is not human listening verification.",
+    "Full brand name Bridge Agency was recognized at both occurrences.",
+    "Instagram and Bridge Agency use brand spelling for display."
+  ],
+  "words": [
+    {
+      "id": 0,
+      "text": "Зайшов",
+      "start": 0.0,
+      "end": 0.52,
+      "probability": 0.8418
+    },
+    {
+      "id": 1,
+      "text": "у",
+      "start": 0.52,
+      "end": 0.7,
+      "probability": 0.9702
+    },
+    {
+      "id": 2,
+      "text": "твій",
+      "start": 0.7,
+      "end": 0.94,
+      "probability": 0.8747
+    },
+    {
+      "id": 3,
+      "text": "Instagram.",
+      "start": 0.94,
+      "end": 1.5,
+      "probability": 0.9316
+    },
+    {
+      "id": 4,
+      "text": "Не",
+      "start": 2.0,
+      "end": 2.24,
+      "probability": 0.8944
+    },
+    {
+      "id": 5,
+      "text": "знайшов",
+      "start": 2.24,
+      "end": 2.6,
+      "probability": 0.999
+    },
+    {
+      "id": 6,
+      "text": "ціну.",
+      "start": 2.6,
+      "end": 2.98,
+      "probability": 0.9429
+    },
+    {
+      "id": 7,
+      "text": "Пішов",
+      "start": 3.34,
+      "end": 3.54,
+      "probability": 0.9953
+    },
+    {
+      "id": 8,
+      "text": "до",
+      "start": 3.54,
+      "end": 3.66,
+      "probability": 0.9944
+    },
+    {
+      "id": 9,
+      "text": "конкурента.",
+      "start": 3.66,
+      "end": 4.22,
+      "probability": 0.9418
+    },
+    {
+      "id": 10,
+      "text": "Клієнт",
+      "start": 4.62,
+      "end": 5.06,
+      "probability": 0.759
+    },
+    {
+      "id": 11,
+      "text": "не",
+      "start": 5.06,
+      "end": 5.3,
+      "probability": 0.9943
+    },
+    {
+      "id": 12,
+      "text": "завжди",
+      "start": 5.3,
+      "end": 5.72,
+      "probability": 0.9972
+    },
+    {
+      "id": 13,
+      "text": "хоче",
+      "start": 5.72,
+      "end": 6.06,
+      "probability": 0.9905
+    },
+    {
+      "id": 14,
+      "text": "писати",
+      "start": 6.06,
+      "end": 6.44,
+      "probability": 0.9942
+    },
+    {
+      "id": 15,
+      "text": "в",
+      "start": 6.44,
+      "end": 6.54,
+      "probability": 0.6994
+    },
+    {
+      "id": 16,
+      "text": "директ",
+      "start": 6.54,
+      "end": 6.84,
+      "probability": 0.9257
+    },
+    {
+      "id": 17,
+      "text": "і",
+      "start": 6.84,
+      "end": 7.0,
+      "probability": 0.9784
+    },
+    {
+      "id": 18,
+      "text": "чекати",
+      "start": 7.0,
+      "end": 7.3,
+      "probability": 0.9894
+    },
+    {
+      "id": 19,
+      "text": "відповіді.",
+      "start": 7.3,
+      "end": 7.9,
+      "probability": 0.9874
+    },
+    {
+      "id": 20,
+      "text": "Він",
+      "start": 8.26,
+      "end": 8.38,
+      "probability": 0.9935
+    },
+    {
+      "id": 21,
+      "text": "хоче",
+      "start": 8.38,
+      "end": 8.68,
+      "probability": 0.993
+    },
+    {
+      "id": 22,
+      "text": "одразу",
+      "start": 8.68,
+      "end": 8.96,
+      "probability": 0.9979
+    },
+    {
+      "id": 23,
+      "text": "зрозуміти,",
+      "start": 8.96,
+      "end": 9.62,
+      "probability": 0.9952
+    },
+    {
+      "id": 24,
+      "text": "що",
+      "start": 9.84,
+      "end": 10.08,
+      "probability": 0.9962
+    },
+    {
+      "id": 25,
+      "text": "ти",
+      "start": 10.08,
+      "end": 10.26,
+      "probability": 0.9845
+    },
+    {
+      "id": 26,
+      "text": "пропонуєш,",
+      "start": 10.26,
+      "end": 11.0,
+      "probability": 0.9654
+    },
+    {
+      "id": 27,
+      "text": "скільки",
+      "start": 11.16,
+      "end": 11.56,
+      "probability": 0.9891
+    },
+    {
+      "id": 28,
+      "text": "це",
+      "start": 11.56,
+      "end": 11.78,
+      "probability": 0.9887
+    },
+    {
+      "id": 29,
+      "text": "коштує",
+      "start": 11.78,
+      "end": 12.34,
+      "probability": 0.8647
+    },
+    {
+      "id": 30,
+      "text": "і",
+      "start": 12.34,
+      "end": 12.56,
+      "probability": 0.9274
+    },
+    {
+      "id": 31,
+      "text": "як",
+      "start": 12.56,
+      "end": 12.78,
+      "probability": 0.988
+    },
+    {
+      "id": 32,
+      "text": "замовити.",
+      "start": 12.78,
+      "end": 13.3,
+      "probability": 0.9899
+    },
+    {
+      "id": 33,
+      "text": "Сайт",
+      "start": 13.66,
+      "end": 13.92,
+      "probability": 0.9574
+    },
+    {
+      "id": 34,
+      "text": "збирає",
+      "start": 13.92,
+      "end": 14.38,
+      "probability": 0.9893
+    },
+    {
+      "id": 35,
+      "text": "все",
+      "start": 14.38,
+      "end": 14.52,
+      "probability": 0.9752
+    },
+    {
+      "id": 36,
+      "text": "в",
+      "start": 14.52,
+      "end": 14.68,
+      "probability": 0.9822
+    },
+    {
+      "id": 37,
+      "text": "одному",
+      "start": 14.68,
+      "end": 14.96,
+      "probability": 0.9008
+    },
+    {
+      "id": 38,
+      "text": "місці",
+      "start": 14.96,
+      "end": 15.38,
+      "probability": 0.9046
+    },
+    {
+      "id": 39,
+      "text": "і",
+      "start": 15.38,
+      "end": 15.72,
+      "probability": 0.9225
+    },
+    {
+      "id": 40,
+      "text": "веде",
+      "start": 15.72,
+      "end": 16.02,
+      "probability": 0.9768
+    },
+    {
+      "id": 41,
+      "text": "до",
+      "start": 16.02,
+      "end": 16.24,
+      "probability": 0.9861
+    },
+    {
+      "id": 42,
+      "text": "заявки.",
+      "start": 16.24,
+      "end": 16.76,
+      "probability": 0.9884
+    },
+    {
+      "id": 43,
+      "text": "У",
+      "start": 17.04,
+      "end": 17.12,
+      "probability": 0.9592
+    },
+    {
+      "id": 44,
+      "text": "Bridge",
+      "start": 17.12,
+      "end": 17.34,
+      "probability": 0.0332
+    },
+    {
+      "id": 45,
+      "text": "Agency",
+      "start": 17.34,
+      "end": 17.7,
+      "probability": 0.3118
+    },
+    {
+      "id": 46,
+      "text": "створюємо",
+      "start": 17.7,
+      "end": 18.44,
+      "probability": 0.9639
+    },
+    {
+      "id": 47,
+      "text": "такі",
+      "start": 18.44,
+      "end": 18.72,
+      "probability": 0.9917
+    },
+    {
+      "id": 48,
+      "text": "сайти.",
+      "start": 18.72,
+      "end": 19.04,
+      "probability": 0.7494
+    },
+    {
+      "id": 49,
+      "text": "Залиш",
+      "start": 19.36,
+      "end": 19.68,
+      "probability": 0.9383
+    },
+    {
+      "id": 50,
+      "text": "заявку",
+      "start": 19.68,
+      "end": 20.14,
+      "probability": 0.9864
+    },
+    {
+      "id": 51,
+      "text": "на",
+      "start": 20.14,
+      "end": 20.26,
+      "probability": 0.9969
+    },
+    {
+      "id": 52,
+      "text": "сайті",
+      "start": 20.26,
+      "end": 20.6,
+      "probability": 0.9912
+    },
+    {
+      "id": 53,
+      "text": "Bridge",
+      "start": 20.6,
+      "end": 20.78,
+      "probability": 0.8272
+    },
+    {
+      "id": 54,
+      "text": "Agency.",
+      "start": 20.78,
+      "end": 21.2,
+      "probability": 0.9809
+    },
+    {
+      "id": 55,
+      "text": "Обговоримо",
+      "start": 21.42,
+      "end": 22.16,
+      "probability": 0.9772
+    },
+    {
+      "id": 56,
+      "text": "твій",
+      "start": 22.16,
+      "end": 22.4,
+      "probability": 0.987
+    },
+    {
+      "id": 57,
+      "text": "бізнес.",
+      "start": 22.4,
+      "end": 22.74,
+      "probability": 0.9831
+    }
+  ],
+  "source_audio": {
+    "path": "public/audio/voiceover.mp3",
+    "original_filename": "ElevenLabs_2026-10-09T08_30_20_Artem Klopotenko - Low, Rich and Deep_pvc_sp110_s50_sb69_se24_m2.mp3",
+    "sha256": "a6af6f5408d586df8203cfaf77b966bba7f1e7b16693da66fbea2b10d8842aec"
+  },
+  "spoken_text": "Зайшов у твій Instagram. Не знайшов ціну. Пішов до конкурента. Клієнт не завжди хоче писати в директ і чекати відповіді. Він хоче одразу зрозуміти, що ти пропонуєш, скільки це коштує і як замовити. Сайт збирає все в одному місці і веде до заявки. У Bridge Agency створюємо такі сайти. Залиш заявку на сайті Bridge Agency. Обговоримо твій бізнес."
+}

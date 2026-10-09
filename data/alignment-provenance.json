@@ -1,0 +1,15 @@
+{
+  "audio_sha256": "a6af6f5408d586df8203cfaf77b966bba7f1e7b16693da66fbea2b10d8842aec",
+  "asr_text": " зайшов у твій інстаграм, не знайшов ціну, пішов до конкурента. Кліент не завжди хоче писати в директ і чекати відповіді. Він хоче одразу зрозуміти, що ти пропонуєш, скільки це коштує і як замовити. Сайт збирає все в одному місці і веде до заявки. У Bredge Agency створюємо такі сети. Залиш заявку на сайті Bredge Agency. Обговоримо твій бізнес.",
+  "model_source": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-small.tar.bz2",
+  "model_parameters": 479,
+  "model_validation": {
+    "encoder_max_abs_error": 0.0003685951232910156,
+    "decoder_max_abs_error": 1.621246337890625e-05
+  },
+  "tools": {
+    "openai-whisper": "20250625",
+    "torch": "2.8.0+cpu"
+  },
+  "scope": "Only timing and planning artifacts; no scene implementation or final render yet."
+}
