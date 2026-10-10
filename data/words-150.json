@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "language": "uk",
+  "duration": 22.98775,
+  "method": "Whisper small cross-attention DTW; known script corrected against independent ASR; punctuation merged",
+  "review_status": "automatic_alignment_with_caption_frame_review",
+  "notes": [
+    "Межі автоматично визначені на сітці 20 мс; це не перевірка прослуховуванням.",
+    "Незалежна транскрипція підтвердила всі шість фраз. Озвучено «і», тому субтитри відповідають запису.",
+    "150 і 50 вирівняні як цілі числові фрази; написання Instagram збережено для показу."
+  ],
+  "words": [
+    {
+      "id": 0,
+      "text": "Клієнт",
+      "start": 0.0,
+      "end": 0.42,
+      "probability": 0.7397
+    },
+    {
+      "id": 1,
+      "text": "не",
+      "start": 0.42,
+      "end": 0.52,
+      "probability": 0.9762
+    },
+    {
+      "id": 2,
+      "text": "знаходить",
+      "start": 0.52,
+      "end": 0.92,
+      "probability": 0.92
+    },
+    {
+      "id": 3,
+      "text": "ціну",
+      "start": 0.92,
+      "end": 1.28,
+      "probability": 0.9762
+    },
+    {
+      "id": 4,
+      "text": "у",
+      "start": 1.28,
+      "end": 1.56,
+      "probability": 0.9185
+    },
+    {
+      "id": 5,
+      "text": "твоєму",
+      "start": 1.56,
+      "end": 1.86,
+      "probability": 0.9899
+    },
+    {
+      "id": 6,
+      "text": "Instagram?",
+      "start": 1.86,
+      "end": 2.32,
+      "probability": 0.8334
+    },
+    {
+      "id": 7,
+      "text": "Не",
+      "start": 2.92,
+      "end": 3.26,
+      "probability": 0.5449
+    },
+    {
+      "id": 8,
+      "text": "кожен",
+      "start": 3.26,
+      "end": 3.6,
+      "probability": 0.9859
+    },
+    {
+      "id": 9,
+      "text": "готовий",
+      "start": 3.6,
+      "end": 3.94,
+      "probability": 0.984
+    },
+    {
+      "id": 10,
+      "text": "писати",
+      "start": 3.94,
+      "end": 4.38,
+      "probability": 0.9927
+    },
+    {
+      "id": 11,
+      "text": "і",
+      "start": 4.38,
+      "end": 4.52,
+      "probability": 0.815
+    },
+    {
+      "id": 12,
+      "text": "чекати",
+      "start": 4.52,
+      "end": 4.82,
+      "probability": 0.9909
+    },
+    {
+      "id": 13,
+      "text": "відповіді.",
+      "start": 4.82,
+      "end": 5.4,
+      "probability": 0.9745
+    },
+    {
+      "id": 14,
+      "text": "Збери",
+      "start": 5.68,
+      "end": 6.04,
+      "probability": 0.9554
+    },
+    {
+      "id": 15,
+      "text": "послуги,",
+      "start": 6.04,
+      "end": 6.66,
+      "probability": 0.9939
+    },
+    {
+      "id": 16,
+      "text": "роботи,",
+      "start": 6.9,
+      "end": 7.4,
+      "probability": 0.9862
+    },
+    {
+      "id": 17,
+      "text": "ціни",
+      "start": 7.7,
+      "end": 8.06,
+      "probability": 0.9855
+    },
+    {
+      "id": 18,
+      "text": "та",
+      "start": 8.06,
+      "end": 8.36,
+      "probability": 0.9804
+    },
+    {
+      "id": 19,
+      "text": "форму",
+      "start": 8.36,
+      "end": 8.8,
+      "probability": 0.9927
+    },
+    {
+      "id": 20,
+      "text": "заявки",
+      "start": 8.8,
+      "end": 9.28,
+      "probability": 0.9849
+    },
+    {
+      "id": 21,
+      "text": "на",
+      "start": 9.28,
+      "end": 9.54,
+      "probability": 0.9921
+    },
+    {
+      "id": 22,
+      "text": "одному",
+      "start": 9.54,
+      "end": 9.92,
+      "probability": 0.9514
+    },
+    {
+      "id": 23,
+      "text": "сайті.",
+      "start": 9.92,
+      "end": 10.38,
+      "probability": 0.995
+    },
+    {
+      "id": 24,
+      "text": "Ось",
+      "start": 10.7,
+      "end": 10.96,
+      "probability": 0.9754
+    },
+    {
+      "id": 25,
+      "text": "один",
+      "start": 10.96,
+      "end": 11.18,
+      "probability": 0.4785
+    },
+    {
+      "id": 26,
+      "text": "із",
+      "start": 11.18,
+      "end": 11.42,
+      "probability": 0.8808
+    },
+    {
+      "id": 27,
+      "text": "сайтів,",
+      "start": 11.42,
+      "end": 11.96,
+      "probability": 0.9941
+    },
+    {
+      "id": 28,
+      "text": "який",
+      "start": 12.0,
+      "end": 12.28,
+      "probability": 0.8877
+    },
+    {
+      "id": 29,
+      "text": "ми",
+      "start": 12.28,
+      "end": 12.42,
+      "probability": 0.9979
+    },
+    {
+      "id": 30,
+      "text": "створили.",
+      "start": 12.42,
+      "end": 12.88,
+      "probability": 0.9973
+    },
+    {
+      "id": 31,
+      "text": "Лендінг",
+      "start": 13.22,
+      "end": 13.68,
+      "probability": 0.8461
+    },
+    {
+      "id": 32,
+      "text": "за",
+      "start": 13.68,
+      "end": 13.78,
+      "probability": 0.8787
+    },
+    {
+      "id": 33,
+      "text": "150",
+      "start": 13.78,
+      "end": 14.24,
+      "probability": 0.8889
+    },
+    {
+      "id": 34,
+      "text": "доларів.",
+      "start": 14.24,
+      "end": 14.92,
+      "probability": 0.9082
+    },
+    {
+      "id": 35,
+      "text": "Перші",
+      "start": 15.26,
+      "end": 15.56,
+      "probability": 0.8291
+    },
+    {
+      "id": 36,
+      "text": "50",
+      "start": 15.56,
+      "end": 15.92,
+      "probability": 0.7252
+    },
+    {
+      "id": 37,
+      "text": "відсотків",
+      "start": 15.92,
+      "end": 16.64,
+      "probability": 0.8229
+    },
+    {
+      "id": 38,
+      "text": "після",
+      "start": 16.64,
+      "end": 17.26,
+      "probability": 0.9522
+    },
+    {
+      "id": 39,
+      "text": "затвердження",
+      "start": 17.26,
+      "end": 17.98,
+      "probability": 0.9891
+    },
+    {
+      "id": 40,
+      "text": "дизайну.",
+      "start": 17.98,
+      "end": 18.48,
+      "probability": 0.9928
+    },
+    {
+      "id": 41,
+      "text": "Залиш",
+      "start": 18.78,
+      "end": 19.22,
+      "probability": 0.9472
+    },
+    {
+      "id": 42,
+      "text": "заявку.",
+      "start": 19.22,
+      "end": 19.7,
+      "probability": 0.9705
+    },
+    {
+      "id": 43,
+      "text": "Обговоримо",
+      "start": 20.06,
+      "end": 20.9,
+      "probability": 0.9599
+    },
+    {
+      "id": 44,
+      "text": "сайт",
+      "start": 20.9,
+      "end": 21.5,
+      "probability": 0.9948
+    },
+    {
+      "id": 45,
+      "text": "для",
+      "start": 21.5,
+      "end": 21.76,
+      "probability": 0.995
+    },
+    {
+      "id": 46,
+      "text": "твого",
+      "start": 21.76,
+      "end": 22.06,
+      "probability": 0.6164
+    },
+    {
+      "id": 47,
+      "text": "бізнесу.",
+      "start": 22.06,
+      "end": 22.6,
+      "probability": 0.9865
+    }
+  ],
+  "audio_sha256": "188b60ddfd57b6a9092282d5b2c1259e601e3ea4fd2b274de51f22c4e5614797"
+}

@@ -5,6 +5,7 @@ separate layer, so its volume can be changed or muted in the composition.
 """
 from array import array
 import argparse
+import json
 from pathlib import Path
 import math
 import random
@@ -14,8 +15,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--landing-150', action='store_true')
 args = parser.parse_args()
 RATE = 48000
-DURATION = 22 if args.landing_150 else 25
-COUNT = RATE * DURATION
+plan = json.loads((Path(__file__).resolve().parent.parent / 'data/landing-150.json').read_text()) if args.landing_150 else None
+DURATION = plan['duration'] if plan else 25
+COUNT = round(RATE * DURATION)
 left = array('f', [0.0]) * COUNT
 right = array('f', [0.0]) * COUNT
 rng = random.Random(37)
@@ -32,7 +34,7 @@ sections = [
 if args.landing_150:
     sections = [(0, 8.0, [110.0, 164.81, 246.94, 261.63]),
                 (6.0, 16.0, [87.31, 130.81, 164.81, 196.0]),
-                (14.0, 22.0, [130.81, 196.0, 246.94, 293.66])]
+                (plan['scenes'][4]['start'], DURATION, [130.81, 196.0, 246.94, 293.66])]
 for start, end, notes in sections:
     for frequency in notes:
         phase_offset = rng.uniform(0, math.tau)
@@ -52,7 +54,8 @@ for i in range(COUNT):
     right[i] *= gain
 
 # Light taps on the three answers, form opening and final CTA.
-for at in ([6.3, 6.47, 6.63, 6.8, 18.0] if args.landing_150 else [9.84, 11.16, 12.34, 16.24, 19.36]):
+landing_taps = [6.04, 6.9, 7.7, 8.36, plan['scenes'][4]['start'] + .3, plan['scenes'][5]['start'] + .4] if plan else []
+for at in (landing_taps if plan else [9.84, 11.16, 12.34, 16.24, 19.36]):
     start = round(at * RATE)
     for j in range(round(.09 * RATE)):
         if start + j >= COUNT:
@@ -63,7 +66,7 @@ for at in ([6.3, 6.47, 6.63, 6.8, 18.0] if args.landing_150 else [9.84, 11.16, 1
         right[start + j] += value
 
 # A soft, filtered sweep as the cards become a website.
-start = round((6.0 if args.landing_150 else 13.66) * RATE)
+start = round((plan['scenes'][2]['start'] if plan else 13.66) * RATE)
 noise = 0.0
 for j in range(round(.35 * RATE)):
     noise = .87 * noise + .13 * rng.uniform(-1, 1)

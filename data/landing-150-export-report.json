@@ -1,0 +1,41 @@
+{
+  "source_audio_sha256": "188b60ddfd57b6a9092282d5b2c1259e601e3ea4fd2b274de51f22c4e5614797",
+  "video_frames": 1500,
+  "fps": 60,
+  "duration_seconds": 25,
+  "word_count": 48,
+  "caption_cues": 16,
+  "voice_time_stretch": false,
+  "master_render_scale": 2,
+  "main_downsample": "Lanczos 2160x3840 -> 1080x1920",
+  "crf": 12,
+  "preset": "slow",
+  "mix_gain_db": 3,
+  "files": [
+    {
+      "file": "previews/bridge-reel-150-master-4k-60fps.mp4",
+      "sha256": "3ac9927d8532d90e0571dc696e2780fb824b046dccddc24a1f7c86ad6949b497",
+      "size_bytes": 14031309,
+      "video_bitrate": 4195714,
+      "container_duration": 25.002,
+      "integrated_lufs": -17.17,
+      "true_peak_dbtp": -2.29
+    },
+    {
+      "file": "previews/bridge-reel-150-hq-60fps.mp4",
+      "sha256": "383b3b73a894645769275c3b2637e515aa179561d135a010758aa9d4299db591",
+      "size_bytes": 5460586,
+      "video_bitrate": 1453062,
+      "container_duration": 25.002,
+      "integrated_lufs": -17.17,
+      "true_peak_dbtp": -2.29
+    }
+  ],
+  "checks": [
+    "Final full H.264/AAC decode passed on master and main after audio mastering.",
+    "First frame and all six scenes checked at phone size.",
+    "Price entry, offer-to-CTA morph and final checked on decoded video frames.",
+    "Caption word coverage and continuous scene boundaries validated.",
+    "Original V1, V2 and layout MP4s remain byte-identical."
+  ]
+}

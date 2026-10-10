@@ -1,33 +1,206 @@
 {
-  "status": "layout_preview_waiting_for_new_voiceover",
-  "timing_status": "provisional_scene_windows_not_audio_aligned",
-  "duration": 22,
-  "voiceover": null,
-  "voiceover_volume": 1,
+  "status": "rendered_hq_60fps",
+  "timing_status": "audio_aligned",
+  "duration": 25,
+  "fps": 60,
+  "voiceover": "audio/voiceover-150.mp3",
+  "voiceover_volume": 1.12,
   "case_capture": null,
-  "case_clip": "brand/composite-scroll.mp4",
+  "case_clip": "brand/composite-scroll-60.mp4",
   "case_scroll_pixels": 0,
   "scenes": [
-    {"id": "01-problem", "start": 0, "end": 3},
-    {"id": "02-waiting", "start": 3, "end": 6},
-    {"id": "03-solution", "start": 6, "end": 10},
-    {"id": "04-case", "start": 10, "end": 14},
-    {"id": "05-offer", "start": 14, "end": 18},
-    {"id": "06-action", "start": 18, "end": 22}
+    {
+      "id": "01-problem",
+      "start": 0,
+      "end": 2.92
+    },
+    {
+      "id": "02-waiting",
+      "start": 2.92,
+      "end": 5.68
+    },
+    {
+      "id": "03-solution",
+      "start": 5.68,
+      "end": 10.7
+    },
+    {
+      "id": "04-case",
+      "start": 10.7,
+      "end": 13.22
+    },
+    {
+      "id": "05-offer",
+      "start": 13.22,
+      "end": 18.78
+    },
+    {
+      "id": "06-action",
+      "start": 18.78,
+      "end": 25
+    }
   ],
   "captions": [
-    {"start": 0, "end": 1.45, "text": "Клієнт не знаходить ціну"},
-    {"start": 1.45, "end": 3, "text": "у твоєму Instagram?"},
-    {"start": 3, "end": 4.35, "text": "Не кожен готовий писати"},
-    {"start": 4.35, "end": 6, "text": "й чекати відповіді."},
-    {"start": 6, "end": 7.6, "text": "Збери послуги, роботи, ціни"},
-    {"start": 7.6, "end": 10, "text": "та форму заявки на одному сайті."},
-    {"start": 10, "end": 11.6, "text": "Ось один із сайтів,"},
-    {"start": 11.6, "end": 14, "text": "який ми створили."},
-    {"start": 14, "end": 15.5, "text": "Лендінг за 150 доларів."},
-    {"start": 15.5, "end": 16.55, "text": "Перші 50 відсотків —"},
-    {"start": 16.55, "end": 18, "text": "після затвердження дизайну."},
-    {"start": 18, "end": 19.5, "text": "Залиш заявку —"},
-    {"start": 19.5, "end": 21.5, "text": "обговоримо сайт для твого бізнесу."}
-  ]
+    {
+      "start": 0.0,
+      "end": 1.28,
+      "word_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "text": "Клієнт не знаходить ціну"
+    },
+    {
+      "start": 1.28,
+      "end": 2.92,
+      "word_ids": [
+        4,
+        5,
+        6
+      ],
+      "text": "у твоєму Instagram?"
+    },
+    {
+      "start": 2.92,
+      "end": 4.38,
+      "word_ids": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "text": "Не кожен готовий писати"
+    },
+    {
+      "start": 4.38,
+      "end": 5.68,
+      "word_ids": [
+        11,
+        12,
+        13
+      ],
+      "text": "і чекати відповіді."
+    },
+    {
+      "start": 5.68,
+      "end": 6.9,
+      "word_ids": [
+        14,
+        15
+      ],
+      "text": "Збери послуги,"
+    },
+    {
+      "start": 6.9,
+      "end": 8.06,
+      "word_ids": [
+        16,
+        17
+      ],
+      "text": "роботи, ціни"
+    },
+    {
+      "start": 8.06,
+      "end": 9.28,
+      "word_ids": [
+        18,
+        19,
+        20
+      ],
+      "text": "та форму заявки"
+    },
+    {
+      "start": 9.28,
+      "end": 10.7,
+      "word_ids": [
+        21,
+        22,
+        23
+      ],
+      "text": "на одному сайті."
+    },
+    {
+      "start": 10.7,
+      "end": 12.0,
+      "word_ids": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "text": "Ось один із сайтів,"
+    },
+    {
+      "start": 12.0,
+      "end": 13.22,
+      "word_ids": [
+        28,
+        29,
+        30
+      ],
+      "text": "який ми створили."
+    },
+    {
+      "start": 13.22,
+      "end": 15.26,
+      "word_ids": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "text": "Лендінг за 150 доларів."
+    },
+    {
+      "start": 15.26,
+      "end": 16.64,
+      "word_ids": [
+        35,
+        36,
+        37
+      ],
+      "text": "Перші 50 відсотків"
+    },
+    {
+      "start": 16.64,
+      "end": 18.78,
+      "word_ids": [
+        38,
+        39,
+        40
+      ],
+      "text": "після затвердження дизайну."
+    },
+    {
+      "start": 18.78,
+      "end": 20.06,
+      "word_ids": [
+        41,
+        42
+      ],
+      "text": "Залиш заявку."
+    },
+    {
+      "start": 20.06,
+      "end": 21.5,
+      "word_ids": [
+        43,
+        44
+      ],
+      "text": "Обговоримо сайт"
+    },
+    {
+      "start": 21.5,
+      "end": 22.72,
+      "word_ids": [
+        45,
+        46,
+        47
+      ],
+      "text": "для твого бізнесу."
+    }
+  ],
+  "mix_gain_db": 3
 }

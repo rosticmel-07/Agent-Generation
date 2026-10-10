@@ -9,10 +9,13 @@ const previews = resolve(root, 'previews');
 mkdirSync(previews, {recursive: true});
 const browserExecutable = process.env.REMOTION_BROWSER_EXECUTABLE ||
   (existsSync('/usr/bin/chromium') ? '/usr/bin/chromium' : undefined);
-const compositionId = process.argv.find(arg => arg.startsWith('--composition='))?.split('=')[1] ?? 'BridgeReel';
+const compositionId = process.argv.find(arg => arg.startsWith('--composition='))?.split('=')[1] ?? 'BridgeLanding150';
 if (!['BridgeReel', 'BridgeLanding150'].includes(compositionId)) throw new Error(`Unknown composition: ${compositionId}`);
 const landing = compositionId === 'BridgeLanding150';
-const finalExport = process.argv.includes('--final');
+const finalExport = landing || process.argv.includes('--final');
+const masterExport = process.argv.includes('--master');
+if (masterExport && (!landing || !finalExport)) throw new Error('--master requires --composition=BridgeLanding150 --final');
+const landingPlan = JSON.parse(readFileSync(resolve(root, 'data/landing-150.json'), 'utf8'));
 if (landing && finalExport) {
   const plan = JSON.parse(readFileSync(resolve(root, 'data/landing-150.json'), 'utf8'));
   if (!plan.voiceover || !existsSync(resolve(root, 'public', plan.voiceover)) || plan.timing_status !== 'audio_aligned') {
@@ -22,10 +25,16 @@ if (landing && finalExport) {
 const serveUrl = await bundle({entryPoint: resolve(root, 'src/index.ts')});
 const options = {serveUrl, id: compositionId, browserExecutable};
 const composition = await selectComposition(options);
+const stillsFolder = landing && finalExport ? resolve(previews, 'landing-150-hq') : previews;
+mkdirSync(stillsFolder, {recursive: true});
 const targets = landing ? [
-  ['150-00-first-frame', 0], ['150-01-problem', 1.9], ['150-02-waiting', 4.8],
-  ['150-03-solution', 8.8], ['150-04-case-start', 10.5], ['150-04-case', 12.7], ['150-05-offer', 16.9],
-  ['150-06-action', 20.5],
+  ['150-00-first-frame', 0], ['150-01-problem', 1.9],
+  ['150-02-waiting', landingPlan.scenes[1].start + 1.8],
+  ['150-03-solution', landingPlan.scenes[2].start + 3.8],
+  ['150-04-case-start', landingPlan.scenes[3].start + .4],
+  ['150-04-case', landingPlan.scenes[3].end - .4],
+  ['150-05-offer', landingPlan.scenes[4].end - .5],
+  ['150-06-action', landingPlan.duration - 1.5],
 ] : [
   ['01-profile', 1.1], ['02-price', 2.8], ['03-competitor', 3.95],
   ['04-direct', 7.4], ['05-answers', 13], ['06-website', 15.1],
@@ -39,7 +48,7 @@ if (process.argv.includes('--stills')) {
   for (const [name, seconds] of selected) {
     await renderStill({
       serveUrl, composition, browserExecutable,
-      output: resolve(previews, `${name}.png`),
+      output: resolve(stillsFolder, `${name}.png`),
       frame: Math.round(seconds * composition.fps),
       imageFormat: 'png',
     });
@@ -50,11 +59,17 @@ if (process.argv.includes('--stills')) {
   const version = process.argv.find(arg => arg.startsWith('--version='))?.split('=')[1] ?? 'v2';
   if (!/^v[1-9]\d*$/.test(version)) throw new Error(`Invalid version: ${version}`);
   const outputLocation = resolve(previews, landing
-    ? (finalExport ? 'bridge-reel-150.mp4' : 'bridge-reel-150-layout.mp4')
+    ? (finalExport
+      ? (masterExport ? 'bridge-reel-150-master-4k-60fps.mp4' : 'bridge-reel-150-hq-60fps.mp4')
+      : 'bridge-reel-150-layout.mp4')
     : `bridge-reel-${version}.mp4`);
   await renderMedia({
     serveUrl, composition, browserExecutable, outputLocation,
-    codec: 'h264', audioCodec: 'aac', crf: 18, pixelFormat: 'yuv420p', colorSpace: 'bt709',
+    codec: 'h264', audioCodec: 'aac', crf: landing && finalExport ? 12 : 18,
+    x264Preset: landing && finalExport ? 'slow' : undefined,
+    audioBitrate: landing && finalExport ? '320k' : undefined,
+    metadata: landing && finalExport ? {comment: `bridge_mix_gain_db=${landingPlan.mix_gain_db}`} : undefined,
+    scale: masterExport ? 2 : 1, pixelFormat: 'yuv420p', colorSpace: 'bt709',
     concurrency: 2, imageFormat: 'png',
     onProgress: ({progress}) => {
       const milestone = Math.floor(progress * 10);

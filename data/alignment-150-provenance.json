@@ -1,0 +1,14 @@
+{
+  "audio_sha256": "188b60ddfd57b6a9092282d5b2c1259e601e3ea4fd2b274de51f22c4e5614797",
+  "source_file": "ElevenLabs_2026-10-10T12_16_21_Artem Klopotenko - Low, Rich and Deep_pvc_sp112_s50_sb69_se25_m2.mp3",
+  "asr_text": " Клієнт не знаходить ціну у твоєму Інстаграм? Не кожен готовий писати і чекати відповіді. Збери послуги, роботи, ціни та форму заявки на одному сайті. Ось один із сайтів, який ми створили. Лендінг за 150 доларів. Перші 50% після затвердження дизайну. Залиш заявку. Обговоримо сайт для твого бізнесу.",
+  "model": "Whisper small, validated restored official k2-fsa ONNX weights",
+  "method": "Whisper small cross-attention DTW; known script corrected against independent ASR; punctuation merged",
+  "audio_duration": 22.98775,
+  "no_audio_time_stretch": true,
+  "notes": [
+    "Межі автоматично визначені на сітці 20 мс; це не перевірка прослуховуванням.",
+    "Незалежна транскрипція підтвердила всі шість фраз. Озвучено «і», тому субтитри відповідають запису.",
+    "150 і 50 вирівняні як цілі числові фрази; написання Instagram збережено для показу."
+  ]
+}
