@@ -11,8 +11,9 @@ const width = 804;
 
 const AdClick: React.FC = () => {
   const f = useMotionFrame();
-  const clicked = f >= 45;
-  const tap = ease(f, 24, 42);
+  const clickAt = wordData.words[6].start * 30;
+  const clicked = f >= clickAt;
+  const tap = ease(f, clickAt - 20, clickAt - 2);
   return <AbsoluteFill>
     <SceneTitle immediate size={76} lines={['Платиш за рекламу.', 'А що після кліку?']}/>
     <div style={{position: 'absolute', left, top: 612, width, height: 704, ...panel}}>
@@ -26,7 +27,7 @@ const AdClick: React.FC = () => {
         <div style={{fontSize: 37, fontWeight: 700, marginBottom: 24}}>Знайти умови серед постів?</div>
         <div style={{height: 373, overflow: 'hidden', borderRadius: 15}}>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 11,
-            transform: `translateY(${-ease(f, 53, 111) * 118}px)`}}>
+            transform: `translateY(${-ease(f, clickAt + 8, clickAt + 55) * 118}px)`}}>
             {[0, 1, 2, 3, 4, 5].map(i => <div key={i} style={{position: 'relative', overflow: 'hidden', borderRadius: 12}}>
               <PostArt variant={i} size={237}/>
               <div style={{position: 'absolute', left: 13, bottom: 16, fontSize: 29, fontWeight: 700,
@@ -35,7 +36,7 @@ const AdClick: React.FC = () => {
           </div>
         </div>
         <div style={{marginTop: 26, display: 'flex', alignItems: 'center', gap: 17, fontSize: 37,
-          fontWeight: 700, ...enter(f, 60, 15)}}><Icon name="search" color={C.red} size={36}/>Де конкретна пропозиція?</div>
+          fontWeight: 700, ...enter(f, clickAt + 15, 15)}}><Icon name="search" color={C.red} size={36}/>Де конкретна пропозиція?</div>
       </div> : <div style={{padding: '27px 36px'}}>
         <div style={{fontSize: 43, fontWeight: 750}}>Твоя пропозиція</div>
         <div style={{height: 260, marginTop: 24, borderRadius: 17, overflow: 'hidden', position: 'relative', background: '#211b1c'}}>
@@ -45,9 +46,9 @@ const AdClick: React.FC = () => {
         <div style={{position: 'absolute', left: 36, right: 36, bottom: 43, height: 105, borderRadius: 20,
           background: C.red, display: 'flex', alignItems: 'center', justifyContent: 'space-between',
           padding: '0 30px', fontSize: 38, fontWeight: 700,
-          transform: `scale(${1 - ease(f, 39, 44) * .016})`}}>Дізнатися більше<Icon name="arrow" size={38}/></div>
+          transform: `scale(${1 - ease(f, clickAt - 6, clickAt - 1) * .016})`}}>Дізнатися більше<Icon name="arrow" size={38}/></div>
         <div style={{position: 'absolute', right: 113 - tap * 31, bottom: 206 - tap * 115,
-          opacity: ease(f, 17, 24), filter: 'drop-shadow(0 4px 7px #0008)'}}><Icon name="cursor" size={47}/></div>
+          opacity: ease(f, clickAt - 27, clickAt - 20), filter: 'drop-shadow(0 4px 7px #0008)'}}><Icon name="cursor" size={47}/></div>
       </div>}
     </div>
   </AbsoluteFill>;
@@ -58,15 +59,18 @@ const Clarity: React.FC = () => {
   return <AbsoluteFill>
     <SceneTitle size={76} lines={['Клієнту потрібні', 'чіткі відповіді.']}/>
     <div style={{position: 'absolute', left, top: 635, width, display: 'flex', flexDirection: 'column', gap: 24}}>
-      {(['Що я отримую?', 'Скільки коштує?', 'Як замовити?'] as const).map((text, i) => <div key={text}
+      {(['Що я отримую?', 'Скільки коштує?', 'Як замовити?'] as const).map((text, i) => {
+        const at = (wordData.words[[12, 13, 15][i]].start - plan.scenes[1].start) * 30;
+        const accent = Math.sin(Math.PI * ease(f, at, at + 18));
+        return <div key={text}
         style={{height: 173, padding: '0 34px', display: 'flex', alignItems: 'center', gap: 29,
-          ...panel, ...enter(f, i * 5, 43)}}>
+          ...panel, borderColor: accent > .25 ? '#8a3c46' : '#353b37', ...enter(f, i * 5, 43)}}>
         <div style={{width: 77, height: 77, borderRadius: 23, background: '#f3233510',
           border: '1px solid #f3233528', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <Icon name={(['site', 'price', 'message'] as const)[i]} size={40} color={C.red}/>
         </div>
         <span style={{fontSize: 48, fontWeight: 700, letterSpacing: -1.4}}>{text}</span>
-      </div>)}
+      </div>;})}
       <div style={{fontSize: 33, color: C.muted, padding: '11px 4px', ...enter(f, 23, 15)}}>Без пошуку по різних публікаціях</div>
     </div>
   </AbsoluteFill>;
@@ -112,7 +116,7 @@ export const BridgeAdClick: React.FC = () => {
   const mixGain = Math.pow(10, plan.mix_gain_db / 20);
   return <AbsoluteFill className="brand-font" style={{color: C.white, overflow: 'hidden'}}>
     <Background/>
-    {plan.atmosphere && <Audio src={staticFile(plan.atmosphere)} volume={.75 * mixGain}/>}
+    {plan.atmosphere && <Audio src={staticFile(plan.atmosphere)} volume={(f) => (f / fps < plan.voice_end ? .75 : 1) * mixGain}/>}
     {plan.voiceover && <Audio src={staticFile(plan.voiceover)} volume={plan.voiceover_volume * mixGain}/>}
     {plan.scenes.map((scene, i) => {
       const Component = scenes[i];

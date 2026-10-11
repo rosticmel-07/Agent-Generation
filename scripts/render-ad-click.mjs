@@ -14,6 +14,15 @@ if (!stills && (!plan.voiceover || !existsSync(resolve(root, 'public', plan.voic
   plan.timing_status !== 'audio_aligned' || !words.length || !plan.captions.length)) {
   throw new Error('This ad is awaiting its own voiceover and word alignment. Only --stills is available until then.');
 }
+if (plan.timing_status === 'audio_aligned') {
+  if (plan.fps !== 60 || words.some(w => !(w.end > w.start))) throw new Error('Invalid frame rate or word duration.');
+  if (plan.scenes[0].start !== 0 || plan.scenes.at(-1).end !== plan.duration ||
+    plan.scenes.some((s, i) => s.end <= s.start || (i > 0 && s.start !== plan.scenes[i-1].end))) {
+    throw new Error('Scene boundaries must cover the full video without gaps or overlaps.');
+  }
+  const ids = plan.captions.flatMap(c => c.word_ids);
+  if (ids.length !== words.length || ids.some((id, i) => id !== i)) throw new Error('Captions must include every word exactly once.');
+}
 const serveUrl = await bundle({entryPoint: resolve(root, 'src/index.ts')});
 const composition = await selectComposition({serveUrl, id: 'BridgeAdClick', browserExecutable});
 const previews = resolve(root, 'previews');

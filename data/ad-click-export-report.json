@@ -1,0 +1,64 @@
+{
+  "source_audio_sha256": "d961ffce60e6bca39fdf395664902908569f2cacb67bb87a7645284b94f980fd",
+  "video_frames": 1320,
+  "fps": 60,
+  "duration_seconds": 22,
+  "word_count": 45,
+  "caption_cues": 15,
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "master_render_scale": 2,
+  "main_downsample": "Lanczos 2160x3840 -> 1080x1920",
+  "crf": 12,
+  "preset": "slow",
+  "files": [
+    {
+      "file": "previews/bridge-reel-ad-click-master-4k-60fps.mp4",
+      "sha256": "fabcaf93394d30934bd2e55ac7481488ab5beac99c662d24f418069ece64b34f",
+      "size_bytes": 13115420,
+      "video_bitrate": 4437902,
+      "profile": "High",
+      "audio_bitrate": 317375,
+      "container_duration": 22.016,
+      "integrated_lufs": -17.0,
+      "true_peak_dbtp": -4.68,
+      "full_decode": "passed"
+    },
+    {
+      "file": "previews/bridge-reel-ad-click-hq-60fps.mp4",
+      "sha256": "e0534cd6118e0cf67e6568265adb2bc4a9c4f85429cd34210502ea82170243d9",
+      "size_bytes": 5435585,
+      "video_bitrate": 1645193,
+      "profile": "High",
+      "audio_bitrate": 317375,
+      "container_duration": 22.016,
+      "integrated_lufs": -17.0,
+      "true_peak_dbtp": -4.68,
+      "full_decode": "passed"
+    }
+  ],
+  "checks": [
+    "TypeScript typecheck passed.",
+    "Full H.264/AAC decode passed on both actual delivered MP4s.",
+    "First frame and six scenes rendered and checked at phone size.",
+    "All 45 aligned words appear exactly once in 15 caption cues.",
+    "Scene boundaries cover 22 seconds without gaps or overlap.",
+    "Original supplied MP3 and both previous approved MP4s verified byte-identical.",
+    "Ad click, real-case hero, price entry and offer-to-CTA morph reviewed on 13 decoded 1080p video frames."
+  ],
+  "reviewed_decoded_frames": [
+    0,
+    98,
+    105,
+    222,
+    468,
+    551,
+    695,
+    709,
+    732,
+    942,
+    962,
+    994,
+    1319
+  ]
+}

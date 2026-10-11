@@ -13,9 +13,13 @@ import wave
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--landing-150', action='store_true')
+parser.add_argument('--ad-click', action='store_true')
 args = parser.parse_args()
+if args.landing_150 and args.ad_click:
+    parser.error('Choose one campaign.')
 RATE = 48000
-plan = json.loads((Path(__file__).resolve().parent.parent / 'data/landing-150.json').read_text()) if args.landing_150 else None
+plan_file = 'ad-click.json' if args.ad_click else 'landing-150.json'
+plan = json.loads((Path(__file__).resolve().parent.parent / 'data' / plan_file).read_text()) if args.landing_150 or args.ad_click else None
 DURATION = plan['duration'] if plan else 25
 COUNT = round(RATE * DURATION)
 left = array('f', [0.0]) * COUNT
@@ -31,7 +35,7 @@ sections = [
     (8.26, 19.5, [87.31, 130.81, 164.81, 196.0]),
     (17.04, 25.0, [130.81, 196.0, 246.94, 293.66]),
 ]
-if args.landing_150:
+if plan:
     sections = [(0, 8.0, [110.0, 164.81, 246.94, 261.63]),
                 (6.0, 16.0, [87.31, 130.81, 164.81, 196.0]),
                 (plan['scenes'][4]['start'], DURATION, [130.81, 196.0, 246.94, 293.66])]
@@ -55,6 +59,9 @@ for i in range(COUNT):
 
 # Light taps on the three answers, form opening and final CTA.
 landing_taps = [6.04, 6.9, 7.7, 8.36, plan['scenes'][4]['start'] + .3, plan['scenes'][5]['start'] + .4] if plan else []
+if args.ad_click:
+    landing_taps = [1.68, 4.0, 4.76, 5.26, plan['scenes'][2]['start'] + .35,
+                    plan['scenes'][4]['start'] + .3, 13.78, plan['scenes'][5]['start'] + .4]
 for at in (landing_taps if plan else [9.84, 11.16, 12.34, 16.24, 19.36]):
     start = round(at * RATE)
     for j in range(round(.09 * RATE)):
@@ -80,7 +87,8 @@ for a, b in zip(left, right):
     peak = max(peak, abs(a), abs(b))
     samples.extend([round(max(-1, min(1, a)) * 32767), round(max(-1, min(1, b)) * 32767)])
 assert peak < .06, peak
-target = Path(__file__).resolve().parent.parent / 'public/audio' / ('atmosphere-150.wav' if args.landing_150 else 'atmosphere-v2.wav')
+filename = 'atmosphere-ad-click.wav' if args.ad_click else ('atmosphere-150.wav' if args.landing_150 else 'atmosphere-v2.wav')
+target = Path(__file__).resolve().parent.parent / 'public/audio' / filename
 with wave.open(str(target), 'wb') as output:
     output.setnchannels(2)
     output.setsampwidth(2)

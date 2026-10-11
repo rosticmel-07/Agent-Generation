@@ -1,0 +1,54 @@
+{
+  "source_file": "ElevenLabs_2026-10-11T11_45_12_Artem Klopotenko - Low, Rich and Deep_pvc_sp112_s54_sb69_se29_m2.mp3",
+  "source_audio_sha256": "d961ffce60e6bca39fdf395664902908569f2cacb67bb87a7645284b94f980fd",
+  "source_duration_seconds": 19.774688,
+  "independent_asr": {
+    "model": "Whisper small",
+    "language": "uk",
+    "text": "Платиш за рекламу, а клієнт після кліку губиться серед постів? Йому потрібні пропозиції, ціна і зрозумілий спосіб замовити. Збери це на одному лендінгу, з прикладами робіт та формою заявки. У Брідж Айдженсі створимо такий сайт за 150 доларів. За лише заявку обговоримо сайт для твого бізнесу.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.02,
+        "text": "Платиш за рекламу, а клієнт після кліку губиться серед постів?"
+      },
+      {
+        "start": 3.46,
+        "end": 6.8,
+        "text": "Йому потрібні пропозиції, ціна і зрозумілий спосіб замовити."
+      },
+      {
+        "start": 7.18,
+        "end": 11.12,
+        "text": "Збери це на одному лендінгу, з прикладами робіт та формою заявки."
+      },
+      {
+        "start": 11.56,
+        "end": 15.32,
+        "text": "У Брідж Айдженсі створимо такий сайт за 150 доларів."
+      },
+      {
+        "start": 15.6,
+        "end": 19.42,
+        "text": "За лише заявку обговоримо сайт для твого бізнесу."
+      }
+    ]
+  },
+  "alignment": "Cross-attention DTW against known script, reconciled with independent transcription.",
+  "corrections": [
+    "Full spoken brand displayed as Bridge Agency.",
+    "ASR \"За лише\" restored to scripted \"Залиш\".",
+    "Scripted singular \"пропозиція\" preserved despite ASR suffix uncertainty.",
+    "Zero-duration conjunction corrected to independent-ASR 1.02–1.04; next word begins 1.04.",
+    "Preposition з begins at 8.82 after the spoken pause."
+  ],
+  "audio_processing": {
+    "time_stretch": false,
+    "pitch_shift": false,
+    "original_file_preserved": true,
+    "method": "FFmpeg two-pass loudnorm I=-17 TP=-2 LRA=11; measured I=-20.08 TP=-2.96 LRA=1.40 threshold=-30.45 offset=-0.14, 48000 Hz 24-bit WAV.",
+    "normalized_voice_integrated_lufs": -16.9,
+    "normalized_voice_true_peak_dbtp": -2.0
+  },
+  "review": "ASR, word alignment and frame review; no claim of human listening."
+}

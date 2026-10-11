@@ -1,4 +1,330 @@
 {
-  "status": "awaiting_voiceover",
-  "words": []
+  "schema_version": 1,
+  "language": "uk",
+  "duration": 19.7746875,
+  "method": "Whisper small cross-attention DTW; script reconciled with independent ASR",
+  "review_status": "automatic_alignment_with_caption_frame_review",
+  "notes": [
+    "Boundary estimates use a 20 ms grid; no human listening verification.",
+    "Recording says the full brand Bridge Agency; the subtitles preserve that wording.",
+    "150 is aligned as one spoken numeric phrase."
+  ],
+  "words": [
+    {
+      "id": 0,
+      "text": "Платиш",
+      "start": 0.0,
+      "end": 0.42,
+      "probability": 0.8692
+    },
+    {
+      "id": 1,
+      "text": "за",
+      "start": 0.42,
+      "end": 0.5,
+      "probability": 0.8729
+    },
+    {
+      "id": 2,
+      "text": "рекламу,",
+      "start": 0.5,
+      "end": 0.96,
+      "probability": 0.9464
+    },
+    {
+      "id": 3,
+      "text": "а",
+      "start": 1.02,
+      "end": 1.04,
+      "probability": 0.992
+    },
+    {
+      "id": 4,
+      "text": "клієнт",
+      "start": 1.04,
+      "end": 1.46,
+      "probability": 0.8333
+    },
+    {
+      "id": 5,
+      "text": "після",
+      "start": 1.46,
+      "end": 1.68,
+      "probability": 0.9761
+    },
+    {
+      "id": 6,
+      "text": "кліку",
+      "start": 1.68,
+      "end": 1.96,
+      "probability": 0.8334
+    },
+    {
+      "id": 7,
+      "text": "губиться",
+      "start": 1.96,
+      "end": 2.34,
+      "probability": 0.9684
+    },
+    {
+      "id": 8,
+      "text": "серед",
+      "start": 2.34,
+      "end": 2.64,
+      "probability": 0.9903
+    },
+    {
+      "id": 9,
+      "text": "постів?",
+      "start": 2.64,
+      "end": 3.02,
+      "probability": 0.9339
+    },
+    {
+      "id": 10,
+      "text": "Йому",
+      "start": 3.44,
+      "end": 3.62,
+      "probability": 0.9655
+    },
+    {
+      "id": 11,
+      "text": "потрібні",
+      "start": 3.62,
+      "end": 4.0,
+      "probability": 0.9711
+    },
+    {
+      "id": 12,
+      "text": "пропозиція,",
+      "start": 4.0,
+      "end": 4.72,
+      "probability": 0.776
+    },
+    {
+      "id": 13,
+      "text": "ціна",
+      "start": 4.76,
+      "end": 5.1,
+      "probability": 0.9906
+    },
+    {
+      "id": 14,
+      "text": "і",
+      "start": 5.1,
+      "end": 5.26,
+      "probability": 0.6761
+    },
+    {
+      "id": 15,
+      "text": "зрозумілий",
+      "start": 5.26,
+      "end": 5.88,
+      "probability": 0.9363
+    },
+    {
+      "id": 16,
+      "text": "спосіб",
+      "start": 5.88,
+      "end": 6.26,
+      "probability": 0.9394
+    },
+    {
+      "id": 17,
+      "text": "замовити.",
+      "start": 6.26,
+      "end": 6.8,
+      "probability": 0.9909
+    },
+    {
+      "id": 18,
+      "text": "Збери",
+      "start": 7.12,
+      "end": 7.44,
+      "probability": 0.8884
+    },
+    {
+      "id": 19,
+      "text": "це",
+      "start": 7.44,
+      "end": 7.58,
+      "probability": 0.9811
+    },
+    {
+      "id": 20,
+      "text": "на",
+      "start": 7.58,
+      "end": 7.72,
+      "probability": 0.9829
+    },
+    {
+      "id": 21,
+      "text": "одному",
+      "start": 7.72,
+      "end": 8.1,
+      "probability": 0.9579
+    },
+    {
+      "id": 22,
+      "text": "лендінгу",
+      "start": 8.1,
+      "end": 8.64,
+      "probability": 0.8452
+    },
+    {
+      "id": 23,
+      "text": "з",
+      "start": 8.82,
+      "end": 8.96,
+      "probability": 0.3303
+    },
+    {
+      "id": 24,
+      "text": "прикладами",
+      "start": 8.96,
+      "end": 9.56,
+      "probability": 0.9883
+    },
+    {
+      "id": 25,
+      "text": "робіт",
+      "start": 9.56,
+      "end": 9.96,
+      "probability": 0.9843
+    },
+    {
+      "id": 26,
+      "text": "та",
+      "start": 9.96,
+      "end": 10.16,
+      "probability": 0.9957
+    },
+    {
+      "id": 27,
+      "text": "формою",
+      "start": 10.16,
+      "end": 10.58,
+      "probability": 0.9043
+    },
+    {
+      "id": 28,
+      "text": "заявки.",
+      "start": 10.58,
+      "end": 11.14,
+      "probability": 0.9521
+    },
+    {
+      "id": 29,
+      "text": "У",
+      "start": 11.52,
+      "end": 11.66,
+      "probability": 0.955
+    },
+    {
+      "id": 30,
+      "text": "Bridge",
+      "start": 11.66,
+      "end": 11.98,
+      "probability": 0.6455
+    },
+    {
+      "id": 31,
+      "text": "Agency",
+      "start": 11.98,
+      "end": 12.62,
+      "probability": 0.6933
+    },
+    {
+      "id": 32,
+      "text": "створимо",
+      "start": 12.62,
+      "end": 13.0,
+      "probability": 0.9849
+    },
+    {
+      "id": 33,
+      "text": "такий",
+      "start": 13.0,
+      "end": 13.32,
+      "probability": 0.9557
+    },
+    {
+      "id": 34,
+      "text": "сайт",
+      "start": 13.32,
+      "end": 13.62,
+      "probability": 0.995
+    },
+    {
+      "id": 35,
+      "text": "за",
+      "start": 13.62,
+      "end": 13.78,
+      "probability": 0.9926
+    },
+    {
+      "id": 36,
+      "text": "150",
+      "start": 13.78,
+      "end": 14.3,
+      "probability": 0.8445
+    },
+    {
+      "id": 37,
+      "text": "доларів.",
+      "start": 14.3,
+      "end": 15.32,
+      "probability": 0.8917
+    },
+    {
+      "id": 38,
+      "text": "Залиш",
+      "start": 15.6,
+      "end": 16.04,
+      "probability": 0.8735
+    },
+    {
+      "id": 39,
+      "text": "заявку.",
+      "start": 16.04,
+      "end": 16.54,
+      "probability": 0.9419
+    },
+    {
+      "id": 40,
+      "text": "Обговоримо",
+      "start": 16.92,
+      "end": 17.82,
+      "probability": 0.9691
+    },
+    {
+      "id": 41,
+      "text": "сайт",
+      "start": 17.82,
+      "end": 18.42,
+      "probability": 0.9971
+    },
+    {
+      "id": 42,
+      "text": "для",
+      "start": 18.42,
+      "end": 18.58,
+      "probability": 0.9967
+    },
+    {
+      "id": 43,
+      "text": "твого",
+      "start": 18.58,
+      "end": 18.9,
+      "probability": 0.6789
+    },
+    {
+      "id": 44,
+      "text": "бізнесу.",
+      "start": 18.9,
+      "end": 19.42,
+      "probability": 0.9863
+    }
+  ],
+  "source_audio_sha256": "d961ffce60e6bca39fdf395664902908569f2cacb67bb87a7645284b94f980fd"
 }
