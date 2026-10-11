@@ -1,0 +1,20 @@
+{
+  "status": "awaiting_voiceover",
+  "timing_status": "provisional_layout",
+  "duration": 25,
+  "fps": 60,
+  "voiceover": null,
+  "voiceover_volume": 1.12,
+  "mix_gain_db": 3,
+  "atmosphere": null,
+  "case_clip": "brand/composite-scroll-60.mp4",
+  "scenes": [
+    {"id": "01-ad-click", "start": 0, "end": 5},
+    {"id": "02-clarity", "start": 5, "end": 8.8},
+    {"id": "03-landing", "start": 8.8, "end": 13.2},
+    {"id": "04-case", "start": 13.2, "end": 15.7},
+    {"id": "05-offer", "start": 15.7, "end": 20},
+    {"id": "06-action", "start": 20, "end": 25}
+  ],
+  "captions": []
+}

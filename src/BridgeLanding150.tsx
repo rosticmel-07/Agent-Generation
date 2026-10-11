@@ -136,7 +136,7 @@ const Solution: React.FC = () => {
   </AbsoluteFill>;
 };
 
-const Case: React.FC = () => {
+const Case: React.FC<{clip?: string}> = ({clip = plan.case_clip}) => {
   const f = useMotionFrame();
   return <AbsoluteFill>
     <SceneTitle size={76} lines={['Ось як це', 'може виглядати.']}/>
@@ -147,7 +147,7 @@ const Case: React.FC = () => {
         <span style={{marginLeft: 'auto', fontSize: 28, color: '#bbc6bc'}}>Композитна сітка</span>
       </div>
       <div style={{position: 'absolute', top: 62, bottom: 0, left: 0, right: 0, overflow: 'hidden'}}>
-        <OffthreadVideo src={staticFile(plan.case_clip)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}}/>
+        <OffthreadVideo src={staticFile(clip)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}}/>
       </div>
     </div>
     <div style={{position: 'absolute', left, top: 1340, width, fontSize: 32, fontWeight: 600,
@@ -158,12 +158,14 @@ const Case: React.FC = () => {
 };
 
 // One persistent card spans offer + CTA. Compact it once, then hold still.
-const OfferDeck: React.FC = () => {
+const OfferDeck: React.FC<{offerStart?: number; actionStart?: number}> = ({
+  offerStart = plan.scenes[4].start, actionStart = plan.scenes[5].start,
+}) => {
   const f = useMotionFrame();
-  const start = plan.scenes[4].start * 30;
+  const start = offerStart * 30;
   if (f < start) return null;
   const local = f - start;
-  const compact = ease(f, plan.scenes[5].start * 30, plan.scenes[5].start * 30 + 13);
+  const compact = ease(f, actionStart * 30, actionStart * 30 + 13);
   const land = settle(local);
   const height = 638 - compact * 320;
   const gloss = ease(local, 17, 55);
@@ -226,18 +228,22 @@ const Action: React.FC = () => {
   </AbsoluteFill>;
 };
 
-const Captions: React.FC = () => {
+export type CaptionCue = {start: number; end: number; word_ids: number[]; text: string};
+export type TimedWord = {start: number; end: number; text: string};
+const Captions: React.FC<{cues?: CaptionCue[]; words?: TimedWord[]}> = ({
+  cues = plan.captions, words = wordData.words,
+}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;
-  const cue = plan.captions.find(c => t >= c.start && t < c.end);
+  const cue = cues.find(c => t >= c.start && t < c.end);
   if (!cue) return null;
   return <div style={{position: 'absolute', left: 85, top: 1440, width: 830, zIndex: 20,
     textAlign: 'center', fontSize: 48, fontWeight: 650, letterSpacing: -.9, lineHeight: 1.3,
     textShadow: '0 2px 12px #000', opacity: t < .12 ? 1 : ease((t - cue.start) * 30, 0, 2)}}>
     <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 12, rowGap: 4}}>
       {cue.word_ids.map(id => {
-        const word = wordData.words[id];
+        const word = words[id];
         return <span key={id} style={{color: t >= word.start && t < word.end ? C.red : C.white}}>{word.text}</span>;
       })}
     </div>
@@ -262,3 +268,7 @@ export const BridgeLanding150: React.FC = () => {
     <Captions/>
   </AbsoluteFill>;
 };
+
+// Reuse the approved visual language while each new ad keeps its own timeline/audio.
+export {SceneTitle, Brand, Case, OfferDeck, Offer, Action, Captions,
+  useMotionFrame, ease, settle, enter, panel};
