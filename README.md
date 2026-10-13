@@ -10,6 +10,8 @@
 - [Перегляд і кадри нового ролика](previews/ad-click-work/index.html).
 - [Сценарій, монтаж і перевірки](docs/ad-click.md).
 
+**Наступний ролик:** [«Знову ті самі питання?»](docs/direct-questions.md). Текст готовий до озвучки; нова подача з відцентрованим контентом. [Текст для ElevenLabs](public/audio/voiceover-direct-questions.txt).
+
 Попередня схвалена рекламна версія «Лендінг за $150»:
 
 - [MP4 для рекламного тесту — HQ / 60 fps](previews/bridge-reel-150-hq-60fps.mp4).
