@@ -1,0 +1,75 @@
+{
+  "source_audio_sha256": "fb90eefb6614d75e9d5e6b64af9bf4aa8b23ed66ba2486249c1766b7780ab728",
+  "video_frames": 1440,
+  "fps": 60,
+  "duration_seconds": 24,
+  "word_count": 48,
+  "caption_cues": 18,
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "master_render_scale": 2,
+  "main_downsample": "Lanczos 2160x3840 -> 1080x1920",
+  "crf": 12,
+  "preset": "slow",
+  "files": [
+    {
+      "file": "previews/bridge-reel-direct-questions-master-4k-60fps.mp4",
+      "sha256": "10538eb18f01be2ee42e7daf1a6dd01d705d41c8ef5a07ed4878c8b32ac7c51e",
+      "size_bytes": 10498494,
+      "video_bitrate": 3168364,
+      "profile": "High",
+      "audio_bitrate": 317375,
+      "container_duration": 24.0,
+      "integrated_lufs": -17.1,
+      "true_peak_dbtp": -4.83,
+      "full_decode": "passed"
+    },
+    {
+      "file": "previews/bridge-reel-direct-questions-hq-60fps.mp4",
+      "sha256": "049d44331931418f762c6b5c37ee1ef128a7b91d4e9cd0c42c6d0037acda5bbc",
+      "size_bytes": 4194030,
+      "video_bitrate": 1066900,
+      "profile": "High",
+      "audio_bitrate": 317375,
+      "container_duration": 24.0,
+      "integrated_lufs": -17.1,
+      "true_peak_dbtp": -4.83,
+      "full_decode": "passed"
+    }
+  ],
+  "checks": [
+    "TypeScript typecheck passed.",
+    "Full H.264/AAC decode passed on both actual delivered MP4s.",
+    "Nine first-frame/scene/accordion/offer/CTA stills checked at phone size.",
+    "All 48 words appear exactly once in 18 caption cues.",
+    "Scene boundaries cover 24 seconds without gaps or overlap.",
+    "Every principal group measured at x=540 in Chromium on nine frames.",
+    "Original provided MP3 and the four previous approved MP4s verified byte-identical.",
+    "Questions, accordion motion, horizontal price entry and CTA transition reviewed on 18 frames decoded from the final 1080p MP4."
+  ],
+  "centering": {
+    "expected_center_x": 540,
+    "reviewed_frames": 9,
+    "max_error_px": 0
+  },
+  "reviewed_decoded_frames": [
+    0,
+    83,
+    135,
+    196,
+    256,
+    411,
+    471,
+    530,
+    670,
+    730,
+    825,
+    860,
+    1005,
+    1085,
+    1100,
+    1120,
+    1152,
+    1439
+  ]
+}

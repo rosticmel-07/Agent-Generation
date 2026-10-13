@@ -3,8 +3,10 @@ import {Composition} from 'remotion';
 import {BridgeReel} from './BridgeReel';
 import {BridgeLanding150} from './BridgeLanding150';
 import {BridgeAdClick} from './BridgeAdClick';
+import {BridgeDirectQuestions} from './BridgeDirectQuestions';
 import landingPlan from '../data/landing-150.json';
 import adClickPlan from '../data/ad-click.json';
+import directQuestionsPlan from '../data/direct-questions.json';
 import './style.css';
 
 export const Root: React.FC = () => (
@@ -24,6 +26,14 @@ export const Root: React.FC = () => (
     height={1920}
     fps={adClickPlan.fps}
     durationInFrames={Math.round(adClickPlan.duration * adClickPlan.fps)}
+  />
+  <Composition
+    id="BridgeDirectQuestions"
+    component={BridgeDirectQuestions}
+    width={1080}
+    height={1920}
+    fps={directQuestionsPlan.fps}
+    durationInFrames={Math.round(directQuestionsPlan.duration * directQuestionsPlan.fps)}
   />
   <Composition
     id="BridgeReel"

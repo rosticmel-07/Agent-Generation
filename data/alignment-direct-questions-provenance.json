@@ -1,0 +1,50 @@
+{
+  "source_file": "ElevenLabs_2026-10-13T07_48_21_Artem Klopotenko - Low, Rich and Deep_pvc_sp112_s54_sb69_se29_m2.mp3",
+  "source_audio_sha256": "fb90eefb6614d75e9d5e6b64af9bf4aa8b23ed66ba2486249c1766b7780ab728",
+  "source_duration_seconds": 21.681625,
+  "independent_asr": {
+    "model": "Whisper small",
+    "language": "uk",
+    "text": "Знову пояснюєш у директі ціну умови і як замовити. Ті самі питання кожному новому клієнту. Збери відповіді, приклади робіт і форму заявки на одному сайті. Клієнт зможе прочитати умови ще до переписки. У Bridge Agency створимо такий лендинг за 150 доларів. За лише заявку обговоримо сайт для твого бізнесу.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.32,
+        "text": " Знову пояснюєш у директі ціну умови і як замовити."
+      },
+      {
+        "start": 3.66,
+        "end": 6.28,
+        "text": " Ті самі питання кожному новому клієнту."
+      },
+      {
+        "start": 6.52,
+        "end": 10.08,
+        "text": " Збери відповіді, приклади робіт і форму заявки на одному сайті."
+      },
+      {
+        "start": 10.5,
+        "end": 13.32,
+        "text": " Клієнт зможе прочитати умови ще до переписки."
+      },
+      {
+        "start": 13.62,
+        "end": 17.74,
+        "text": " У Bridge Agency створимо такий лендинг за 150 доларів."
+      },
+      {
+        "start": 18.04,
+        "end": 21.32,
+        "text": " За лише заявку обговоримо сайт для твого бізнесу."
+      }
+    ]
+  },
+  "alignment": "Cross-attention DTW against the supplied script, reconciled with independent ASR.",
+  "corrections": [
+    "ASR \"За лише\" displayed as scripted \"Залиш\".",
+    "Ukrainian spelling лендінг preserved.",
+    "Phonetic brand alignment displayed as Bridge Agency.",
+    "150 displayed as a single numeric phrase; no standalone dash tokens in alignment."
+  ],
+  "review": "Automatic transcription and alignment, followed by rendered-frame review; no human listening claim."
+}

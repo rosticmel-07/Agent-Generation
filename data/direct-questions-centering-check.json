@@ -1,0 +1,230 @@
+{
+  "method": "Actual Chromium DOM bounds normalized to the 1080px composition after fonts loaded",
+  "expected_center_x": 540,
+  "tolerance_px": 0.25,
+  "frames": [
+    {
+      "scene": "00-first-frame",
+      "seconds": 0,
+      "frame": 0,
+      "groups": [
+        {
+          "name": "title",
+          "center_x": 540
+        },
+        {
+          "name": "question-stack",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "01-questions",
+      "seconds": 3.3600000000000003,
+      "frame": 202,
+      "groups": [
+        {
+          "name": "title",
+          "center_x": 540
+        },
+        {
+          "name": "question-stack",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "02-repeat",
+      "seconds": 5.16,
+      "frame": 310,
+      "groups": [
+        {
+          "name": "title",
+          "center_x": 540
+        },
+        {
+          "name": "next-dialog",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "03-answer-terms",
+      "seconds": 6.85,
+      "frame": 411,
+      "groups": [
+        {
+          "name": "title",
+          "center_x": 540
+        },
+        {
+          "name": "answers-site",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "03-answer-works",
+      "seconds": 7.85,
+      "frame": 471,
+      "groups": [
+        {
+          "name": "title",
+          "center_x": 540
+        },
+        {
+          "name": "answers-site",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "03-answer-form",
+      "seconds": 9.9,
+      "frame": 594,
+      "groups": [
+        {
+          "name": "title",
+          "center_x": 540
+        },
+        {
+          "name": "answers-site",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "04-before-chat",
+      "seconds": 12.92,
+      "frame": 775,
+      "groups": [
+        {
+          "name": "title",
+          "center_x": 540
+        },
+        {
+          "name": "step-0",
+          "center_x": 540
+        },
+        {
+          "name": "step-1",
+          "center_x": 540
+        },
+        {
+          "name": "step-arrow",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "05-offer",
+      "seconds": 17.279999999999998,
+      "frame": 1037,
+      "groups": [
+        {
+          "name": "payment",
+          "center_x": 540
+        },
+        {
+          "name": "hosting",
+          "center_x": 540
+        },
+        {
+          "name": "offer-card",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ]
+    },
+    {
+      "scene": "06-action",
+      "seconds": 22.5,
+      "frame": 1350,
+      "groups": [
+        {
+          "name": "action-title",
+          "center_x": 540
+        },
+        {
+          "name": "address",
+          "center_x": 540
+        },
+        {
+          "name": "action-button",
+          "center_x": 540
+        },
+        {
+          "name": "offer-card",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        }
+      ]
+    }
+  ]
+}
