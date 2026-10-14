@@ -1,0 +1,21 @@
+{
+  "reference_filename": "IMG_9912.MP4",
+  "reference_sha256": "35568d3527e216e8c65d00f9dc2a59b4e84d69d12939b33d275e79cb90b956dd",
+  "duration_seconds": 15.9,
+  "width": 464,
+  "height": 848,
+  "fps": 30,
+  "analysis": "Eight decoded video frames plus independent Whisper small ASR; no human listening claim.",
+  "visible_prices_usd": [
+    150,
+    300
+  ],
+  "raw_automatic_transcript": "Ти власник малого бізнесу? Мене для тебе є пропозиція. Одну сторінковий сайт за 150 доларів, або повноціний сайт на декілька сторінок за 300 доларів. Залишай свою заявку.",
+  "offer": {
+    "landing_usd": 150,
+    "multi_page_website_usd": 300
+  },
+  "bridge_adaptation": "Replace first-person offer with Bridge Agency; retain both prices, add design/text/development and Bridge website CTA.",
+  "competitor_media_in_delivery": false,
+  "conversion_metrics_available": false
+}

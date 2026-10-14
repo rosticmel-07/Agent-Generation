@@ -10,6 +10,8 @@
 - [Перегляд і кадри нового ролика](previews/direct-questions-hq/index.html).
 - [Сценарій, монтаж, центрування та перевірки](docs/direct-questions.md).
 
+**Наступний ролик за наданим референсом:** [сайт за $150 / $300](docs/two-offers.md). Текст підготовлено до озвучки; заплановано дві анімовані картки й нову типографіку Oswald. [Текст для ElevenLabs](public/audio/voiceover-two-offers.txt).
+
 Попередній ролик «Купив клік. А що далі?»:
 
 - [MP4 1080p / 60 fps](previews/bridge-reel-ad-click-hq-60fps.mp4).
