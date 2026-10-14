@@ -1,0 +1,343 @@
+{
+  "method": "Chromium DOM bounds after fonts loaded; centering, price width and Oswald loading checks",
+  "expected_center_x": 540,
+  "tolerance_px": 0.25,
+  "frames": [
+    {
+      "scene": "00-first-frame",
+      "seconds": 0,
+      "frame": 0,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 291.328125,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 317.859375,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "01-proposal",
+      "seconds": 3.35,
+      "frame": 201,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 291.328125,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 317.859375,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "02-landing",
+      "seconds": 5.9,
+      "frame": 354,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540
+        },
+        {
+          "name": "landing-payment",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 291.328125,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 317.859375,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "03-multi-page",
+      "seconds": 9.4,
+      "frame": 564,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 291.328125,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 317.859375,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "04-included",
+      "seconds": 12.2,
+      "frame": 732,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540
+        },
+        {
+          "name": "service-blocks",
+          "center_x": 540
+        },
+        {
+          "name": "hosting",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 291.328125,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 317.859375,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "05-transition",
+      "seconds": 14.25,
+      "frame": 855,
+      "groups": [
+        {
+          "name": "action-heading",
+          "center_x": 540
+        },
+        {
+          "name": "address",
+          "center_x": 540
+        },
+        {
+          "name": "action-button",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 208.390625,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 227.59375,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "06-action",
+      "seconds": 15.7,
+      "frame": 942,
+      "groups": [
+        {
+          "name": "action-heading",
+          "center_x": 540
+        },
+        {
+          "name": "address",
+          "center_x": 540
+        },
+        {
+          "name": "action-button",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        },
+        {
+          "name": "captions",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 206.453125,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 225.5,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "07-final",
+      "seconds": 20.2,
+      "frame": 1212,
+      "groups": [
+        {
+          "name": "action-heading",
+          "center_x": 540
+        },
+        {
+          "name": "address",
+          "center_x": 540
+        },
+        {
+          "name": "action-button",
+          "center_x": 540
+        },
+        {
+          "name": "offer-pair",
+          "center_x": 540
+        },
+        {
+          "name": "brand",
+          "center_x": 540
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 206.453125,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        },
+        {
+          "text": "$300",
+          "width_px": 225.5,
+          "available_px": 336,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    }
+  ]
+}

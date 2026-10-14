@@ -1,0 +1,39 @@
+{
+  "source_filename": "ElevenLabs_2026-10-14T17_09_24_Artem Klopotenko - Low, Rich and Deep_pvc_sp112_s54_sb69_se29_m2.mp3",
+  "source_audio_sha256": "1995f6ec0024958607cdaaac7dfafdbfcd43d1a9330fd2835e0bf2b390ef38de",
+  "source_duration_seconds": 17.8155,
+  "independent_asr": {
+    "model": "Whisper small",
+    "language": "uk",
+    "text": "Ти власник малого бізнесу? У «Bridge Agency» для тебе є пропозиція. Односторінковий сайт за 150 доларів, або сайт на кілька сторінок за 300 доларів. Дизайн, тексти та розробка для твого бізнесу. Залиш заявку, обговоримо сайт для твого бізнесу.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.8,
+        "text": " Ти власник малого бізнесу? У «Bridge Agency» для тебе є пропозиція."
+      },
+      {
+        "start": 4.22,
+        "end": 10.58,
+        "text": " Односторінковий сайт за 150 доларів, або сайт на кілька сторінок за 300 доларів."
+      },
+      {
+        "start": 10.84,
+        "end": 13.76,
+        "text": " Дизайн, тексти та розробка для твого бізнесу."
+      },
+      {
+        "start": 14.0,
+        "end": 17.52,
+        "text": " Залиш заявку, обговоримо сайт для твого бізнесу."
+      }
+    ]
+  },
+  "alignment": "Cross-attention DTW against the known script, reconciled with independent ASR.",
+  "notes": [
+    "150 and 300 each represented as one numeric phrase.",
+    "Phonetic alignment displayed with the brand spelling Bridge Agency.",
+    "No speech tempo/pitch changes.",
+    "Automatic ASR and word alignment; no human listening claim."
+  ]
+}

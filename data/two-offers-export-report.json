@@ -1,0 +1,77 @@
+{
+  "source_audio_sha256": "1995f6ec0024958607cdaaac7dfafdbfcd43d1a9330fd2835e0bf2b390ef38de",
+  "video_frames": 1260,
+  "fps": 60,
+  "duration_seconds": 21,
+  "word_count": 38,
+  "caption_cues": 13,
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "master_render_scale": 2,
+  "main_downsample": "Lanczos 2160x3840 -> 1080x1920",
+  "crf": 12,
+  "preset": "slow",
+  "typography": "Oswald 700 display / Manrope 700 captions",
+  "reference_media_in_delivery": false,
+  "files": [
+    {
+      "file": "previews/bridge-reel-two-offers-master-4k-60fps.mp4",
+      "sha256": "83781aa3aa16b24d3b732692d75901b46543a981ad84f7670c7de933e7699f2e",
+      "size_bytes": 7984445,
+      "video_bitrate": 2710166,
+      "profile": "High",
+      "audio_bitrate": 317380,
+      "container_duration": 21.013,
+      "integrated_lufs": -17.04,
+      "true_peak_dbtp": -4.8,
+      "full_decode": "passed"
+    },
+    {
+      "file": "previews/bridge-reel-two-offers-hq-60fps.mp4",
+      "sha256": "c7565497073f1684b561eec079894c3ec18b3d021adc541cd0f4df396bef6268",
+      "size_bytes": 3249816,
+      "video_bitrate": 906528,
+      "profile": "High",
+      "audio_bitrate": 317380,
+      "container_duration": 21.013,
+      "integrated_lufs": -17.04,
+      "true_peak_dbtp": -4.8,
+      "full_decode": "passed"
+    }
+  ],
+  "checks": [
+    "TypeScript typecheck passed.",
+    "Full H.264/AAC decode passed on both actual delivered MP4s.",
+    "Eight first-frame/offer/card-transition/CTA stills checked at phone size.",
+    "All 38 words appear exactly once in 13 caption cues.",
+    "Scene boundaries cover 21 seconds without gaps or overlap.",
+    "Every principal group measured at x=540 in Chromium on eight frames; both prices fit and Oswald is loaded.",
+    "Original provided MP3 and the six previous approved MP4s verified byte-identical.",
+    "Oswald first-frame typography, active offer/page assembly and compacting cards-to-CTA transition checked on 18 decoded final MP4 frames."
+  ],
+  "centering": {
+    "expected_center_x": 540,
+    "reviewed_frames": 8,
+    "max_error_px": 0
+  },
+  "reviewed_decoded_frames": [
+    0,
+    77,
+    119,
+    201,
+    250,
+    330,
+    380,
+    440,
+    550,
+    610,
+    710,
+    770,
+    840,
+    846,
+    855,
+    880,
+    970,
+    1259
+  ]
+}

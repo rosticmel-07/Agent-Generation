@@ -4,9 +4,11 @@ import {BridgeReel} from './BridgeReel';
 import {BridgeLanding150} from './BridgeLanding150';
 import {BridgeAdClick} from './BridgeAdClick';
 import {BridgeDirectQuestions} from './BridgeDirectQuestions';
+import {BridgeTwoOffers} from './BridgeTwoOffers';
 import landingPlan from '../data/landing-150.json';
 import adClickPlan from '../data/ad-click.json';
 import directQuestionsPlan from '../data/direct-questions.json';
+import twoOffersPlan from '../data/two-offers.json';
 import './style.css';
 
 export const Root: React.FC = () => (
@@ -34,6 +36,14 @@ export const Root: React.FC = () => (
     height={1920}
     fps={directQuestionsPlan.fps}
     durationInFrames={Math.round(directQuestionsPlan.duration * directQuestionsPlan.fps)}
+  />
+  <Composition
+    id="BridgeTwoOffers"
+    component={BridgeTwoOffers}
+    width={1080}
+    height={1920}
+    fps={twoOffersPlan.fps}
+    durationInFrames={Math.round(twoOffersPlan.duration * twoOffersPlan.fps)}
   />
   <Composition
     id="BridgeReel"

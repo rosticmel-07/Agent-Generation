@@ -1,0 +1,20 @@
+{
+  "source": "public/audio/voiceover-two-offers.mp3",
+  "output": "public/audio/voiceover-two-offers-mix.wav",
+  "method": "FFmpeg two-pass loudnorm; separate 24-bit/48 kHz mono WAV",
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "source_measurements": {
+    "input_i": "-19.57",
+    "input_tp": "-3.36",
+    "input_lra": "2.30",
+    "input_thresh": "-30.10",
+    "output_i": "-16.77",
+    "output_tp": "-2.00",
+    "output_lra": "2.50",
+    "output_thresh": "-27.22",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.23"
+  },
+  "filter": "loudnorm=I=-17:TP=-2:LRA=11:measured_I=-19.57:measured_TP=-3.36:measured_LRA=2.30:measured_thresh=-30.10:offset=-0.23:linear=true"
+}

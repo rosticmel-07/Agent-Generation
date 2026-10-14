@@ -247,3 +247,5 @@ export const BridgeDirectQuestions: React.FC<{checkLayout?: boolean}> = ({checkL
     {checkLayout && <LayoutCheck/>}
   </AbsoluteFill>;
 };
+
+export {CenteredBackground, CenteredBrand};
