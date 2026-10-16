@@ -1,0 +1,352 @@
+{
+  "method": "Chromium DOM bounds after fonts loaded; centering, price width and Oswald loading checks",
+  "expected_center_x": 540,
+  "tolerance_px": 0.25,
+  "frames": [
+    {
+      "scene": "00-first-frame",
+      "seconds": 0,
+      "frame": 0,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 572.9375
+        },
+        {
+          "name": "photo-pair",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1160
+        },
+        {
+          "name": "choice-question",
+          "center_x": 540,
+          "left": 190,
+          "right": 890,
+          "bottom": 1336
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 125,
+          "right": 955,
+          "bottom": 1503.6875
+        }
+      ],
+      "prices": [],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "01-choice",
+      "seconds": 2.1,
+      "frame": 126,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 572.9375
+        },
+        {
+          "name": "photo-pair",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1160
+        },
+        {
+          "name": "choice-question",
+          "center_x": 540,
+          "left": 190,
+          "right": 890,
+          "bottom": 1312
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 125,
+          "right": 955,
+          "bottom": 1503.6875
+        }
+      ],
+      "prices": [],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "02-services",
+      "seconds": 5.1,
+      "frame": 306,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 555.03125
+        },
+        {
+          "name": "service-example",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1310
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 125,
+          "right": 955,
+          "bottom": 1503.6875
+        }
+      ],
+      "prices": [],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "03-products",
+      "seconds": 8.5,
+      "frame": 510,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 539.34375
+        },
+        {
+          "name": "product-example",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1310
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 125,
+          "right": 955,
+          "bottom": 1503.6875
+        }
+      ],
+      "prices": [],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "04-adaptation",
+      "seconds": 10.1,
+      "frame": 606,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 555.03125
+        },
+        {
+          "name": "adapted-website",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1310
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 125,
+          "right": 955,
+          "bottom": 1503.6875
+        }
+      ],
+      "prices": [],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "05-adapted-product",
+      "seconds": 11.25,
+      "frame": 675,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 555.03125
+        },
+        {
+          "name": "adapted-website",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1310
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 125,
+          "right": 955,
+          "bottom": 1503.6875
+        }
+      ],
+      "prices": [],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "06-offer",
+      "seconds": 14.1,
+      "frame": 846,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 543.8125
+        },
+        {
+          "name": "price-card",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1138
+        },
+        {
+          "name": "payment-terms",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1276.46875
+        },
+        {
+          "name": "hosting-terms",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1354
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 125,
+          "right": 955,
+          "bottom": 1503.6875
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 458.40625,
+          "available_px": 746,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "07-final",
+      "seconds": 21.2,
+      "frame": 1272,
+      "groups": [
+        {
+          "name": "action-heading",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 980.625
+        },
+        {
+          "name": "address",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1099
+        },
+        {
+          "name": "action-button",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 1262
+        },
+        {
+          "name": "price-card",
+          "center_x": 540,
+          "left": 138,
+          "right": 942,
+          "bottom": 646
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 284.828125,
+          "available_px": 746,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "oswald_loaded": true
+    }
+  ]
+}

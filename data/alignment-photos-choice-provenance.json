@@ -1,0 +1,39 @@
+{
+  "source_filename": "ElevenLabs_2026-10-16T15_20_30_Artem Klopotenko - Low, Rich and Deep_pvc_sp111_s57_sb67_se27_m2.mp3",
+  "source_audio_sha256": "08a9d66ff61c356f19f0126ef7c0ff8056e46a8ac51848b05255bbdb3aa0b5d1",
+  "source_duration_seconds": 19.173875,
+  "independent_asr": {
+    "model": "Whisper small",
+    "language": "uk",
+    "text": " Гарні фото є, але клієнт не розуміє, що обрати, для послуг покажемо, що входить у вартість. Для товарів, варіанти та умови замовлення. Зберемо це на сайті «Під твій бізнес», односторінковий сайт за 150 доларів. Залиш заявку, обговоримо сайт для твого бізнесу.",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.68,
+        "text": " Гарні фото є, але клієнт не розуміє, що обрати, для послуг покажемо, що входить у вартість."
+      },
+      {
+        "start": 6.08,
+        "end": 9.18,
+        "text": " Для товарів, варіанти та умови замовлення."
+      },
+      {
+        "start": 9.48,
+        "end": 14.98,
+        "text": " Зберемо це на сайті «Під твій бізнес», односторінковий сайт за 150 доларів."
+      },
+      {
+        "start": 15.26,
+        "end": 18.86,
+        "text": " Залиш заявку, обговоримо сайт для твого бізнесу."
+      }
+    ]
+  },
+  "alignment": "Cross-attention DTW against actual recording reconciled with independent ASR.",
+  "notes": [
+    "Cross-attention alignment uses 20 ms boundary estimates.",
+    "Independent ASR confirms actual recording says Односторінковий сайт rather than the draft Лендінг.",
+    "150 is one spoken numeric phrase; captions use digits.",
+    "No human listening verification; no tempo or pitch changes."
+  ]
+}

@@ -1,14 +1,21 @@
 # Bridge Agency — рекламні ролики
 
-Поточний ролик «Сайт для малого бізнесу: $150 / $300» адаптує наданий референс під Bridge Agency. Дві анімовані картки показують лендінг і сайт на кілька сторінок; ціни видно від першого кадру до фіналу. Новий шрифт Oswald для заголовків і цифр, Manrope для субтитрів.
+Поточний ролик **«Фото є. А що обрати?»** показує одну проблему на двох прикладах: клієнт бачить фотографію, але не розуміє склад послуги або варіанти товару. Фото прибирання й меблів доповнюються конкретними деталями, потім збираються у сторінку сайту. Це ілюстративні приклади бізнесів, а не реальні кейси чи обіцянки продажів.
 
-**Новий результат:** 21 секунда, 9:16, справжні 60 fps, надана озвучка та синхронні українські субтитри. Головні групи відцентровані; обидві пропозиції залишаються у стабільному фіналі. Основний 1080p отримано з нативного 4K-майстра зі зменшенням Lanczos.
+**22 секунди, 9:16, 60 fps.** Надана озвучка збережена без прискорення. Синхронні українські субтитри; центр композиції x=540; чорний фон, червоні акценти, Oswald і Manrope. У фіналі — лендінг за $150 та заявка. 1080p отримано з нативного 4K-рендеру зі зменшенням Lanczos.
 
-- [Новий MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-two-offers-hq-60fps.mp4).
-- [Новий майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-two-offers-master-4k-60fps.mp4).
-- [Нові оригінальні MP4 одним ZIP](previews/bridge-reel-two-offers-originals-60fps.zip).
-- [Перегляд і кадри нового ролика](previews/two-offers-hq/index.html).
-- [Сценарій, монтаж і перевірки](docs/two-offers.md).
+- [Новий MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-photos-choice-hq-60fps.mp4).
+- [Майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-photos-choice-master-4k-60fps.mp4).
+- [Оригінали одним ZIP](previews/bridge-reel-photos-choice-originals-60fps.zip).
+- [Відео та кадри](previews/photos-choice-hq/index.html).
+- [Сценарій, монтаж і перевірки](docs/photos-choice.md).
+
+Попередній ролик «Сайт для малого бізнесу: $150 / $300»:
+
+- [MP4 1080p / 60 fps](previews/bridge-reel-two-offers-hq-60fps.mp4).
+- [Майстер 4K / 60 fps](previews/bridge-reel-two-offers-master-4k-60fps.mp4).
+- [Оригінали одним ZIP](previews/bridge-reel-two-offers-originals-60fps.zip).
+- [Сценарій і перевірки](docs/two-offers.md).
 
 Попередній ролик «Знову ті самі питання?»:
 
@@ -41,7 +48,7 @@
 - [Монтаж, таймкоди й експорт «Лендінг за $150»](docs/landing-150.md).
 - [Архівний макет за $150 без диктора](previews/bridge-reel-150-layout.mp4) та [його галерея](previews/landing-150.html).
 
-![Фінальний екран](previews/two-offers-hq/07-final.png)
+![Фінальний екран](previews/photos-choice-hq/07-final.png)
 
 ## Запуск
 
@@ -52,17 +59,17 @@ npm ci
 npm start
 ```
 
-Команда `npm start` відкриває Remotion Studio для перегляду, перемотування та перевірки кадрів на вашому комп’ютері. Новий ролик має композицію `BridgeTwoOffers` на 60 fps. У переліку також залишено попередні `BridgeDirectQuestions`, `BridgeAdClick` та `BridgeLanding150` на 60 fps та архівну `BridgeReel` на 30 fps.
+Команда `npm start` відкриває Remotion Studio для перегляду, перемотування та перевірки кадрів на вашому комп’ютері. Новий ролик має композицію `BridgePhotosChoice` на 60 fps. У переліку також залишено попередні `BridgeTwoOffers`, `BridgeDirectQuestions`, `BridgeAdClick` та `BridgeLanding150` на 60 fps та архівну `BridgeReel` на 30 fps.
 
-Новий ролик має окрему композицію `BridgeTwoOffers` та свої матеріали:
+Новий ролик має окрему композицію `BridgePhotosChoice` та свої матеріали:
 
 ```sh
 npm run typecheck
-node scripts/render-two-offers.mjs --stills
-node scripts/render-two-offers.mjs --master
-node scripts/export-two-offers-from-master.mjs
-python3 scripts/check-two-offers-export.py
-python3 scripts/package-two-offers.py
+node scripts/render-photos-choice.mjs --stills
+node scripts/render-photos-choice.mjs --master
+node scripts/export-photos-choice-from-master.mjs
+python3 scripts/check-photos-choice-export.py
+python3 scripts/package-photos-choice.py
 ```
 
 Для попередньої схваленої рекламної версії виберіть композицію `BridgeLanding150`:

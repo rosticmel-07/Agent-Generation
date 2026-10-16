@@ -16,12 +16,13 @@ parser.add_argument('--landing-150', action='store_true')
 parser.add_argument('--ad-click', action='store_true')
 parser.add_argument('--direct-questions', action='store_true')
 parser.add_argument('--two-offers', action='store_true')
+parser.add_argument('--photos-choice', action='store_true')
 args = parser.parse_args()
-if sum([args.landing_150, args.ad_click, args.direct_questions, args.two_offers]) > 1:
+if sum([args.landing_150, args.ad_click, args.direct_questions, args.two_offers, args.photos_choice]) > 1:
     parser.error('Choose one campaign.')
 RATE = 48000
-plan_file = 'two-offers.json' if args.two_offers else ('direct-questions.json' if args.direct_questions else ('ad-click.json' if args.ad_click else 'landing-150.json'))
-plan = json.loads((Path(__file__).resolve().parent.parent / 'data' / plan_file).read_text()) if args.landing_150 or args.ad_click or args.direct_questions or args.two_offers else None
+plan_file = 'photos-choice.json' if args.photos_choice else 'two-offers.json' if args.two_offers else ('direct-questions.json' if args.direct_questions else ('ad-click.json' if args.ad_click else 'landing-150.json'))
+plan = json.loads((Path(__file__).resolve().parent.parent / 'data' / plan_file).read_text()) if args.landing_150 or args.ad_click or args.direct_questions or args.two_offers or args.photos_choice else None
 DURATION = plan['duration'] if plan else 25
 COUNT = round(RATE * DURATION)
 left = array('f', [0.0]) * COUNT
@@ -49,6 +50,10 @@ if args.two_offers:
     sections = [(0, 5.2, [98.0, 146.83, 196.0, 261.63]),
                 (3.9, 11.6, [110.0, 164.81, 220.0, 293.66]),
                 (plan['scenes'][4]['start'], DURATION, [130.81, 196.0, 246.94, 329.63])]
+if args.photos_choice:
+    sections = [(0, 7.0, [110.0, 164.81, 220.0, 293.66]),
+                (5.8, 13.0, [98.0, 146.83, 196.0, 261.63]),
+                (11.86, DURATION, [130.81, 196.0, 246.94, 329.63])]
 for start, end, notes in sections:
     for frequency in notes:
         phase_offset = rng.uniform(0, math.tau)
@@ -78,6 +83,8 @@ if args.direct_questions:
                     plan['scenes'][5]['start'] + .4]
 if args.two_offers:
     landing_taps = [4.06, 5.56, 7.16, 9.08, 10.80, 11.48, 11.86, plan['scenes'][5]['start'] + .4]
+if args.photos_choice:
+    landing_taps = [3.7,4.2,4.8,6.7,7.3,8.1,9.8,10.7,12.2,15.65]
 for at in (landing_taps if plan else [9.84, 11.16, 12.34, 16.24, 19.36]):
     start = round(at * RATE)
     for j in range(round(.09 * RATE)):
@@ -103,7 +110,7 @@ for a, b in zip(left, right):
     peak = max(peak, abs(a), abs(b))
     samples.extend([round(max(-1, min(1, a)) * 32767), round(max(-1, min(1, b)) * 32767)])
 assert peak < .06, peak
-filename = 'atmosphere-two-offers.wav' if args.two_offers else ('atmosphere-direct-questions.wav' if args.direct_questions else ('atmosphere-ad-click.wav' if args.ad_click else ('atmosphere-150.wav' if args.landing_150 else 'atmosphere-v2.wav')))
+filename = 'atmosphere-photos-choice.wav' if args.photos_choice else 'atmosphere-two-offers.wav' if args.two_offers else ('atmosphere-direct-questions.wav' if args.direct_questions else ('atmosphere-ad-click.wav' if args.ad_click else ('atmosphere-150.wav' if args.landing_150 else 'atmosphere-v2.wav')))
 target = Path(__file__).resolve().parent.parent / 'public/audio' / filename
 with wave.open(str(target), 'wb') as output:
     output.setnchannels(2)

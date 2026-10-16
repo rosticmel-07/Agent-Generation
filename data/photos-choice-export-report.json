@@ -1,0 +1,101 @@
+{
+  "source_audio_sha256": "08a9d66ff61c356f19f0126ef7c0ff8056e46a8ac51848b05255bbdb3aa0b5d1",
+  "video_frames": 1320,
+  "fps": 60,
+  "duration_seconds": 22,
+  "word_count": 41,
+  "caption_cues": 14,
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "master_render_scale": 2,
+  "main_downsample": "Lanczos 2160x3840 -> 1080x1920",
+  "crf": 12,
+  "preset": "slow",
+  "typography": "Oswald 700 display / Manrope 700 captions",
+  "reference_media_in_delivery": false,
+  "illustrations": "AI-generated cleaning and furniture examples; no real portfolio claim",
+  "files": [
+    {
+      "file": "previews/bridge-reel-photos-choice-master-4k-60fps.mp4",
+      "sha256": "cb967322a1df2486ad9da52f5994773e4b2e117f20001f4f92685f309efd1bea",
+      "size_bytes": 14306379,
+      "video_bitrate": 4870945,
+      "profile": "High",
+      "audio_bitrate": 317375,
+      "container_duration": 22.016,
+      "integrated_lufs": -17.2,
+      "true_peak_dbtp": -4.82,
+      "full_decode": "passed"
+    },
+    {
+      "file": "previews/bridge-reel-photos-choice-hq-60fps.mp4",
+      "sha256": "741dc469943f4eecbccb0e58c0244a0b1a60bb15dda66681eb3063e8905d9eb4",
+      "size_bytes": 5407279,
+      "video_bitrate": 1634850,
+      "profile": "High",
+      "audio_bitrate": 317375,
+      "container_duration": 22.016,
+      "integrated_lufs": -17.2,
+      "true_peak_dbtp": -4.82,
+      "full_decode": "passed"
+    }
+  ],
+  "checks": [
+    "TypeScript typecheck passed.",
+    "Full H.264/AAC decode passed on both actual delivered MP4s.",
+    "Eight first-frame/service/product/website/offer/CTA stills checked at phone size.",
+    "All 41 words appear exactly once in 14 caption cues.",
+    "Scene boundaries cover 22 seconds without gaps or overlap.",
+    "Every principal group measured at x=540 in Chromium on eight frames; the price fits and Oswald is loaded.",
+    "Original provided MP3 and the eight previous approved MP4s verified byte-identical.",
+    "26 actual final MP4 frames visually reviewed at phone size after the price-entry fix."
+  ],
+  "centering": {
+    "expected_center_x": 540,
+    "reviewed_frames": 8,
+    "max_error_px": 0
+  },
+  "decoded_frame_review": {
+    "source": "previews/bridge-reel-photos-choice-hq-60fps.mp4",
+    "frames": [
+      0,
+      57,
+      126,
+      196,
+      197,
+      207,
+      306,
+      368,
+      382,
+      510,
+      568,
+      580,
+      606,
+      632,
+      640,
+      675,
+      712,
+      728,
+      846,
+      913,
+      925,
+      950,
+      1050,
+      1130,
+      1272,
+      1319
+    ],
+    "phone_preview_size": [
+      360,
+      640
+    ],
+    "status": "visually_reviewed_passed",
+    "notes": [
+      "26 decoded final-video frames reviewed at 360x640 phone size, including scene boundaries, subtitle changes, price entry and CTA.",
+      "Price entry frame 712 now contains the immediate headline and card; no empty-frame pause.",
+      "No old and new headlines overlap; final price, URL and CTA remain stable and inside safe margins.",
+      "Review uses decoded frames and automatic audio checks; no human listening claim."
+    ]
+  },
+  "final_reading_hold_seconds": 3.14
+}

@@ -1,0 +1,12 @@
+{
+  "source": "OpenAI image generation, 2026-10-16",
+  "file": "public/illustrations/photos-choice/cleaning-and-furniture.png",
+  "sha256": "91e38b0b9096a09eef4e5e7bb58f8c7944671558fbaf6ccc8c61fdc533b9f436",
+  "size_pixels": [
+    1774,
+    887
+  ],
+  "layout": "Two equal square images in one photographic diptych; left cleaning, right furniture. Cropped by CSS only.",
+  "purpose": "Illustrative business examples. Not real Bridge portfolio, testimonials or results.",
+  "third_party_photographs_used": false
+}

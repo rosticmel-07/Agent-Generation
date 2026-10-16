@@ -5,14 +5,24 @@ import {BridgeLanding150} from './BridgeLanding150';
 import {BridgeAdClick} from './BridgeAdClick';
 import {BridgeDirectQuestions} from './BridgeDirectQuestions';
 import {BridgeTwoOffers} from './BridgeTwoOffers';
+import {BridgePhotosChoice} from './BridgePhotosChoice';
 import landingPlan from '../data/landing-150.json';
 import adClickPlan from '../data/ad-click.json';
 import directQuestionsPlan from '../data/direct-questions.json';
 import twoOffersPlan from '../data/two-offers.json';
+import photosChoicePlan from '../data/photos-choice.json';
 import './style.css';
 
 export const Root: React.FC = () => (
   <>
+  <Composition
+    id="BridgePhotosChoice"
+    component={BridgePhotosChoice}
+    width={1080}
+    height={1920}
+    fps={photosChoicePlan.fps}
+    durationInFrames={Math.round(photosChoicePlan.duration * photosChoicePlan.fps)}
+  />
   <Composition
     id="BridgeLanding150"
     component={BridgeLanding150}
