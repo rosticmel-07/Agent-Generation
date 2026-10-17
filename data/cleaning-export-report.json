@@ -1,0 +1,393 @@
+{
+  "source_audio_sha256": "f54aff4bb757d6248fdde8ce3f3fcb21221adaaac356ffa4b6f9c3ebf6f2ba1b",
+  "video_frames": 1200,
+  "fps": 60,
+  "duration_seconds": 20,
+  "final_scene_seconds": 3,
+  "word_count": 39,
+  "caption_cues": 9,
+  "captioned_word_count": 21,
+  "caption_strategy": "Short synchronous phrases complement the on-screen headings; full transcript coverage is not required.",
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "master_render_scale": 2,
+  "main_downsample": "Lanczos 2160x3840 -> 1080x1920",
+  "crf": 12,
+  "preset": "slow",
+  "typography": "Oswald 700 display / Manrope 700 body and captions",
+  "illustration_context": "Demonstration of a cleaning-service page; no fictional cleaning prices, testimonials or performance claims.",
+  "files": [
+    {
+      "file": "previews/bridge-reel-cleaning-master-4k-60fps.mp4",
+      "sha256": "9cf8a64bd852e34de30d35ea3517a5ef9d9366736f7c812672f22318d7fe2abb",
+      "size_bytes": 7559196,
+      "video_bitrate": 2692113,
+      "profile": "High",
+      "audio_bitrate": 317369,
+      "container_duration": 20.011,
+      "integrated_lufs": -17.21,
+      "true_peak_dbtp": -4.75,
+      "full_decode": "passed"
+    },
+    {
+      "file": "previews/bridge-reel-cleaning-hq-60fps.mp4",
+      "sha256": "a05be4a5a9fb65f6dd5af5c9bb5e0e47d88056e9ac3daadea331ff2563358138",
+      "size_bytes": 3065967,
+      "video_bitrate": 894844,
+      "profile": "High",
+      "audio_bitrate": 317369,
+      "container_duration": 20.011,
+      "integrated_lufs": -17.21,
+      "true_peak_dbtp": -4.75,
+      "full_decode": "passed"
+    }
+  ],
+  "checks": [
+    "Full H.264/AAC decode passed for both actual delivered MP4s.",
+    "Frame count, native master dimensions, 60 fps, BT.709 and stereo AAC metadata verified.",
+    "Integrated loudness and true peak measured on each delivered file.",
+    "Eight Chromium DOM samples passed center, platform-safe-area, loaded-font and price-width checks.",
+    "Every referenced caption word is within its cue; short captions need not repeat complete headings.",
+    "Five contiguous scenes cover 20 seconds; the final scene lasts exactly three seconds.",
+    "Original provided MP3 and all ten previous approved MP4s verified byte-identical.",
+    "29 actual delivered MP4 frames reviewed at phone size; final scene stays stable for exactly180frames."
+  ],
+  "previous_approved_files": [
+    {
+      "file": "previews/bridge-reel-150-master-4k-60fps.mp4",
+      "sha256": "3ac9927d8532d90e0571dc696e2780fb824b046dccddc24a1f7c86ad6949b497"
+    },
+    {
+      "file": "previews/bridge-reel-150-hq-60fps.mp4",
+      "sha256": "383b3b73a894645769275c3b2637e515aa179561d135a010758aa9d4299db591"
+    },
+    {
+      "file": "previews/bridge-reel-ad-click-master-4k-60fps.mp4",
+      "sha256": "fabcaf93394d30934bd2e55ac7481488ab5beac99c662d24f418069ece64b34f"
+    },
+    {
+      "file": "previews/bridge-reel-ad-click-hq-60fps.mp4",
+      "sha256": "e0534cd6118e0cf67e6568265adb2bc4a9c4f85429cd34210502ea82170243d9"
+    },
+    {
+      "file": "previews/bridge-reel-direct-questions-master-4k-60fps.mp4",
+      "sha256": "10538eb18f01be2ee42e7daf1a6dd01d705d41c8ef5a07ed4878c8b32ac7c51e"
+    },
+    {
+      "file": "previews/bridge-reel-direct-questions-hq-60fps.mp4",
+      "sha256": "049d44331931418f762c6b5c37ee1ef128a7b91d4e9cd0c42c6d0037acda5bbc"
+    },
+    {
+      "file": "previews/bridge-reel-two-offers-master-4k-60fps.mp4",
+      "sha256": "83781aa3aa16b24d3b732692d75901b46543a981ad84f7670c7de933e7699f2e"
+    },
+    {
+      "file": "previews/bridge-reel-two-offers-hq-60fps.mp4",
+      "sha256": "c7565497073f1684b561eec079894c3ec18b3d021adc541cd0f4df396bef6268"
+    },
+    {
+      "file": "previews/bridge-reel-photos-choice-master-4k-60fps.mp4",
+      "sha256": "cb967322a1df2486ad9da52f5994773e4b2e117f20001f4f92685f309efd1bea"
+    },
+    {
+      "file": "previews/bridge-reel-photos-choice-hq-60fps.mp4",
+      "sha256": "741dc469943f4eecbccb0e58c0244a0b1a60bb15dda66681eb3063e8905d9eb4"
+    }
+  ],
+  "layout": {
+    "expected_center_x": 540,
+    "sampled_frames": 8,
+    "safe_area": {
+      "left": 160,
+      "right": 920,
+      "bottom": 1600,
+      "measurement_tolerance_px": 1
+    },
+    "max_center_error_px": 0
+  },
+  "decoded_frame_review": {
+    "status": "visually_reviewed_passed",
+    "source": "/workspace/Agent-Generation/previews/bridge-reel-cleaning-hq-60fps.mp4",
+    "review_scope": "29 actual delivered 1080p frames reviewed at360x640; opening/form also independently reviewed.",
+    "source_probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "width": 1080,
+          "height": 1920,
+          "avg_frame_rate": "60/1",
+          "duration": "20.000000",
+          "nb_frames": "1200"
+        }
+      ],
+      "format": {
+        "duration": "20.011000"
+      }
+    },
+    "fps": 60,
+    "thumbnail_dimensions": [
+      360,
+      640
+    ],
+    "thumbnail_resampling": "FFmpeg scale with Lanczos, for QA only",
+    "ffmpeg_filtergraph": "select=eq(n\\,0)+eq(n\\,50)+eq(n\\,112)+eq(n\\,157)+eq(n\\,191)+eq(n\\,192)+eq(n\\,220)+eq(n\\,286)+eq(n\\,322)+eq(n\\,350)+eq(n\\,351)+eq(n\\,363)+eq(n\\,378)+eq(n\\,398)+eq(n\\,399)+eq(n\\,407)+eq(n\\,468)+eq(n\\,501)+eq(n\\,502)+eq(n\\,514)+eq(n\\,616)+eq(n\\,700)+eq(n\\,800)+eq(n\\,927)+eq(n\\,1019)+eq(n\\,1020)+eq(n\\,1064)+eq(n\\,1126)+eq(n\\,1199),scale=360:640:flags=lanczos",
+    "frames_extracted": 29,
+    "contact_sheets": [
+      "01-opening-composition.jpg",
+      "02-website-form.jpg",
+      "03-offer-terms.jpg",
+      "04-final-message.jpg"
+    ],
+    "frames": [
+      {
+        "frame": 0,
+        "seconds": 0.0,
+        "label": "Перший кадр",
+        "image": "frames/0000.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 50,
+        "seconds": 0.833333,
+        "label": "Перша репліка",
+        "image": "frames/0050.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 112,
+        "seconds": 1.866667,
+        "label": "Друга репліка",
+        "image": "frames/0112.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 157,
+        "seconds": 2.616667,
+        "label": "Обидві репліки",
+        "image": "frames/0157.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 191,
+        "seconds": 3.183333,
+        "label": "До переходу 3.2",
+        "image": "frames/0191.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 192,
+        "seconds": 3.2,
+        "label": "Після переходу 3.2",
+        "image": "frames/0192.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 220,
+        "seconds": 3.666667,
+        "label": "Поява складу послуги",
+        "image": "frames/0220.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 286,
+        "seconds": 4.766667,
+        "label": "Послуги та додаткові вікна",
+        "image": "frames/0286.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 322,
+        "seconds": 5.366667,
+        "label": "Повний склад послуги",
+        "image": "frames/0322.png",
+        "contact_sheet": "01-opening-composition.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 350,
+        "seconds": 5.833333,
+        "label": "До переходу 5.85",
+        "image": "frames/0350.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 351,
+        "seconds": 5.85,
+        "label": "Після переходу 5.85",
+        "image": "frames/0351.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 363,
+        "seconds": 6.05,
+        "label": "Поява мобільної сторінки",
+        "image": "frames/0363.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 378,
+        "seconds": 6.3,
+        "label": "Кнопка на сторінці",
+        "image": "frames/0378.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 398,
+        "seconds": 6.633333,
+        "label": "Перед натисканням",
+        "image": "frames/0398.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 399,
+        "seconds": 6.65,
+        "label": "Натискання 6.65",
+        "image": "frames/0399.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 407,
+        "seconds": 6.783333,
+        "label": "Поява форми",
+        "image": "frames/0407.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 468,
+        "seconds": 7.8,
+        "label": "Відкрита порожня форма",
+        "image": "frames/0468.png",
+        "contact_sheet": "02-website-form.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 501,
+        "seconds": 8.35,
+        "label": "Перед пропозицією",
+        "image": "frames/0501.png",
+        "contact_sheet": "03-offer-terms.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 502,
+        "seconds": 8.366667,
+        "label": "Перший кадр пропозиції",
+        "image": "frames/0502.png",
+        "contact_sheet": "03-offer-terms.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 514,
+        "seconds": 8.566667,
+        "label": "Поява ціни",
+        "image": "frames/0514.png",
+        "contact_sheet": "03-offer-terms.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 616,
+        "seconds": 10.266667,
+        "label": "Ціна 150 доларів",
+        "image": "frames/0616.png",
+        "contact_sheet": "03-offer-terms.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 700,
+        "seconds": 11.666667,
+        "label": "Дизайн, тексти, розробка",
+        "image": "frames/0700.png",
+        "contact_sheet": "03-offer-terms.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 800,
+        "seconds": 13.333333,
+        "label": "Умови перших 50%",
+        "image": "frames/0800.png",
+        "contact_sheet": "03-offer-terms.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 927,
+        "seconds": 15.45,
+        "label": "Оплата, домен і хостинг",
+        "image": "frames/0927.png",
+        "contact_sheet": "03-offer-terms.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 1019,
+        "seconds": 16.983333,
+        "label": "Останній кадр пропозиції",
+        "image": "frames/1019.png",
+        "contact_sheet": "04-final-message.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 1020,
+        "seconds": 17.0,
+        "label": "Перший кадр фіналу",
+        "image": "frames/1020.png",
+        "contact_sheet": "04-final-message.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 1064,
+        "seconds": 17.733333,
+        "label": "Основний заклик САЙТ",
+        "image": "frames/1064.png",
+        "contact_sheet": "04-final-message.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 1126,
+        "seconds": 18.766667,
+        "label": "Після завершення голосу",
+        "image": "frames/1126.png",
+        "contact_sheet": "04-final-message.jpg",
+        "status": "visually_reviewed_passed"
+      },
+      {
+        "frame": 1199,
+        "seconds": 19.983333,
+        "label": "Останній кадр ролика",
+        "image": "frames/1199.png",
+        "contact_sheet": "04-final-message.jpg",
+        "status": "visually_reviewed_passed"
+      }
+    ],
+    "findings": [
+      "Cleaning only; no furniture or services/products switch.",
+      "Headlines and form fields are readable at phone size; no overlapping titles or empty transition frames.",
+      "Price, inclusions, first50% and separate domain/hosting costs remain legible.",
+      "Final180frames carry one plain-text message CTA, without URL or platform-like button.",
+      "No human listening claim; audio validated by independent edited-WAV ASR and technical measurements."
+    ]
+  },
+  "voice_edit": {
+    "source_duration_seconds": 21.315875,
+    "trim_end_seconds": 18.76,
+    "removed_unrequested_offer": "та отримай безкоштовний аудит",
+    "core_spoken_cta": "Напиши САЙТ у приватні повідомлення",
+    "secondary_cta_screen_only": "Обговоримо твій проєкт",
+    "original_upload_sha256_verified": true,
+    "no_speed_or_pitch_change": true
+  }
+}

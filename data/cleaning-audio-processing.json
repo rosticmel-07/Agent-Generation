@@ -1,0 +1,21 @@
+{
+  "source": "public/audio/voiceover-cleaning.mp3",
+  "output": "public/audio/voiceover-cleaning-mix.wav",
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "trim_end_seconds": 18.76,
+  "fade_out_seconds": 0.016,
+  "source_measurements": {
+    "input_i": "-21.22",
+    "input_tp": "-3.48",
+    "input_lra": "1.60",
+    "input_thresh": "-31.55",
+    "output_i": "-17.41",
+    "output_tp": "-2.00",
+    "output_lra": "1.40",
+    "output_thresh": "-27.75",
+    "normalization_type": "dynamic",
+    "target_offset": "0.41"
+  },
+  "filter": "atrim=end=18.76,afade=t=out:st=18.744:d=0.016,asetpts=PTS-STARTPTS,loudnorm=I=-17:TP=-2:LRA=11:measured_I=-21.22:measured_TP=-3.48:measured_LRA=1.60:measured_thresh=-31.55:offset=0.41:linear=true"
+}

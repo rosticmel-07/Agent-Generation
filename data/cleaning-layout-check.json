@@ -1,0 +1,577 @@
+{
+  "method": "Chromium DOM bounds after font loading; principal groups, platform safe area and price fit",
+  "expected_center_x": 540,
+  "tolerance_px": 0.5,
+  "safe_area": {
+    "left": 160,
+    "right": 920,
+    "bottom": 1600,
+    "measurement_tolerance_px": 1
+  },
+  "frames": [
+    {
+      "scene": "00-first-frame",
+      "seconds": 0,
+      "frame": 0,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 583.78125
+        },
+        {
+          "name": "cleaning-photo",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 950
+        },
+        {
+          "name": "question-0",
+          "center_x": 540,
+          "left": 190,
+          "right": 890,
+          "bottom": 1100
+        },
+        {
+          "name": "question-1",
+          "center_x": 540,
+          "left": 190,
+          "right": 890,
+          "bottom": 1216
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        }
+      ],
+      "prices": [],
+      "text_samples": [
+        {
+          "text": "Клієнти постійно",
+          "width_px": 565.375,
+          "font_size": "80px"
+        },
+        {
+          "text": "питають:",
+          "width_px": 295.203125,
+          "font_size": "80px"
+        },
+        {
+          "text": "«Що входить у ціну?»",
+          "width_px": 726.890625,
+          "font_size": "80px"
+        },
+        {
+          "text": "А кухня входить?",
+          "width_px": 389.265625,
+          "font_size": "46px"
+        },
+        {
+          "text": "А вікна — окремо?",
+          "width_px": 405.59375,
+          "font_size": "46px"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "01-client-questions",
+      "seconds": 2.6166666666666667,
+      "frame": 157,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 583.78125
+        },
+        {
+          "name": "cleaning-photo",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 950
+        },
+        {
+          "name": "question-0",
+          "center_x": 540,
+          "left": 190,
+          "right": 890,
+          "bottom": 1080
+        },
+        {
+          "name": "question-1",
+          "center_x": 540,
+          "left": 190,
+          "right": 890,
+          "bottom": 1196
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1497.5
+        }
+      ],
+      "prices": [],
+      "text_samples": [
+        {
+          "text": "Клієнти постійно",
+          "width_px": 565.375,
+          "font_size": "80px"
+        },
+        {
+          "text": "питають:",
+          "width_px": 295.203125,
+          "font_size": "80px"
+        },
+        {
+          "text": "«Що входить у ціну?»",
+          "width_px": 726.890625,
+          "font_size": "80px"
+        },
+        {
+          "text": "А кухня входить?",
+          "width_px": 389.265625,
+          "font_size": "46px"
+        },
+        {
+          "text": "А вікна — окремо?",
+          "width_px": 405.59375,
+          "font_size": "46px"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "02-service-composition",
+      "seconds": 5.366666666666666,
+      "frame": 322,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 507.09375
+        },
+        {
+          "name": "service-composition",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1286
+        },
+        {
+          "name": "example-label",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1362.5
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1497.5
+        }
+      ],
+      "prices": [],
+      "text_samples": [
+        {
+          "text": "Покажи на сайті",
+          "width_px": 590.71875,
+          "font_size": "88px"
+        },
+        {
+          "text": "склад послуги",
+          "width_px": 537.828125,
+          "font_size": "88px"
+        },
+        {
+          "text": "Миття вікон — додатково",
+          "width_px": 541.59375,
+          "font_size": "44px"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "03-mobile-website",
+      "seconds": 6.3,
+      "frame": 378,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 507.09375
+        },
+        {
+          "name": "mobile-page-form",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1322
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1497.5
+        }
+      ],
+      "prices": [],
+      "text_samples": [
+        {
+          "text": "Умови зрозумілі.",
+          "width_px": 617.75,
+          "font_size": "88px"
+        },
+        {
+          "text": "Заявка — поруч",
+          "width_px": 604.96875,
+          "font_size": "88px"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "04-request-form",
+      "seconds": 7.8,
+      "frame": 468,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 507.09375
+        },
+        {
+          "name": "mobile-page-form",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1322
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1497.5
+        }
+      ],
+      "prices": [],
+      "text_samples": [
+        {
+          "text": "Умови зрозумілі.",
+          "width_px": 617.75,
+          "font_size": "88px"
+        },
+        {
+          "text": "Заявка — поруч",
+          "width_px": 604.96875,
+          "font_size": "88px"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "05-landing-offer",
+      "seconds": 10.266666666666667,
+      "frame": 616,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 507.09375
+        },
+        {
+          "name": "offer-price",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 820
+        },
+        {
+          "name": "included-services",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 926.390625
+        },
+        {
+          "name": "payment-terms",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1122.78125
+        },
+        {
+          "name": "domain-hosting-terms",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1329.78125
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1497.5
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 416.109375,
+          "available_px": 718,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "text_samples": [
+        {
+          "text": "Лендінг",
+          "width_px": 294.921875,
+          "font_size": "88px"
+        },
+        {
+          "text": "для клінінгу",
+          "width_px": 467.953125,
+          "font_size": "88px"
+        },
+        {
+          "text": "Дизайн • Тексти • Розробка",
+          "width_px": 666.140625,
+          "font_size": "48px"
+        },
+        {
+          "text": "Перші 50% — після",
+          "width_px": 437.421875,
+          "font_size": "48px"
+        },
+        {
+          "text": "затвердження дизайну",
+          "width_px": 549.78125,
+          "font_size": "48px"
+        },
+        {
+          "text": "Домен і хостинг",
+          "width_px": 379.546875,
+          "font_size": "48px"
+        },
+        {
+          "text": "оплачуються окремо",
+          "width_px": 501.671875,
+          "font_size": "48px"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "06-payment-hosting-terms",
+      "seconds": 15.45,
+      "frame": 927,
+      "groups": [
+        {
+          "name": "heading",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 507.09375
+        },
+        {
+          "name": "offer-price",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 820
+        },
+        {
+          "name": "included-services",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 926.390625
+        },
+        {
+          "name": "payment-terms",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1122.78125
+        },
+        {
+          "name": "domain-hosting-terms",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1329.78125
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        },
+        {
+          "name": "captions",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1497.5
+        }
+      ],
+      "prices": [
+        {
+          "text": "$150",
+          "width_px": 416.109375,
+          "available_px": 718,
+          "font": "Oswald, Manrope, sans-serif"
+        }
+      ],
+      "text_samples": [
+        {
+          "text": "Лендінг",
+          "width_px": 294.921875,
+          "font_size": "88px"
+        },
+        {
+          "text": "для клінінгу",
+          "width_px": 467.953125,
+          "font_size": "88px"
+        },
+        {
+          "text": "Дизайн • Тексти • Розробка",
+          "width_px": 666.140625,
+          "font_size": "48px"
+        },
+        {
+          "text": "Перші 50% — після",
+          "width_px": 437.421875,
+          "font_size": "48px"
+        },
+        {
+          "text": "затвердження дизайну",
+          "width_px": 549.78125,
+          "font_size": "48px"
+        },
+        {
+          "text": "Домен і хостинг",
+          "width_px": 379.546875,
+          "font_size": "48px"
+        },
+        {
+          "text": "оплачуються окремо",
+          "width_px": 501.671875,
+          "font_size": "48px"
+        }
+      ],
+      "oswald_loaded": true
+    },
+    {
+      "scene": "07-final-message",
+      "seconds": 18.8,
+      "frame": 1128,
+      "groups": [
+        {
+          "name": "message-action",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 869.90625
+        },
+        {
+          "name": "project-discussion",
+          "center_x": 540,
+          "left": 160,
+          "right": 920,
+          "bottom": 1132.390625
+        },
+        {
+          "name": "brand",
+          "center_x": 540,
+          "left": 462,
+          "right": 618,
+          "bottom": 263
+        }
+      ],
+      "prices": [],
+      "text_samples": [
+        {
+          "text": "Напиши «САЙТ»",
+          "width_px": 617.171875,
+          "font_size": "94px"
+        },
+        {
+          "text": "у приватні",
+          "width_px": 403.296875,
+          "font_size": "94px"
+        },
+        {
+          "text": "повідомлення",
+          "width_px": 556.78125,
+          "font_size": "94px"
+        },
+        {
+          "text": "Обговоримо твій проєкт",
+          "width_px": 573.828125,
+          "font_size": "48px"
+        }
+      ],
+      "oswald_loaded": true
+    }
+  ]
+}
