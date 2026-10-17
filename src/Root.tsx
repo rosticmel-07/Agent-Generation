@@ -7,16 +7,26 @@ import {BridgeDirectQuestions} from './BridgeDirectQuestions';
 import {BridgeTwoOffers} from './BridgeTwoOffers';
 import {BridgePhotosChoice} from './BridgePhotosChoice';
 import {BridgeCleaning} from './BridgeCleaning';
+import {BridgeCleaningPremium} from './BridgeCleaningPremium';
 import landingPlan from '../data/landing-150.json';
 import adClickPlan from '../data/ad-click.json';
 import directQuestionsPlan from '../data/direct-questions.json';
 import twoOffersPlan from '../data/two-offers.json';
 import photosChoicePlan from '../data/photos-choice.json';
 import cleaningPlan from '../data/cleaning.json';
+import cleaningPremiumPlan from '../data/cleaning-premium.json';
 import './style.css';
 
 export const Root: React.FC = () => (
   <>
+  <Composition
+    id="BridgeCleaningPremium"
+    component={BridgeCleaningPremium}
+    width={1080}
+    height={1920}
+    fps={cleaningPremiumPlan.fps}
+    durationInFrames={Math.round(cleaningPremiumPlan.duration * cleaningPremiumPlan.fps)}
+  />
   <Composition
     id="BridgeCleaning"
     component={BridgeCleaning}

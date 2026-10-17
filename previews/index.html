@@ -3,21 +3,57 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Bridge — перший ролик</title>
+  <title>Bridge — клінінг: преміальна версія</title>
   <style>
     @font-face{font-family:Manrope;src:url('../public/fonts/Manrope.ttf');font-weight:200 800}
-    *{box-sizing:border-box}body{margin:0;padding:48px 24px;background:#080a0a;color:#f5f4ef;font-family:Manrope,Arial,sans-serif}
+    *{box-sizing:border-box}body{margin:0;padding:48px 24px;background:#090b0b;color:#f2f0eb;font-family:Manrope,Arial,sans-serif}
     main{max-width:1160px;margin:auto}header{border-bottom:1px solid #272a28;padding-bottom:28px;margin-bottom:36px}
-    .label{color:#ff2535;font-size:12px;letter-spacing:3px;font-weight:800}h1{font-size:clamp(32px,5vw,54px);letter-spacing:-2px;margin:13px 0 8px}p{color:#a6aaa5;line-height:1.6}
-    video{display:block;max-width:370px;width:100%;max-height:78vh;margin:0 auto 40px;border:1px solid #343b35;border-radius:18px;background:#000}
-    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.scene{margin:0}.scene img{width:100%;display:block;border:1px solid #262d28;border-radius:12px}.scene a{display:block}figcaption{font-size:13px;line-height:1.5;margin:12px 0 5px;color:#c7ccc6}small{font-size:11px;color:#777f76}
-    @media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}body{padding:28px 16px}}
+    .label{color:#f32335;font-size:12px;letter-spacing:3px;font-weight:800}h1{font-size:clamp(32px,5vw,54px);letter-spacing:-2px;margin:13px 0 12px}h2{font-size:25px;margin:0 0 20px}p{color:#a6aaa5;line-height:1.65;max-width:900px}
+    a{color:#f2f0eb;text-underline-offset:4px}a:hover{color:#f32335}video{display:block;max-width:400px;width:100%;max-height:82vh;margin:0 auto 28px;border:1px solid #343b35;border-radius:18px;background:#000}
+    .status{padding:14px 18px;border:1px solid #353b37;border-radius:12px;font-size:14px}.downloads{display:flex;justify-content:center;gap:14px 26px;flex-wrap:wrap;margin:0 0 40px}.downloads a{font-size:15px;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 20px}.scene{margin:0}.scene img{width:100%;display:block;border:1px solid #262d28;border-radius:12px}.scene a{display:block}figcaption{font-size:13px;line-height:1.5;margin:12px 0 5px;color:#d0d3cd}small{font-size:12px;color:#8d958b}
+    .archive{border-top:1px solid #272a28;margin-top:44px;padding-top:28px}.archive p{font-size:14px}.archive summary{cursor:pointer;font-weight:700;font-size:19px;padding:12px 0 22px}.archive video{max-width:340px}.archive ul{padding-left:20px;line-height:2}
+    @media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}body{padding:28px 16px}.downloads{gap:14px 20px}h1{letter-spacing:-1px}}
   </style>
 </head>
 <body><main>
-  <header><div class="label">BRIDGE AGENCY</div><h1>Перший ролик.</h1><p>Версія 2 · 25 секунд · вертикальний формат<br/>Переглянь відео та залиш одне зауваження із часом або номером сцени.</p></header>
-  <video controls preload="metadata" playsinline poster="01-profile.png" src="bridge-reel-v2.mp4"></video>
-  <p style="text-align:center;margin:0 0 40px"><a href="bridge-reel-v1.mp4" style="color:#a6aaa5">Перша версія для порівняння</a></p>
+  <header>
+    <div class="label">BRIDGE AGENCY</div>
+    <h1>Що входить у ціну?</h1>
+    <p>Клінінг · 21,5 секунди · 9:16 · 60 fps<br/>Велика картка послуги, виразні заголовки, повна оригінальна озвучка та завершені фрази субтитрів. Чотири сцени: проблема → сайт → лендінг за $150 → звернення у приватні повідомлення.</p>
+    <p class="status">Експортовано 1080p і нативний 4K, 60 fps. Технічні перевірки пройдені: 1290 кадрів, повне декодування, звук −17,15 LUFS / −4,70 dBTP. Повна озвучка збережена без обрізання або прискорення.</p>
+  </header>
+  <video controls preload="metadata" playsinline poster="cleaning-premium-hq/00-first-frame.png" src="bridge-reel-cleaning-premium-hq-60fps.mp4"></video>
+  <nav class="downloads" aria-label="Завантаження поточної версії">
+    <a href="bridge-reel-cleaning-premium-hq-60fps.mp4" download>MP4 1080p / 60 fps</a>
+    <a href="bridge-reel-cleaning-premium-master-4k-60fps.mp4" download>Майстер 4K / 60 fps</a>
+    <a href="bridge-reel-cleaning-premium-originals-60fps.zip" download>Оригінали ZIP</a>
+  </nav>
+  <div class="grid">
+    <figure class="scene"><a href="cleaning-premium-hq/00-first-frame.png"><img src="cleaning-premium-hq/00-first-frame.png" alt="Перший кадр"/></a><figcaption>01 · Що входить у ціну?</figcaption><small>0,00 с</small></figure>
+    <figure class="scene"><a href="cleaning-premium-hq/01-client-questions.png"><img src="cleaning-premium-hq/01-client-questions.png" alt="Два запитання клієнтів"/></a><figcaption>02 · А кухня входить? А вікна — окремо?</figcaption><small>2,55 с</small></figure>
+    <figure class="scene"><a href="cleaning-premium-hq/02-service-website.png"><img src="cleaning-premium-hq/02-service-website.png" alt="Картка послуги на сайті"/></a><figcaption>03 · Склад прибирання та запит вартості</figcaption><small>5,95 с</small></figure>
+    <figure class="scene"><a href="cleaning-premium-hq/03-landing-offer.png"><img src="cleaning-premium-hq/03-landing-offer.png" alt="Велика пропозиція лендінгу за 150 доларів"/></a><figcaption>04 · Лендінг для твого бізнесу — $150</figcaption><small>9,40 с</small></figure>
+    <figure class="scene"><a href="cleaning-premium-hq/04-design-text-development.png"><img src="cleaning-premium-hq/04-design-text-development.png" alt="Дизайн, тексти та розробка"/></a><figcaption>05 · Три складові лендінгу</figcaption><small>11,80 с</small></figure>
+    <figure class="scene"><a href="cleaning-premium-hq/05-payment-hosting-terms.png"><img src="cleaning-premium-hq/05-payment-hosting-terms.png" alt="Умови оплати, домен і хостинг"/></a><figcaption>06 · 50% після дизайну. Домен і хостинг окремо</figcaption><small>15,10 с</small></figure>
+    <figure class="scene"><a href="cleaning-premium-hq/06-message-lead-in.png"><img src="cleaning-premium-hq/06-message-lead-in.png" alt="Початок звернення у приватні повідомлення"/></a><figcaption>07 · Перехід від пропозиції до звернення</figcaption><small>17,60 с</small></figure>
+    <figure class="scene"><a href="cleaning-premium-hq/07-final-message.png"><img src="cleaning-premium-hq/07-final-message.png" alt="Напиши САЙТ у приватні повідомлення"/></a><figcaption>08 · Одна конкретна дія</figcaption><small>20,30 с</small></figure>
+  </div>
+  <section class="archive" aria-label="Попередні версії">
+    <h2>Попередні версії</h2>
+    <ul>
+      <li><a href="cleaning-hq/index.html">Клінінг — попередня версія, 20 с</a></li>
+      <li><a href="photos-choice-hq/index.html">Фото є. А що обрати? — головний візуальний референс</a></li>
+      <li><a href="two-offers-hq/index.html">Сайт для малого бізнесу: $150 / $300</a></li>
+      <li><a href="direct-questions-hq/index.html">Знову ті самі питання?</a></li>
+      <li><a href="bridge-reel-ad-click-hq-60fps.mp4">Купив клік. А що далі?</a></li>
+      <li><a href="landing-150-hq/index.html">Лендінг за $150</a></li>
+    </ul>
+    <details>
+      <summary>Перший ролик — версії 1 і 2</summary>
+      <p>Архівний монтаж: версія 2, 25 секунд, 30 fps.</p>
+      <video controls preload="none" playsinline poster="01-profile.png" src="bridge-reel-v2.mp4"></video>
+      <p><a href="bridge-reel-v1.mp4">Перша версія для порівняння</a></p>
   <div class="grid">
     <figure class="scene"><a href="01-profile.png"><img src="01-profile.png" alt="Клієнт відкриває профіль бізнесу"/></a><figcaption>01 · Клієнт уже тут</figcaption><small>0–2,00 с</small></figure>
     <figure class="scene"><a href="02-price.png"><img src="02-price.png" alt="У картці послуги немає ціни"/></a><figcaption>02 · А ціна де?</figcaption><small>2,00–3,34 с</small></figure>
@@ -28,4 +64,6 @@
     <figure class="scene"><a href="07-portfolio.png"><img src="07-portfolio.png" alt="Реальний лендинг композитної сітки"/></a><figcaption>07 · Робота Bridge</figcaption><small>17,04–19,36 с</small></figure>
     <figure class="scene"><a href="08-cta.png"><img src="08-cta.png" alt="Обговоримо твій бізнес. Залишити заявку"/></a><figcaption>08 · Обговоримо твій бізнес</figcaption><small>19,36–25,00 с</small></figure>
   </div>
+    </details>
+  </section>
 </main></body></html>

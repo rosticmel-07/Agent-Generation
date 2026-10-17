@@ -1,0 +1,587 @@
+{
+  "status": "passed",
+  "source": "previews/bridge-reel-cleaning-premium-hq-60fps.mp4",
+  "source_sha256": "79e9b4c79ea46a6cdcb5e31d6695f742a1bdf64c8dbcd5b2148845d9054988a9",
+  "review_scope": "Manual model visual review of all64decoded phone-size frames plus full-resolution website frame; no human audio listening claim.",
+  "source_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "avg_frame_rate": "60/1",
+        "duration": "21.500000",
+        "nb_frames": "1290"
+      }
+    ],
+    "format": {
+      "duration": "21.504000"
+    }
+  },
+  "fps": 60,
+  "expected_frames": 1290,
+  "duration_seconds": 21.5,
+  "cut_frames": [
+    198,
+    502,
+    1110
+  ],
+  "cut_offsets": [
+    -12,
+    -6,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    6,
+    12
+  ],
+  "thumbnail_dimensions": [
+    360,
+    640
+  ],
+  "thumbnail_resampling": "FFmpeg scale with Lanczos, for QA only",
+  "ffmpeg_filtergraph": "select=eq(n\\,0)+eq(n\\,1)+eq(n\\,6)+eq(n\\,12)+eq(n\\,48)+eq(n\\,100)+eq(n\\,153)+eq(n\\,185)+eq(n\\,186)+eq(n\\,192)+eq(n\\,196)+eq(n\\,197)+eq(n\\,198)+eq(n\\,199)+eq(n\\,200)+eq(n\\,204)+eq(n\\,210)+eq(n\\,240)+eq(n\\,280)+eq(n\\,357)+eq(n\\,405)+eq(n\\,450)+eq(n\\,489)+eq(n\\,490)+eq(n\\,496)+eq(n\\,500)+eq(n\\,501)+eq(n\\,502)+eq(n\\,503)+eq(n\\,504)+eq(n\\,508)+eq(n\\,514)+eq(n\\,564)+eq(n\\,648)+eq(n\\,708)+eq(n\\,770)+eq(n\\,786)+eq(n\\,842)+eq(n\\,906)+eq(n\\,990)+eq(n\\,1005)+eq(n\\,1006)+eq(n\\,1020)+eq(n\\,1056)+eq(n\\,1097)+eq(n\\,1098)+eq(n\\,1104)+eq(n\\,1108)+eq(n\\,1109)+eq(n\\,1110)+eq(n\\,1111)+eq(n\\,1112)+eq(n\\,1116)+eq(n\\,1122)+eq(n\\,1125)+eq(n\\,1126)+eq(n\\,1138)+eq(n\\,1153)+eq(n\\,1180)+eq(n\\,1230)+eq(n\\,1254)+eq(n\\,1261)+eq(n\\,1288)+eq(n\\,1289),scale=360:640:flags=lanczos",
+  "frames_extracted": 64,
+  "contact_sheets": [
+    "01-problem-composition-01.jpg",
+    "01-problem-composition-02.jpg",
+    "02-problem-to-website-cut-01.jpg",
+    "02-problem-to-website-cut-02.jpg",
+    "03-large-website-01.jpg",
+    "04-website-to-offer-cut-01.jpg",
+    "04-website-to-offer-cut-02.jpg",
+    "05-offer-price-and-terms-01.jpg",
+    "05-offer-price-and-terms-02.jpg",
+    "05-offer-price-and-terms-03.jpg",
+    "06-offer-to-message-cut-01.jpg",
+    "06-offer-to-message-cut-02.jpg",
+    "07-full-voice-final-01.jpg",
+    "07-full-voice-final-02.jpg"
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "label": "Перший кадр / головний заголовок",
+      "image": "frames/0000.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 1,
+      "seconds": 0.016667,
+      "label": "Початок без заставки",
+      "image": "frames/0001.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 6,
+      "seconds": 0.1,
+      "label": "Перший рух",
+      "image": "frames/0006.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 12,
+      "seconds": 0.2,
+      "label": "Читабельність появи",
+      "image": "frames/0012.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 48,
+      "seconds": 0.8,
+      "label": "Перша репліка",
+      "image": "frames/0048.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 100,
+      "seconds": 1.666667,
+      "label": "Друга репліка",
+      "image": "frames/0100.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 153,
+      "seconds": 2.55,
+      "label": "Фото та дві репліки",
+      "image": "frames/0153.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 185,
+      "seconds": 3.083333,
+      "label": "Остання стабільна проблема",
+      "image": "frames/0185.png",
+      "group": "01-problem-composition",
+      "status": "passed"
+    },
+    {
+      "frame": 186,
+      "seconds": 3.1,
+      "label": "Перехід 3.3000 с / -12 кадр.",
+      "image": "frames/0186.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 192,
+      "seconds": 3.2,
+      "label": "Перехід 3.3000 с / -6 кадр.",
+      "image": "frames/0192.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 196,
+      "seconds": 3.266667,
+      "label": "Перехід 3.3000 с / -2 кадр.",
+      "image": "frames/0196.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 197,
+      "seconds": 3.283333,
+      "label": "Перехід 3.3000 с / -1 кадр.",
+      "image": "frames/0197.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 198,
+      "seconds": 3.3,
+      "label": "Перехід 3.3000 с / +0 кадр.",
+      "image": "frames/0198.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 199,
+      "seconds": 3.316667,
+      "label": "Перехід 3.3000 с / +1 кадр.",
+      "image": "frames/0199.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 200,
+      "seconds": 3.333333,
+      "label": "Перехід 3.3000 с / +2 кадр.",
+      "image": "frames/0200.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 204,
+      "seconds": 3.4,
+      "label": "Перехід 3.3000 с / +6 кадр.",
+      "image": "frames/0204.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 210,
+      "seconds": 3.5,
+      "label": "Перехід 3.3000 с / +12 кадр.",
+      "image": "frames/0210.png",
+      "group": "02-problem-to-website-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 240,
+      "seconds": 4.0,
+      "label": "Фото переходить у сайт",
+      "image": "frames/0240.png",
+      "group": "03-large-website",
+      "status": "passed"
+    },
+    {
+      "frame": 280,
+      "seconds": 4.666667,
+      "label": "Склад послуги",
+      "image": "frames/0280.png",
+      "group": "03-large-website",
+      "status": "passed"
+    },
+    {
+      "frame": 357,
+      "seconds": 5.95,
+      "label": "Весь макет / додаткові вікна",
+      "image": "frames/0357.png",
+      "group": "03-large-website",
+      "status": "passed"
+    },
+    {
+      "frame": 405,
+      "seconds": 6.75,
+      "label": "Склад і кнопка читабельні",
+      "image": "frames/0405.png",
+      "group": "03-large-website",
+      "status": "passed"
+    },
+    {
+      "frame": 450,
+      "seconds": 7.5,
+      "label": "Перехід голосу до пропозиції",
+      "image": "frames/0450.png",
+      "group": "03-large-website",
+      "status": "passed"
+    },
+    {
+      "frame": 489,
+      "seconds": 8.15,
+      "label": "Останній стабільний сайт",
+      "image": "frames/0489.png",
+      "group": "03-large-website",
+      "status": "passed"
+    },
+    {
+      "frame": 490,
+      "seconds": 8.166667,
+      "label": "Перехід 8.3667 с / -12 кадр.",
+      "image": "frames/0490.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 496,
+      "seconds": 8.266667,
+      "label": "Перехід 8.3667 с / -6 кадр.",
+      "image": "frames/0496.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 500,
+      "seconds": 8.333333,
+      "label": "Перехід 8.3667 с / -2 кадр.",
+      "image": "frames/0500.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 501,
+      "seconds": 8.35,
+      "label": "Перехід 8.3667 с / -1 кадр.",
+      "image": "frames/0501.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 502,
+      "seconds": 8.366667,
+      "label": "Перехід 8.3667 с / +0 кадр.",
+      "image": "frames/0502.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 503,
+      "seconds": 8.383333,
+      "label": "Перехід 8.3667 с / +1 кадр.",
+      "image": "frames/0503.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 504,
+      "seconds": 8.4,
+      "label": "Перехід 8.3667 с / +2 кадр.",
+      "image": "frames/0504.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 508,
+      "seconds": 8.466667,
+      "label": "Перехід 8.3667 с / +6 кадр.",
+      "image": "frames/0508.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 514,
+      "seconds": 8.566667,
+      "label": "Перехід 8.3667 с / +12 кадр.",
+      "image": "frames/0514.png",
+      "group": "04-website-to-offer-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 564,
+      "seconds": 9.4,
+      "label": "Ціна на слові доларів",
+      "image": "frames/0564.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 648,
+      "seconds": 10.8,
+      "label": "Складові пропозиції",
+      "image": "frames/0648.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 708,
+      "seconds": 11.8,
+      "label": "Тексти та розробка",
+      "image": "frames/0708.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 770,
+      "seconds": 12.833333,
+      "label": "Пауза перед умовами",
+      "image": "frames/0770.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 786,
+      "seconds": 13.1,
+      "label": "Перші 50%",
+      "image": "frames/0786.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 842,
+      "seconds": 14.033333,
+      "label": "Повний субтитр умови оплати",
+      "image": "frames/0842.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 906,
+      "seconds": 15.1,
+      "label": "Умови та домен / хостинг",
+      "image": "frames/0906.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 990,
+      "seconds": 16.5,
+      "label": "Завершення умов оплати",
+      "image": "frames/0990.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 1005,
+      "seconds": 16.75,
+      "label": "Перед повним CTA-субтитром",
+      "image": "frames/1005.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 1006,
+      "seconds": 16.766667,
+      "label": "Перший кадр CTA-субтитру",
+      "image": "frames/1006.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 1020,
+      "seconds": 17.0,
+      "label": "CTA над завершенням пропозиції",
+      "image": "frames/1020.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 1056,
+      "seconds": 17.6,
+      "label": "Заклик синхронний із голосом",
+      "image": "frames/1056.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 1097,
+      "seconds": 18.283333,
+      "label": "Остання стабільна пропозиція",
+      "image": "frames/1097.png",
+      "group": "05-offer-price-and-terms",
+      "status": "passed"
+    },
+    {
+      "frame": 1098,
+      "seconds": 18.3,
+      "label": "Перехід 18.5000 с / -12 кадр.",
+      "image": "frames/1098.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1104,
+      "seconds": 18.4,
+      "label": "Перехід 18.5000 с / -6 кадр.",
+      "image": "frames/1104.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1108,
+      "seconds": 18.466667,
+      "label": "Перехід 18.5000 с / -2 кадр.",
+      "image": "frames/1108.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1109,
+      "seconds": 18.483333,
+      "label": "Перехід 18.5000 с / -1 кадр.",
+      "image": "frames/1109.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1110,
+      "seconds": 18.5,
+      "label": "Перехід 18.5000 с / +0 кадр.",
+      "image": "frames/1110.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1111,
+      "seconds": 18.516667,
+      "label": "Перехід 18.5000 с / +1 кадр.",
+      "image": "frames/1111.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1112,
+      "seconds": 18.533333,
+      "label": "Перехід 18.5000 с / +2 кадр.",
+      "image": "frames/1112.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1116,
+      "seconds": 18.6,
+      "label": "Перехід 18.5000 с / +6 кадр.",
+      "image": "frames/1116.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1122,
+      "seconds": 18.7,
+      "label": "Перехід 18.5000 с / +12 кадр.",
+      "image": "frames/1122.png",
+      "group": "06-offer-to-message-cut",
+      "status": "passed"
+    },
+    {
+      "frame": 1125,
+      "seconds": 18.75,
+      "label": "Останній кадр CTA-субтитру",
+      "image": "frames/1125.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1126,
+      "seconds": 18.766667,
+      "label": "Перший кадр повної фрази про аудит",
+      "image": "frames/1126.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1138,
+      "seconds": 18.966667,
+      "label": "Фінальний екран і додаткова фраза",
+      "image": "frames/1138.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1153,
+      "seconds": 19.216667,
+      "label": "Слово отримай",
+      "image": "frames/1153.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1180,
+      "seconds": 19.666667,
+      "label": "Перед словом безкоштовний",
+      "image": "frames/1180.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1230,
+      "seconds": 20.5,
+      "label": "Фінал без прихованого обрізання",
+      "image": "frames/1230.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1254,
+      "seconds": 20.9,
+      "label": "Кінець усієї озвучки",
+      "image": "frames/1254.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1261,
+      "seconds": 21.016667,
+      "label": "Останній видимий кадр субтитру про аудит (cue ends21.02s)",
+      "image": "frames/1261.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1288,
+      "seconds": 21.466667,
+      "label": "Передостанній кадр",
+      "image": "frames/1288.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    },
+    {
+      "frame": 1289,
+      "seconds": 21.483333,
+      "label": "Останній кадр / повний MP4",
+      "image": "frames/1289.png",
+      "group": "07-full-voice-final",
+      "status": "passed"
+    }
+  ],
+  "findings": [
+    "Main composition is large and centered; cleaning only.",
+    "Photo-to-website morph has no overlapping question/title text.",
+    "All scene cuts have no old/new headline overlap or black frames.",
+    "Price, inclusions, payment and hosting terms readable atphone size.",
+    "Complete short captions retained; identical CTA caption hands over to final title.",
+    "Free-audit phrase retained and visible; stable CTA persists throughframe1289.",
+    "Full-resolution decoded website frame inspected; display and body type remain sharp."
+  ]
+}

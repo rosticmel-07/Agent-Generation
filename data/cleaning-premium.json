@@ -1,0 +1,220 @@
+{
+  "status": "rendered_reviewed",
+  "timing_status": "audio_aligned",
+  "duration": 21.5,
+  "fps": 60,
+  "center_x": 540,
+  "content_width": 804,
+  "caption_width": 804,
+  "voiceover": "audio/voiceover-cleaning-premium-mix.wav",
+  "original_voiceover": "audio/voiceover-cleaning.mp3",
+  "voiceover_volume": 1.0,
+  "voice_end": 20.9,
+  "mix_gain_db": 0,
+  "voice_trim": false,
+  "atmosphere": "audio/atmosphere-cleaning-premium.wav",
+  "preview_times": {
+    "questions": 2.55,
+    "website": 5.95,
+    "price": 9.4,
+    "inclusions": 11.8,
+    "terms": 15.1,
+    "cta_lead_in": 17.6
+  },
+  "scenes": [
+    {
+      "id": "01-problem",
+      "start": 0,
+      "end": 3.3
+    },
+    {
+      "id": "02-website",
+      "start": 3.3,
+      "end": 8.36
+    },
+    {
+      "id": "03-offer",
+      "start": 8.36,
+      "end": 18.5
+    },
+    {
+      "id": "04-message",
+      "start": 18.5,
+      "end": 21.5
+    }
+  ],
+  "captions": [
+    {
+      "kind": "problem",
+      "start": 0,
+      "end": 2.94,
+      "word_ids": [
+        0,
+        1,
+        2
+      ],
+      "line_word_ids": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "text": "Клієнти постійно питають…"
+    },
+    {
+      "kind": "solution",
+      "start": 3.38,
+      "end": 6.74,
+      "word_ids": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "line_word_ids": [
+        [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        [
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      ],
+      "text": "Покажи на сайті склад послуги, додаткові роботи та форму заявки."
+    },
+    {
+      "kind": "introduction",
+      "start": 6.98,
+      "end": 10.44,
+      "word_ids": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "line_word_ids": [
+        [
+          18,
+          19,
+          20
+        ],
+        [
+          21,
+          22,
+          23
+        ]
+      ],
+      "text": "Створимо такий лендінг за 150 доларів."
+    },
+    {
+      "kind": "included",
+      "start": 10.72,
+      "end": 12.72,
+      "word_ids": [
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "line_word_ids": [
+        [
+          24,
+          25,
+          26
+        ],
+        [
+          27,
+          28
+        ]
+      ],
+      "text": "Дизайн, тексти й розробка включені."
+    },
+    {
+      "kind": "payment",
+      "start": 12.96,
+      "end": 16.64,
+      "word_ids": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "line_word_ids": [
+        [
+          29,
+          30
+        ],
+        [
+          31,
+          32,
+          33
+        ]
+      ],
+      "text": "Перші 50% після затвердження дизайну."
+    },
+    {
+      "kind": "cta",
+      "start": 16.76,
+      "end": 18.76,
+      "word_ids": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "line_word_ids": [
+        [
+          34,
+          35
+        ],
+        [
+          36,
+          37,
+          38
+        ]
+      ],
+      "text": "Напиши САЙТ у приватні повідомлення"
+    },
+    {
+      "kind": "audit",
+      "start": 18.76,
+      "end": 21.02,
+      "word_ids": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "line_word_ids": [
+        [
+          39,
+          40
+        ],
+        [
+          41,
+          42
+        ]
+      ],
+      "text": "Та отримай безкоштовний аудит."
+    }
+  ]
+}

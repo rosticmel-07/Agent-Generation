@@ -1,16 +1,27 @@
 # Bridge Agency — рекламні ролики
 
-Поточний ролик **«Лендінг для клінінгу — $150»** звертається до власника клінінгової компанії: клієнти постійно питають, що входить у ціну прибирання. Фото перетворюється на склад послуги, мобільну сторінку та форму заявки. Це один демонстраційний приклад без вигаданих цін на прибирання, відгуків або обіцянок гарантованих клієнтів.
+Поточна переробка **«Що входить у ціну?»** — ролик лише для клінінгу, з масштабом карток і цілісною композицією за візуальним референсом «Фото є. А що обрати?». Велике фото прибирання та питання клієнтів переходять у зрозумілу картку послуги, пропозицію лендінгу за $150 й одну фінальну дію: **«Напиши “САЙТ” у приватні повідомлення»**. Без інших ніш, вигаданих цін на прибирання чи обіцянок гарантованих клієнтів.
 
-**20 секунд, 9:16, 60 fps, 1200 кадрів.** Короткі синхронні українські субтитри; центр композиції x=540; безпечні поля 160 px зверху та з боків, 320 px знизу. Чорне тло, червоні акценти, Oswald і Manrope. Фінал рівно 3 секунди: **«Напиши “САЙТ” у приватні повідомлення»**, другорядний рядок «Обговоримо твій проєкт».
+**21,5 секунди, 9:16, 60 fps, 1290 кадрів.** Чотири сцени: проблема 0–3,3 с; сайт 3,3–8,36 с; пропозиція 8,36–18,5 с; звернення 18,5–21,5 с. Оригінальна озвучка 21,315875 с використовується повністю: без обрізання, прискорення або зміни висоти голосу, включно з її заключною фразою про безкоштовний аудит. Фінальна сцена триває рівно 3 секунди.
 
-Повний оригінальний MP3 збережений. Для монтажу окремий WAV обрізано після основного заклику: фразу про безкоштовний аудит із наданого запису прибрано відповідно до письмового завдання. Темп і висоту голосу не змінено. Обидва MP4 готові: 1080×1920 та нативний 2160×3840, по 1200 кадрів при 60 fps. Повне декодування пройдено; звук обох файлів — −17,21 LUFS / −4,75 dBTP. Перевірено вісім основних кадрів і 13 кадрів переходів, SHA-256 оригінального MP3 та десяти попередніх MP4. Деталі — у [документі ролика](docs/cleaning.md).
+Центр композиції x=540, ширина основної картки 804 px; великі заголовки й завершені короткі фрази субтитрів. Чорне тло, червоні акценти Bridge, Oswald і Manrope. У пропозиції читабельно зазначено: дизайн, тексти, розробка; перші 50% після затвердження дизайну; домен і хостинг окремо. Заклик у приватні повідомлення не імітує кнопку платформи.
 
-- [Поточний MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-cleaning-hq-60fps.mp4).
+Обидва MP4 експортовано й технічно перевірено: 1080 × 1920 та нативний 2160 × 3840, по 1290 кадрів при 60 fps. Повне декодування пройдено; звук обох файлів — −17,15 LUFS / −4,70 dBTP. Порівняння декодованої озвучки: оригінал 1 023 165 семплів, нормалізований WAV 1 023 164 семпли при 48 kHz — різниця лише один семпл, без обрізання фраз. Перевірено вісім DOM-вимірювань композиції; шість оригінальних MP3 і дванадцять попередніх MP4 не змінені. Результати — у [звіті експорту](data/cleaning-premium-export-report.json).
+
+- [Поточний MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-cleaning-premium-hq-60fps.mp4).
+- [Майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-cleaning-premium-master-4k-60fps.mp4).
+- [Оригінали одним ZIP](previews/bridge-reel-cleaning-premium-originals-60fps.zip).
+- [Відео та вісім кадрів](previews/index.html).
+- [Сценарій, матеріали та відтворення переробки](docs/cleaning-premium.md).
+- [План чотирьох сцен і субтитри](data/cleaning-premium.json).
+
+Попередня версія для клінінгу збережена окремо:
+
+- [MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-cleaning-hq-60fps.mp4).
 - [Майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-cleaning-master-4k-60fps.mp4).
 - [Оригінали одним ZIP](previews/bridge-reel-cleaning-originals-60fps.zip).
-- [Відео та вісім кадрів](previews/cleaning-hq/index.html).
-- [Сценарій, монтаж і перевірки](docs/cleaning.md).
+- [Відео та кадри](previews/cleaning-hq/index.html).
+- [Її сценарій і перевірки](docs/cleaning.md).
 
 Попередній ролик «Фото є. А що обрати?»:
 
@@ -58,7 +69,7 @@
 - [Монтаж, таймкоди й експорт «Лендінг за $150»](docs/landing-150.md).
 - [Архівний макет за $150 без диктора](previews/bridge-reel-150-layout.mp4) та [його галерея](previews/landing-150.html).
 
-![Фінальний екран](previews/cleaning-hq/07-final-message.png)
+![Фінальний екран](previews/cleaning-premium-hq/07-final-message.png)
 
 ## Запуск
 
@@ -69,17 +80,17 @@ npm ci
 npm start
 ```
 
-Команда `npm start` відкриває Remotion Studio для перегляду, перемотування та перевірки кадрів на вашому комп’ютері. Новий ролик має композицію `BridgeCleaning` на 60 fps. У переліку також залишено попередні `BridgePhotosChoice`, `BridgeTwoOffers`, `BridgeDirectQuestions`, `BridgeAdClick` та `BridgeLanding150` на 60 fps та архівну `BridgeReel` на 30 fps.
+Команда `npm start` відкриває Remotion Studio для перегляду, перемотування та перевірки кадрів на вашому комп’ютері. Новий ролик має композицію `BridgeCleaningPremium` на 60 fps. У переліку також залишено попередні `BridgeCleaning`, `BridgePhotosChoice`, `BridgeTwoOffers`, `BridgeDirectQuestions`, `BridgeAdClick` та `BridgeLanding150` на 60 fps та архівну `BridgeReel` на 30 fps.
 
-Новий ролик має окрему композицію `BridgeCleaning` та свої матеріали:
+Поточна переробка має окрему композицію `BridgeCleaningPremium` та свої матеріали:
 
 ```sh
 npm run typecheck
-node scripts/render-cleaning.mjs --stills
-node scripts/render-cleaning.mjs --master
-node scripts/export-cleaning-from-master.mjs
-python3 scripts/check-cleaning-export.py
-python3 scripts/package-cleaning.py
+node scripts/render-cleaning-premium.mjs --stills
+node scripts/render-cleaning-premium.mjs --master
+node scripts/export-cleaning-premium-from-master.mjs
+python3 scripts/check-cleaning-premium-export.py
+python3 scripts/package-cleaning-premium.py
 ```
 
 Для попередньої схваленої рекламної версії виберіть композицію `BridgeLanding150`:
@@ -112,11 +123,12 @@ NPM_CONFIG_CACHE=/workspace/.cache/npm npm ci
 
 ## Код екранів і матеріали
 
-- `src/BridgeCleaning.tsx` — поточний ролик для клінінгу, мобільна сторінка, форма й одна фінальна дія.
-- `data/cleaning.json` — 5 сцен і 9 коротких груп субтитрів; `data/words-cleaning.json` — 39 одиниць синхронізації.
-- `public/audio/voiceover-cleaning.mp3` — повний оригінальний запис; `voiceover-cleaning-mix.wav` — окремий монтажний файл.
-- `public/audio/voiceover-cleaning-edited.txt` — фактичний монтажний текст.
-- `data/cleaning-layout-check.json` — вимірювання восьми кадрів; `data/cleaning-export-report.json` — результати перевірок обох готових MP4, звуку й контрольних сум.
+- `src/BridgeCleaningPremium.tsx` — поточна переробка: чотири сцени, велика картка клінінгу й одна фінальна дія.
+- `data/cleaning-premium.json` — план чотирьох сцен і завершені групи субтитрів; `data/words-cleaning-premium.json` — синхронізація повної озвучки.
+- `public/audio/voiceover-cleaning.mp3` — повний незмінений оригінальний запис; `voiceover-cleaning-premium-mix.wav` — окремий нормалізований файл повної тривалості.
+- `data/cleaning-premium-audio-processing.json` — параметри нормалізації без обрізання або зміни темпу.
+- `data/cleaning-premium-layout-check.json` — вимірювання восьми кадрів; `data/cleaning-premium-export-report.json` — звіт після перевірки готових MP4, звуку й контрольних сум.
+- `src/BridgeCleaning.tsx`, `data/cleaning.json` і `data/cleaning-export-report.json` — попередня версія для клінінгу, збережена як архів.
 - `src/BridgeReel.tsx` — вісім сцен, анімація, графічні елементи й підсвічування субтитрів.
 - `src/Root.tsx` — формат і тривалість композиції.
 - `src/style.css` — локальний шрифт і базова типографіка.
