@@ -1,0 +1,246 @@
+{
+  "duration_seconds": 26,
+  "fps": 60,
+  "video_frames": 1560,
+  "word_count": 50,
+  "caption_cues": 10,
+  "final_scene_seconds": 3,
+  "source_audio_sha256": "4910c850dd065dedf0d840d36366e0432883d07ddeb9b6d4122e4ea5f27895f1",
+  "voice_trimmed": false,
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "full_voice_verification": {
+    "sample_rate": 48000,
+    "source_decoded_samples": 1236324,
+    "mix_decoded_samples": 1236324,
+    "difference_samples": 0,
+    "maximum_tolerance_ms": 1
+  },
+  "master_render_scale": 2,
+  "main_downsample": "Lanczos2160x3840 ->1080x1920",
+  "crf": 12,
+  "preset": "slow",
+  "brand_asset": "Uses the genuine existing Bridge symbol cropped in CSS within a glass tile. The exact new inline icon is not available as a file; this is an explicitly disclosed alternative, not a recreated logo.",
+  "services_provenance": {
+    "status": "user_confirmed",
+    "requested_url": "https://www.bridgeagency.com.ua/#services",
+    "checked_at": "2026-10-19",
+    "live_result": "Cloud egress proxy403; current live page NOT verified",
+    "source": "User-provided homepage screenshot PDF,2026-10-09",
+    "source_images": [
+      "public/brand/home-1.png",
+      "public/brand/home-2.png"
+    ],
+    "prices_used": false,
+    "scope": "User supplied a recording accepting the four-service presentation. Live completeness of website remains unverified; no prices used."
+  },
+  "illustration": {
+    "file": "illustrations/auto-service/diagnostics.png",
+    "origin": "Generated for this ad; unbranded car in dark red-accented workshop",
+    "sha256": "01dec95eef3c50e1442cbca8376c6888f78c928a6180ca78937cb3d2ac6c1f64",
+    "is_real_client_case": false
+  },
+  "files": [
+    {
+      "file": "previews/bridge-reel-auto-service-master-4k-60fps.mp4",
+      "sha256": "936a801eb3a6923c553e7642b8a41a8e19fa65a210161503b33c0686ff0f8e13",
+      "size_bytes": 14161870,
+      "video_bitrate": 4026325,
+      "profile": "High",
+      "audio_bitrate": 317379,
+      "container_duration": 26.005,
+      "integrated_lufs": -17.12,
+      "true_peak_dbtp": -4.72,
+      "full_decode": "passed"
+    },
+    {
+      "file": "previews/bridge-reel-auto-service-hq-60fps.mp4",
+      "sha256": "e0eae3c73277493ef65bbcbb6906bd27c75316ee1bd840a3b1fb8b02447ca572",
+      "size_bytes": 5579076,
+      "video_bitrate": 1385463,
+      "profile": "High",
+      "audio_bitrate": 317379,
+      "container_duration": 26.005,
+      "integrated_lufs": -17.12,
+      "true_peak_dbtp": -4.72,
+      "full_decode": "passed"
+    }
+  ],
+  "previous_files": [
+    {
+      "file": "previews/bridge-reel-150-master-4k-60fps.mp4",
+      "sha256": "3ac9927d8532d90e0571dc696e2780fb824b046dccddc24a1f7c86ad6949b497"
+    },
+    {
+      "file": "previews/bridge-reel-150-hq-60fps.mp4",
+      "sha256": "383b3b73a894645769275c3b2637e515aa179561d135a010758aa9d4299db591"
+    },
+    {
+      "file": "previews/bridge-reel-ad-click-master-4k-60fps.mp4",
+      "sha256": "fabcaf93394d30934bd2e55ac7481488ab5beac99c662d24f418069ece64b34f"
+    },
+    {
+      "file": "previews/bridge-reel-ad-click-hq-60fps.mp4",
+      "sha256": "e0534cd6118e0cf67e6568265adb2bc4a9c4f85429cd34210502ea82170243d9"
+    },
+    {
+      "file": "previews/bridge-reel-direct-questions-master-4k-60fps.mp4",
+      "sha256": "10538eb18f01be2ee42e7daf1a6dd01d705d41c8ef5a07ed4878c8b32ac7c51e"
+    },
+    {
+      "file": "previews/bridge-reel-direct-questions-hq-60fps.mp4",
+      "sha256": "049d44331931418f762c6b5c37ee1ef128a7b91d4e9cd0c42c6d0037acda5bbc"
+    },
+    {
+      "file": "previews/bridge-reel-two-offers-master-4k-60fps.mp4",
+      "sha256": "83781aa3aa16b24d3b732692d75901b46543a981ad84f7670c7de933e7699f2e"
+    },
+    {
+      "file": "previews/bridge-reel-two-offers-hq-60fps.mp4",
+      "sha256": "c7565497073f1684b561eec079894c3ec18b3d021adc541cd0f4df396bef6268"
+    },
+    {
+      "file": "previews/bridge-reel-photos-choice-master-4k-60fps.mp4",
+      "sha256": "cb967322a1df2486ad9da52f5994773e4b2e117f20001f4f92685f309efd1bea"
+    },
+    {
+      "file": "previews/bridge-reel-photos-choice-hq-60fps.mp4",
+      "sha256": "741dc469943f4eecbccb0e58c0244a0b1a60bb15dda66681eb3063e8905d9eb4"
+    },
+    {
+      "file": "previews/bridge-reel-cleaning-master-4k-60fps.mp4",
+      "sha256": "9cf8a64bd852e34de30d35ea3517a5ef9d9366736f7c812672f22318d7fe2abb"
+    },
+    {
+      "file": "previews/bridge-reel-cleaning-hq-60fps.mp4",
+      "sha256": "a05be4a5a9fb65f6dd5af5c9bb5e0e47d88056e9ac3daadea331ff2563358138"
+    },
+    {
+      "file": "previews/bridge-reel-cleaning-premium-master-4k-60fps.mp4",
+      "sha256": "0ee1a193a428883a6448c7c227179b9de902786d898840af16fc99abced5d1d6"
+    },
+    {
+      "file": "previews/bridge-reel-cleaning-premium-hq-60fps.mp4",
+      "sha256": "79e9b4c79ea46a6cdcb5e31d6695f742a1bdf64c8dbcd5b2148845d9054988a9"
+    }
+  ],
+  "previous_original_voiceovers": {
+    "audio/voiceover-150.mp3": "188b60ddfd57b6a9092282d5b2c1259e601e3ea4fd2b274de51f22c4e5614797",
+    "audio/voiceover-ad-click.mp3": "d961ffce60e6bca39fdf395664902908569f2cacb67bb87a7645284b94f980fd",
+    "audio/voiceover-direct-questions.mp3": "fb90eefb6614d75e9d5e6b64af9bf4aa8b23ed66ba2486249c1766b7780ab728",
+    "audio/voiceover-two-offers.mp3": "1995f6ec0024958607cdaaac7dfafdbfcd43d1a9330fd2835e0bf2b390ef38de",
+    "audio/voiceover-photos-choice.mp3": "08a9d66ff61c356f19f0126ef7c0ff8056e46a8ac51848b05255bbdb3aa0b5d1",
+    "audio/voiceover-cleaning.mp3": "f54aff4bb757d6248fdde8ce3f3fcb21221adaaac356ffa4b6f9c3ebf6f2ba1b"
+  },
+  "layout": {
+    "sampled_frames": 8,
+    "center_x": 540,
+    "safe_area": {
+      "left": 120,
+      "right": 960,
+      "bottom": 1600
+    },
+    "max_center_error": 0
+  },
+  "checks": [
+    "FullH264/AAC decode passed for both actualMP4 files.",
+    "26seconds/1560frames/60fps/BT709/stereoAAC verified.",
+    "Integrated loudness and true peaks measured on both files.",
+    "Complete original and normalized voice sample counts match within1ms; no trimming, tempo or pitch change.",
+    "All50spoken display units aligned and covered by complete caption cues, main dialogue or final CTA.",
+    "EightChromium font/safe-area/text-width/center checks passed.",
+    "Sevencontiguous scenes, final exactly3seconds.",
+    "Fourteenprevious MP4s and earlier original voiceovers SHA verified unchanged.",
+    "All55decoded actual-MP4 frames visually reviewed, plus full-resolution14.2s frame; transition, text, caption and finalCTA checks passed."
+  ],
+  "actual_video_visual_review": {
+    "status": "passed",
+    "source": "previews/bridge-reel-auto-service-hq-60fps.mp4",
+    "source_sha256": "e0eae3c73277493ef65bbcbb6906bd27c75316ee1bd840a3b1fb8b02447ca572",
+    "frames": [
+      0,
+      1,
+      77,
+      108,
+      153,
+      154,
+      156,
+      160,
+      166,
+      224,
+      264,
+      311,
+      312,
+      314,
+      318,
+      324,
+      373,
+      448,
+      454,
+      460,
+      472,
+      539,
+      541,
+      639,
+      640,
+      642,
+      646,
+      652,
+      706,
+      740,
+      783,
+      784,
+      786,
+      790,
+      796,
+      852,
+      959,
+      983,
+      1033,
+      1034,
+      1036,
+      1040,
+      1046,
+      1126,
+      1276,
+      1301,
+      1379,
+      1380,
+      1382,
+      1386,
+      1392,
+      1462,
+      1506,
+      1558,
+      1559
+    ],
+    "frames_extracted": 55,
+    "contact_sheets": [
+      "contact-00.jpg",
+      "contact-01.jpg",
+      "contact-02.jpg",
+      "contact-03.jpg",
+      "contact-04.jpg",
+      "contact-05.jpg",
+      "contact-06.jpg",
+      "contact-07.jpg",
+      "contact-08.jpg",
+      "contact-09.jpg"
+    ],
+    "phone_frame_dimensions": [
+      360,
+      640
+    ],
+    "method": "Model visual inspection of all55decoded360x640frames and full-resolution frame14.2s; no human audio listening claim.",
+    "findings": [
+      "Opening photo and headings are large, sharp and centered.",
+      "Every scene cut reviewed: no overlapping old/new headings or black frames.",
+      "Landing-to-multipage navigation transition at7.46..7.87s reviewed: labels remain separate and readable.",
+      "Request light remains outside text, then joins the genuine Bridge symbol.",
+      "Complete short bottom captions highlight source-aligned words; main dialogue/CTA remain stable and replace duplicate captions.",
+      "Four service modules and final CTA readable atphone size.",
+      "Finalscene23..26s remains stable throughframe1559."
+    ],
+    "additional_full_resolution_frame_seconds": 14.2
+  }
+}

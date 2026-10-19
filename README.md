@@ -1,151 +1,55 @@
 # Bridge Agency — рекламні ролики
 
-У підготовці наступний ролик **«Ти під авто. Клієнт чекає?»**: [сценарій і джерела](docs/auto-service.md), [текст для озвучки](public/audio/voiceover-auto-service-draft.txt), [макети семи сцен](previews/auto-service-layout/index.html). Код `BridgeAutoService` вже доступний; повна нова озвучка й оригінальний файл іконки ще не отримані. Поточний перелік послуг за живим сайтом не звірено через403 мережевого шлюзу; використано останній доступний PDF без цін. Нижче залишається попередній готовий ролик.
+Поточний ролик **«Ти під авто. Клієнт чекає?»** — для власників автосервісу. Повідомлення про ціну й запис переходять у сайт, Telegram-бот і зрозумілий маршрут звернення. Чотири послуги Bridge подані як інструменти під задачу. Фінальна дія: **«Напиши “СТО” у приватні повідомлення»**.
 
-Поточна переробка **«Що входить у ціну?»** — ролик лише для клінінгу, з масштабом карток і цілісною композицією за візуальним референсом «Фото є. А що обрати?». Велике фото прибирання та питання клієнтів переходять у зрозумілу картку послуги, пропозицію лендінгу за $150 й одну фінальну дію: **«Напиши “САЙТ” у приватні повідомлення»**. Без інших ніш, вигаданих цін на прибирання чи обіцянок гарантованих клієнтів.
+**26 секунд · 9:16 · 60 fps · 1560 кадрів.** Повний запис користувача використано без обрізання, прискорення чи зміни висоти голосу. Фінальний екран — рівно 3 секунди. Субтитри показуються завершеними фразами; головні діалоги й CTA замінюють тотожні нижні написи.
 
-**21,5 секунди, 9:16, 60 fps, 1290 кадрів.** Чотири сцени: проблема 0–3,3 с; сайт 3,3–8,36 с; пропозиція 8,36–18,5 с; звернення 18,5–21,5 с. Оригінальна озвучка 21,315875 с використовується повністю: без обрізання, прискорення або зміни висоти голосу, включно з її заключною фразою про безкоштовний аудит. Фінальна сцена триває рівно 3 секунди.
+- [Готовий MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-auto-service-hq-60fps.mp4)
+- [Нативний майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-auto-service-master-4k-60fps.mp4)
+- [Оригінали одним ZIP](previews/bridge-reel-auto-service-originals-60fps.zip)
+- [Перегляд відео й кадрів](previews/index.html)
+- [Сценарій, джерела та відтворення](docs/auto-service.md)
 
-Центр композиції x=540, ширина основної картки 804 px; великі заголовки й завершені короткі фрази субтитрів. Чорне тло, червоні акценти Bridge, Oswald і Manrope. У пропозиції читабельно зазначено: дизайн, тексти, розробка; перші 50% після затвердження дизайну; домен і хостинг окремо. Заклик у приватні повідомлення не імітує кнопку платформи.
+Технічні перевірки пройдені для обох MP4: повне декодування H.264/AAC, 60 fps, BT.709, гучність −17,12 LUFS / −4,72 dBTP. Переглянуто 55 вибраних кадрів готового 1080p у масштабі телефона та один повнорозмірний кадр. Оригінал і нормалізований WAV мають однакові 1 236 324 семпли при 48 kHz; попередні 14 MP4 не змінені. Звіти: [експорт](data/auto-service-export-report.json), [перегляд кадрів](data/auto-service-video-review.json), [шрифти й композиція](data/auto-service-layout-check.json).
 
-Обидва MP4 експортовано й технічно перевірено: 1080 × 1920 та нативний 2160 × 3840, по 1290 кадрів при 60 fps. Повне декодування пройдено; звук обох файлів — −17,15 LUFS / −4,70 dBTP. Порівняння декодованої озвучки: оригінал 1 023 165 семплів, нормалізований WAV 1 023 164 семпли при 48 kHz — різниця лише один семпл, без обрізання фраз. Перевірено вісім DOM-вимірювань композиції; шість оригінальних MP3 і дванадцять попередніх MP4 не змінені. Результати — у [звіті експорту](data/cleaning-premium-export-report.json).
+У скляному блоці використано справжній наявний знак Bridge з PDF, кадрований у CSS без спотворень. Точна нова іконка з inline-повідомлення не доступна як локальний оригінал PNG/SVG; її можна підставити через `plan.icon`. Зображення авто згенеровано для ролика; це демонстраційний макет, не реальний кейс клієнта. Послуги прийняті користувачем через наданий запис; актуальну повноту живого сайта не підтверджено через 403 мережевого шлюзу. Цін і гарантій клієнтів у ролику немає.
 
-- [Поточний MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-cleaning-premium-hq-60fps.mp4).
-- [Майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-cleaning-premium-master-4k-60fps.mp4).
-- [Оригінали одним ZIP](previews/bridge-reel-cleaning-premium-originals-60fps.zip).
-- [Відео та вісім кадрів](previews/index.html).
-- [Сценарій, матеріали та відтворення переробки](docs/cleaning-premium.md).
-- [План чотирьох сцен і субтитри](data/cleaning-premium.json).
+## Відтворення
 
-Попередня версія для клінінгу збережена окремо:
-
-- [MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-cleaning-hq-60fps.mp4).
-- [Майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-cleaning-master-4k-60fps.mp4).
-- [Оригінали одним ZIP](previews/bridge-reel-cleaning-originals-60fps.zip).
-- [Відео та кадри](previews/cleaning-hq/index.html).
-- [Її сценарій і перевірки](docs/cleaning.md).
-
-Попередній ролик «Фото є. А що обрати?»:
-
-- [MP4 — 1080 × 1920 / 60 fps](previews/bridge-reel-photos-choice-hq-60fps.mp4).
-- [Майстер — 2160 × 3840 / 60 fps](previews/bridge-reel-photos-choice-master-4k-60fps.mp4).
-- [Оригінали одним ZIP](previews/bridge-reel-photos-choice-originals-60fps.zip).
-- [Відео та кадри](previews/photos-choice-hq/index.html).
-- [Сценарій, монтаж і перевірки](docs/photos-choice.md).
-
-Попередній ролик «Сайт для малого бізнесу: $150 / $300»:
-
-- [MP4 1080p / 60 fps](previews/bridge-reel-two-offers-hq-60fps.mp4).
-- [Майстер 4K / 60 fps](previews/bridge-reel-two-offers-master-4k-60fps.mp4).
-- [Оригінали одним ZIP](previews/bridge-reel-two-offers-originals-60fps.zip).
-- [Сценарій і перевірки](docs/two-offers.md).
-
-Попередній ролик «Знову ті самі питання?»:
-
-- [MP4 1080p / 60 fps](previews/bridge-reel-direct-questions-hq-60fps.mp4).
-- [Майстер 4K / 60 fps](previews/bridge-reel-direct-questions-master-4k-60fps.mp4).
-- [Оригінали одним ZIP](previews/bridge-reel-direct-questions-originals-60fps.zip).
-- [План і перевірки](docs/direct-questions.md).
-
-Попередній ролик «Купив клік. А що далі?»:
-
-- [MP4 1080p / 60 fps](previews/bridge-reel-ad-click-hq-60fps.mp4).
-- [Майстер 4K / 60 fps](previews/bridge-reel-ad-click-master-4k-60fps.mp4).
-- [Оригінали одним ZIP](previews/bridge-reel-ad-click-originals-60fps.zip).
-- [План і перевірки](docs/ad-click.md).
-
-Попередня схвалена рекламна версія «Лендінг за $150»:
-
-- [MP4 для рекламного тесту — HQ / 60 fps](previews/bridge-reel-150-hq-60fps.mp4).
-- [Майстер — 4K / 60 fps](previews/bridge-reel-150-master-4k-60fps.mp4).
-- [Оригінальні MP4 одним ZIP-архівом](previews/bridge-reel-150-originals-60fps.zip).
-- [Галерея нової рекламної версії](previews/landing-150-hq/index.html).
-
-- [Перегляд MP4 — версія 2](previews/bridge-reel-v2.mp4) — 25 с, 1080 × 1920, 30 fps.
-- [Перша версія для порівняння](previews/bridge-reel-v1.mp4).
-- [Перегляд усіх екранів](previews/index.html) — після завантаження репозиторію відкрийте файл у браузері.
-- [План сцен](docs/screen-plan.md).
-- [Часові межі кожного слова](docs/timecodes.md).
-- [Контент-план на 14 днів і тест реклами](docs/content-plan-14-days.md).
-- [Чернетки семи наступних сценаріїв](docs/video-scripts-next.md).
-- [Монтаж, таймкоди й експорт «Лендінг за $150»](docs/landing-150.md).
-- [Архівний макет за $150 без диктора](previews/bridge-reel-150-layout.mp4) та [його галерея](previews/landing-150.html).
-
-![Фінальний екран](previews/cleaning-premium-hq/07-final-message.png)
-
-## Запуск
-
-Потрібні Node.js 22 або новіший і npm. У хмарному середовищі встановлено Node.js 24 та Chromium. Залежності зафіксовані в `package-lock.json`.
+Node.js 22+ (у хмарі 24), npm, Chromium, FFmpeg і ffprobe. Залежності зафіксовані в `package-lock.json`.
 
 ```sh
-npm ci
-npm start
-```
-
-Команда `npm start` відкриває Remotion Studio для перегляду, перемотування та перевірки кадрів на вашому комп’ютері. Новий ролик має композицію `BridgeCleaningPremium` на 60 fps. У переліку також залишено попередні `BridgeCleaning`, `BridgePhotosChoice`, `BridgeTwoOffers`, `BridgeDirectQuestions`, `BridgeAdClick` та `BridgeLanding150` на 60 fps та архівну `BridgeReel` на 30 fps.
-
-Поточна переробка має окрему композицію `BridgeCleaningPremium` та свої матеріали:
-
-```sh
+npm ci --no-audit --no-fund
 npm run typecheck
-node scripts/render-cleaning-premium.mjs --stills
-node scripts/render-cleaning-premium.mjs --master
-node scripts/export-cleaning-premium-from-master.mjs
-python3 scripts/check-cleaning-premium-export.py
-python3 scripts/package-cleaning-premium.py
+node scripts/render-auto-service.mjs --stills
+node scripts/render-auto-service.mjs --master
+node scripts/export-auto-service-from-master.mjs
+python3 scripts/check-auto-service-export.py
+python3 scripts/review-auto-service-video.py
+# Після перегляду кадрів і фіксації actual_video_visual_review:
+python3 scripts/package-auto-service.py
 ```
 
-Для попередньої схваленої рекламної версії виберіть композицію `BridgeLanding150`:
+Композиція — `BridgeAutoService`. `npm start` відкриває Remotion Studio локально. Рендер за замовчуванням через `npm run render` досі належить старій кампанії: для поточного ролика використовуйте окремий скрипт вище. Нормалізовану копію голосу та власну синтезовану атмосферу відтворюють `prepare-auto-service-audio.py` і `make-auto-service-atmosphere.py`; вони не змінюють вихідний MP3.
 
-```sh
-npm run preview:stills -- --composition=BridgeLanding150 --final
-npm run render -- --composition=BridgeLanding150 --final
-npm run render -- --composition=BridgeLanding150 --final --master
-```
+Основні файли: `src/BridgeAutoService.tsx`, `data/auto-service.json`, `data/words-auto-service.json`, `data/captions-auto-service.srt`, `public/audio/voiceover-auto-service.mp3`. Попередній [макет без озвучки](previews/auto-service-layout/index.html) збережено окремо.
 
-```sh
-npm run typecheck
-npm run preview:stills
-npm run render
-```
+## Попередні ролики
 
-Файли перегляду зберігаються в `previews/`. Рендер за замовчуванням створює `bridge-reel-150-hq-60fps.mp4`. Архівну V2 можна відтворити через `npm run render -- --composition=BridgeReel`; інший номер для неї задається через `--version=v3`. Для перевірки одного екрана попереднього ролика:
+| Ролик | 1080p / 60 fps | Майстер 4K / 60 fps | Опис |
+| --- | --- | --- | --- |
+| Клінінг — преміальна версія | [MP4](previews/bridge-reel-cleaning-premium-hq-60fps.mp4) | [MP4](previews/bridge-reel-cleaning-premium-master-4k-60fps.mp4) | [Документ](docs/cleaning-premium.md) |
+| Клінінг — перша редакція | [MP4](previews/bridge-reel-cleaning-hq-60fps.mp4) | [MP4](previews/bridge-reel-cleaning-master-4k-60fps.mp4) | [Документ](docs/cleaning.md) |
+| Фото є. А що обрати? | [MP4](previews/bridge-reel-photos-choice-hq-60fps.mp4) | [MP4](previews/bridge-reel-photos-choice-master-4k-60fps.mp4) | [Документ](docs/photos-choice.md) |
+| Сайт для бізнесу: $150 / $300 | [MP4](previews/bridge-reel-two-offers-hq-60fps.mp4) | [MP4](previews/bridge-reel-two-offers-master-4k-60fps.mp4) | [Документ](docs/two-offers.md) |
+| Знову ті самі питання? | [MP4](previews/bridge-reel-direct-questions-hq-60fps.mp4) | [MP4](previews/bridge-reel-direct-questions-master-4k-60fps.mp4) | [Документ](docs/direct-questions.md) |
+| Купив клік. А що далі? | [MP4](previews/bridge-reel-ad-click-hq-60fps.mp4) | [MP4](previews/bridge-reel-ad-click-master-4k-60fps.mp4) | [Документ](docs/ad-click.md) |
+| Лендінг за $150 | [MP4](previews/bridge-reel-150-hq-60fps.mp4) | [MP4](previews/bridge-reel-150-master-4k-60fps.mp4) | [Документ](docs/landing-150.md) |
 
-```sh
-npm run preview:stills -- --scene=150-05-offer
-```
+[Попередня галерея клінінгу](previews/cleaning-premium.html). ZIP кожної попередньої кампанії залишається в `previews/bridge-reel-<назва>-originals-60fps.zip`. Для відтворення попередніх кампаній обирайте їхні композиції та скрипти, зазначені у відповідних документах; не перезаписуйте схвалені файли.
 
-Для рендеру скрипт використовує `/usr/bin/chromium`, якщо він доступний. Інший встановлений браузер можна вказати через змінну `REMOTION_BROWSER_EXECUTABLE`. Якщо браузер не вказаний і системний Chromium відсутній, Remotion використовує свій стандартний механізм завантаження браузера.
+Архіви 30 fps: [V1](previews/bridge-reel-v1.mp4), [V2](previews/bridge-reel-v2.mp4), [план екранів](docs/screen-plan.md), [таймкоди](docs/timecodes.md). Архівний макет пропозиції: [лендінг за $150](previews/bridge-reel-150-layout.mp4).
 
-У хмарному середовищі кеш npm треба розміщувати в доступній для запису папці:
+[Контент-план на 14 днів](docs/content-plan-14-days.md) · [Наступні сценарії](docs/video-scripts-next.md).
 
-```sh
-NPM_CONFIG_CACHE=/workspace/.cache/npm npm ci
-```
-
-## Код екранів і матеріали
-
-- `src/BridgeCleaningPremium.tsx` — поточна переробка: чотири сцени, велика картка клінінгу й одна фінальна дія.
-- `data/cleaning-premium.json` — план чотирьох сцен і завершені групи субтитрів; `data/words-cleaning-premium.json` — синхронізація повної озвучки.
-- `public/audio/voiceover-cleaning.mp3` — повний незмінений оригінальний запис; `voiceover-cleaning-premium-mix.wav` — окремий нормалізований файл повної тривалості.
-- `data/cleaning-premium-audio-processing.json` — параметри нормалізації без обрізання або зміни темпу.
-- `data/cleaning-premium-layout-check.json` — вимірювання восьми кадрів; `data/cleaning-premium-export-report.json` — звіт після перевірки готових MP4, звуку й контрольних сум.
-- `src/BridgeCleaning.tsx`, `data/cleaning.json` і `data/cleaning-export-report.json` — попередня версія для клінінгу, збережена як архів.
-- `src/BridgeReel.tsx` — вісім сцен, анімація, графічні елементи й підсвічування субтитрів.
-- `src/Root.tsx` — формат і тривалість композиції.
-- `src/style.css` — локальний шрифт і базова типографіка.
-- `data/scenes.json` — погоджений план та межі сцен.
-- `data/words.json` — автоматично визначені часові межі слів.
-- `data/captions.json` і `data/captions.srt` — групи субтитрів.
-- `public/audio/voiceover.mp3` — затверджена озвучка ElevenLabs.
-- `public/audio/atmosphere-v2.wav` — окрема тиха атмосфера та звуки інтерфейсу.
-- `public/brand/` — матеріали, отримані з наданих PDF сайта.
-- `public/fonts/` — Manrope й ліцензія SIL Open Font License.
-- `scripts/render.mjs` — рендер окремих кадрів і MP4.
-- `scripts/make-atmosphere.py` — відтворення звукового шару засобами стандартної бібліотеки Python; для звичайного рендеру Python не потрібен.
-
-Інтерфейси бізнесу — демонстраційна графіка. У поточному ролику використано лише фотографію прибирання з попередньої згенерованої ілюстрації; меблі у видиму область не потрапляють. У деяких попередніх 60 fps-роликах справжній сайт композитної сітки записано з оригінального вихідного коду; походження — `data/composite-capture-60-provenance.json`. Старі 30 fps-версії використовували зображення портфоліо з PDF. Логотип залишається матеріалом із PDF; його деталізація обмежена вихідним зображенням. Типографіка поточного ролика — Oswald і Manrope з підтримкою української мови.
-
-У першій версії використано лише голос із підсиленням приблизно на 3,5 dB. У другій додано тиху синтезовану атмосферу й короткі звуки інтерфейсу; вони збережені окремим шаром. Оригінальна озвучка та часові межі не змінені. Таймкоди визначені автоматично та потребують оцінки синхронізації у перегляді, особливо на власних назвах. Правки до змісту, читабельності та темпу вносимо по одному зауваженню.
-
-Другу версію оформлено стриманіше: прибрано дугу зі сцени сайта, смуги прогресу й фоновий напис; полегшено типографіку, картки, субтитри та світіння кнопок. Тонка дуга мосту залишена лише у фінальному екрані. Див. [історію правок](docs/revisions.md).
+У поточному ролику застосовано локальні Oswald і Manrope з ліцензіями OFL. Логотип узято з PDF користувача. Генерована ілюстрація й музичний шар описані в документі кампанії; чуже відео, озвучку або бренд із референса не використано.

@@ -1,6 +1,6 @@
 {
-  "status": "layout_only_not_audio_aligned",
-  "icon": "Original file pending; existing PDF logo used only as stand-in",
+  "status": "audio_aligned_frames_checked",
+  "icon": "Uses the genuine existing Bridge symbol cropped in CSS within a glass tile. The exact new inline icon is not available as a file; this is an explicitly disclosed alternative, not a recreated logo.",
   "center_x": 540,
   "checks": [
     {
@@ -20,6 +20,13 @@
           "right": 942,
           "bottom": 1380,
           "center": 540
+        },
+        {
+          "name": "captions",
+          "left": 138,
+          "right": 942,
+          "bottom": 1564.78125,
+          "center": 540
         }
       ],
       "text": [
@@ -47,13 +54,23 @@
           "text": "Коли можна під’їхати?",
           "width": 481.109375,
           "available": 690
+        },
+        {
+          "text": "Поки ти ремонтуєш авто,",
+          "width": 569.625,
+          "available": 804
+        },
+        {
+          "text": "клієнт знову питає:",
+          "width": 442.484375,
+          "available": 804
         }
       ],
       "fonts": true
     },
     {
       "name": "01-hook",
-      "frame": 168,
+      "frame": 108,
       "groups": [
         {
           "name": "title",
@@ -68,6 +85,13 @@
           "right": 942,
           "bottom": 1380,
           "center": 540
+        },
+        {
+          "name": "captions",
+          "left": 138,
+          "right": 942,
+          "bottom": 1564.78125,
+          "center": 540
         }
       ],
       "text": [
@@ -95,13 +119,23 @@
           "text": "Коли можна під’їхати?",
           "width": 481.109375,
           "available": 690
+        },
+        {
+          "text": "Поки ти ремонтуєш авто,",
+          "width": 569.625,
+          "available": 804
+        },
+        {
+          "text": "клієнт знову питає:",
+          "width": 442.484375,
+          "available": 804
         }
       ],
       "fonts": true
     },
     {
       "name": "02-questions",
-      "frame": 387,
+      "frame": 264,
       "groups": [
         {
           "name": "title",
@@ -130,18 +164,13 @@
           "available": 804
         },
         {
-          "text": "Яка вартість?",
-          "width": 395.703125,
-          "available": 804
-        },
-        {
-          "text": "Які послуги є?",
-          "width": 412.359375,
+          "text": "Яка ціна?",
+          "width": 296.1875,
           "available": 804
         },
         {
           "text": "Як записатися?",
-          "width": 450.015625,
+          "width": 488.8125,
           "available": 804
         }
       ],
@@ -149,7 +178,7 @@
     },
     {
       "name": "03-website",
-      "frame": 618,
+      "frame": 541,
       "groups": [
         {
           "name": "title",
@@ -163,6 +192,13 @@
           "left": 138,
           "right": 942,
           "bottom": 1400,
+          "center": 540
+        },
+        {
+          "name": "captions",
+          "left": 138,
+          "right": 942,
+          "bottom": 1564.78125,
           "center": 540
         }
       ],
@@ -196,13 +232,23 @@
           "text": "Залишити запит",
           "width": 396.390625,
           "available": 722
+        },
+        {
+          "text": "Багатосторінковий сайт",
+          "width": 553.34375,
+          "available": 804
+        },
+        {
+          "text": "для всього автосервісу.",
+          "width": 544.8125,
+          "available": 804
         }
       ],
       "fonts": true
     },
     {
       "name": "04-bot",
-      "frame": 858,
+      "frame": 740,
       "groups": [
         {
           "name": "title",
@@ -216,6 +262,13 @@
           "left": 138,
           "right": 942,
           "bottom": 1400,
+          "center": 540
+        },
+        {
+          "name": "captions",
+          "left": 138,
+          "right": 942,
+          "bottom": 1502.390625,
           "center": 540
         }
       ],
@@ -249,13 +302,78 @@
           "text": "Залиш номер для зв’язку",
           "width": 505.296875,
           "available": 730
+        },
+        {
+          "text": "Telegram-бот для звернень.",
+          "width": 637.859375,
+          "available": 804
         }
       ],
       "fonts": true
     },
     {
-      "name": "05-services",
-      "frame": 1161,
+      "name": "05-route",
+      "frame": 959,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 562.71875,
+          "center": 540
+        },
+        {
+          "name": "request-route",
+          "left": 138,
+          "right": 942,
+          "bottom": 1390,
+          "center": 540
+        },
+        {
+          "name": "captions",
+          "left": 138,
+          "right": 942,
+          "bottom": 1502.390625,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Одна заявка.",
+          "width": 555.28125,
+          "available": 804
+        },
+        {
+          "text": "Зрозумілий шлях.",
+          "width": 753.4375,
+          "available": 804
+        },
+        {
+          "text": "Реклама",
+          "width": 210.828125,
+          "available": 804
+        },
+        {
+          "text": "Сайт із послугами",
+          "width": 441.875,
+          "available": 804
+        },
+        {
+          "text": "Звернення в Telegram",
+          "width": 538.78125,
+          "available": 804
+        },
+        {
+          "text": "Щоб про тебе дізналися.",
+          "width": 563.171875,
+          "available": 804
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "06-services",
+      "frame": 1276,
       "groups": [
         {
           "name": "title",
@@ -269,6 +387,13 @@
           "left": 138,
           "right": 942,
           "bottom": 1400,
+          "center": 540
+        },
+        {
+          "name": "captions",
+          "left": 138,
+          "right": 942,
+          "bottom": 1564.78125,
           "center": 540
         }
       ],
@@ -317,53 +442,15 @@
           "text": "+ реклама",
           "width": 217.796875,
           "available": 376
-        }
-      ],
-      "fonts": true
-    },
-    {
-      "name": "06-route",
-      "frame": 1512,
-      "groups": [
-        {
-          "name": "title",
-          "left": 138,
-          "right": 942,
-          "bottom": 562.71875,
-          "center": 540
         },
         {
-          "name": "request-route",
-          "left": 138,
-          "right": 942,
-          "bottom": 1390,
-          "center": 540
-        }
-      ],
-      "text": [
-        {
-          "text": "Одна заявка.",
-          "width": 555.28125,
+          "text": "Напиши «СТО»",
+          "width": 340.984375,
           "available": 804
         },
         {
-          "text": "Зрозумілий шлях.",
-          "width": 753.4375,
-          "available": 804
-        },
-        {
-          "text": "Реклама",
-          "width": 210.828125,
-          "available": 804
-        },
-        {
-          "text": "Сайт із послугами",
-          "width": 441.875,
-          "available": 804
-        },
-        {
-          "text": "Звернення в Telegram",
-          "width": 538.78125,
+          "text": "у приватні повідомлення",
+          "width": 571.734375,
           "available": 804
         }
       ],
@@ -371,7 +458,7 @@
     },
     {
       "name": "07-message",
-      "frame": 1746,
+      "frame": 1506,
       "groups": [
         {
           "name": "final-icon",
@@ -414,26 +501,17 @@
           "available": 804
         },
         {
-          "text": "Підберемо рішення",
-          "width": 448.71875,
+          "text": "Обговоримо",
+          "width": 286.5,
           "available": 804
         },
         {
-          "text": "для твого бізнесу",
-          "width": 405.546875,
+          "text": "твій автосервіс.",
+          "width": 366.734375,
           "available": 804
         }
       ],
       "fonts": true
     }
-  ],
-  "visual_review": {
-    "status": "passed_layout_only",
-    "frames": 8,
-    "notes": [
-      "Reviewed eight phone-size layouts, plus updated full-resolution hero and website after generated photo replacement.",
-      "Original icon and new narration not yet present; final captions/timing unverified.",
-      "Fourteen earlier MP4s SHA verified unchanged."
-    ]
-  }
+  ]
 }

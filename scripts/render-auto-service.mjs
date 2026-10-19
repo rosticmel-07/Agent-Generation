@@ -11,14 +11,16 @@ if (!stills) {
   if (!plan.voiceover || !existsSync(resolve(root, 'public', plan.voiceover)) || plan.timing_status !== 'audio_aligned' || !plan.captions.length) {
     throw new Error('Final export needs this campaign’s own complete voiceover, aligned scene boundaries and synchronous captions. Layout timing is provisional.');
   }
-  if (!plan.icon || !existsSync(resolve(root, 'public', plan.icon))) throw new Error('Final export needs the original supplied Bridge icon file.');
+  const genuineBrand = plan.icon ? existsSync(resolve(root, 'public', plan.icon))
+    : plan.icon_mode === 'original_brandmark_css_crop' && existsSync(resolve(root, 'public/brand/logo.png'));
+  if (!genuineBrand) throw new Error('Final export needs a genuine supplied Bridge brand asset.');
   if (!['live_site', 'user_confirmed'].includes(plan.services_verification.status)) throw new Error('Verify the current service list before final export; historical PDF is not a live-site check.');
 }
 const browserExecutable = process.env.REMOTION_BROWSER_EXECUTABLE || '/usr/bin/chromium';
 const serveUrl = await bundle({entryPoint: resolve(root, 'src/index.ts')});
 const composition = await selectComposition({serveUrl, id: 'BridgeAutoService', browserExecutable, inputProps: {checkLayout: stills}});
 if (stills) {
-  const folder = resolve(root, 'previews/auto-service-layout'); mkdirSync(folder, {recursive: true});
+  const folder = resolve(root, 'previews/auto-service-hq'); mkdirSync(folder, {recursive: true});
   const targets = [['00-first-frame', 0], ...plan.scenes.map((s, i) => [`${String(i + 1).padStart(2, '0')}-${s.id}`, s.start + (s.end - s.start) * .7])];
   const checks = [];
   for (const [name, time] of targets) {
@@ -31,8 +33,8 @@ if (stills) {
       layout.text.some(t => t.width > t.available + 1)) throw new Error(`Layout check failed: ${name}: ${JSON.stringify(layout)}`);
     checks.push({name, ...layout}); console.log(`Checked ${name}`);
   }
-  writeFileSync(resolve(root, 'data/auto-service-layout-check.json'), JSON.stringify({status: 'layout_only_not_audio_aligned',
-    icon: 'Original file pending; existing PDF logo used only as stand-in', center_x: 540, checks}, null, 2) + '\n');
+  writeFileSync(resolve(root, 'data/auto-service-layout-check.json'), JSON.stringify({status: 'audio_aligned_frames_checked',
+    icon: plan.icon_status, center_x: 540, checks}, null, 2) + '\n');
 } else {
   const master = process.argv.includes('--master'); let milestone = -1;
   await renderMedia({serveUrl, composition, browserExecutable, outputLocation: resolve(root, `previews/bridge-reel-auto-service-${master ? 'master-4k' : 'hq'}-60fps.mp4`),

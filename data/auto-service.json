@@ -1,16 +1,16 @@
 {
-  "status": "layout_draft_waiting_for_voice_and_original_icon",
+  "status": "rendered_reviewed",
   "fps": 60,
-  "duration": 30,
-  "timing_status": "provisional_not_audio_aligned",
+  "duration": 26,
+  "timing_status": "audio_aligned",
   "width": 1080,
   "height": 1920,
-  "voiceover": null,
-  "original_voiceover": null,
+  "voiceover": "audio/voiceover-auto-service-mix.wav",
+  "original_voiceover": "audio/voiceover-auto-service.mp3",
   "icon": null,
-  "icon_status": "Inline visual reference seen; original image file not available to renderer. PDF logo is a layout-only stand-in.",
+  "icon_status": "Uses the genuine existing Bridge symbol cropped in CSS within a glass tile. The exact new inline icon is not available as a file; this is an explicitly disclosed alternative, not a recreated logo.",
   "services_verification": {
-    "status": "historical_user_pdf_only",
+    "status": "user_confirmed",
     "requested_url": "https://www.bridgeagency.com.ua/#services",
     "checked_at": "2026-10-19",
     "live_result": "Cloud egress proxy403; current live page NOT verified",
@@ -19,7 +19,8 @@
       "public/brand/home-1.png",
       "public/brand/home-2.png"
     ],
-    "prices_used": false
+    "prices_used": false,
+    "scope": "User supplied a recording accepting the four-service presentation. Live completeness of website remains unverified; no prices used."
   },
   "services": [
     {
@@ -54,40 +55,283 @@
     {
       "id": "hook",
       "start": 0,
-      "end": 4
+      "end": 2.56
     },
     {
       "id": "questions",
-      "start": 4,
-      "end": 7.5
+      "start": 2.56,
+      "end": 5.2
     },
     {
       "id": "website",
-      "start": 7.5,
-      "end": 11.5
+      "start": 5.2,
+      "end": 10.66
     },
     {
       "id": "bot",
-      "start": 11.5,
-      "end": 15.5
-    },
-    {
-      "id": "services",
-      "start": 15.5,
-      "end": 21
+      "start": 10.66,
+      "end": 13.06
     },
     {
       "id": "route",
-      "start": 21,
-      "end": 27
+      "start": 13.06,
+      "end": 17.24
+    },
+    {
+      "id": "services",
+      "start": 17.24,
+      "end": 23
     },
     {
       "id": "message",
-      "start": 27,
-      "end": 30
+      "start": 23,
+      "end": 26
     }
   ],
-  "captions": [],
+  "captions": [
+    {
+      "kind": "opening",
+      "start": 0.0,
+      "end": 2.56,
+      "word_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "line_word_ids": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "text": "Поки ти ремонтуєш авто, клієнт знову питає:",
+      "render": true
+    },
+    {
+      "kind": "questions",
+      "start": 2.68,
+      "end": 4.8,
+      "word_ids": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "line_word_ids": [
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "text": "«Яка ціна? Як записатися?»",
+      "render": false
+    },
+    {
+      "kind": "landing",
+      "start": 5.2,
+      "end": 7.24,
+      "word_ids": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "line_word_ids": [
+        [
+          11,
+          12,
+          13,
+          14
+        ]
+      ],
+      "text": "Лендінг під одну послугу.",
+      "render": true
+    },
+    {
+      "kind": "website",
+      "start": 7.46,
+      "end": 10.52,
+      "word_ids": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "line_word_ids": [
+        [
+          15,
+          16
+        ],
+        [
+          17,
+          18,
+          19
+        ]
+      ],
+      "text": "Багатосторінковий сайт для всього автосервісу.",
+      "render": true
+    },
+    {
+      "kind": "bot",
+      "start": 10.66,
+      "end": 12.86,
+      "word_ids": [
+        20,
+        21,
+        22
+      ],
+      "line_word_ids": [
+        [
+          20,
+          21,
+          22
+        ]
+      ],
+      "text": "Telegram-бот для звернень.",
+      "render": true
+    },
+    {
+      "kind": "ads",
+      "start": 13.06,
+      "end": 15.34,
+      "word_ids": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "line_word_ids": [
+        [
+          23,
+          24,
+          25
+        ],
+        [
+          26,
+          27,
+          28,
+          29
+        ]
+      ],
+      "text": "Сайт із рекламою у Facebook та Instagram",
+      "render": true
+    },
+    {
+      "kind": "awareness",
+      "start": 15.68,
+      "end": 17.08,
+      "word_ids": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "line_word_ids": [
+        [
+          30,
+          31,
+          32,
+          33
+        ]
+      ],
+      "text": "щоб про тебе дізналися.",
+      "render": true
+    },
+    {
+      "kind": "agency",
+      "start": 17.24,
+      "end": 20.3,
+      "word_ids": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "line_word_ids": [
+        [
+          34,
+          35,
+          36,
+          37
+        ],
+        [
+          38,
+          39,
+          40,
+          41
+        ]
+      ],
+      "text": "У Bridge Agency підберемо інструменти під твою задачу.",
+      "render": true
+    },
+    {
+      "kind": "cta",
+      "start": 20.44,
+      "end": 22.94,
+      "word_ids": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "line_word_ids": [
+        [
+          42,
+          43
+        ],
+        [
+          44,
+          45,
+          46
+        ]
+      ],
+      "text": "Напиши «СТО» у приватні повідомлення",
+      "render": true
+    },
+    {
+      "kind": "closing",
+      "start": 23.2,
+      "end": 25.52,
+      "word_ids": [
+        47,
+        48,
+        49
+      ],
+      "line_word_ids": [
+        [
+          47,
+          48,
+          49
+        ]
+      ],
+      "text": "обговоримо твій автосервіс.",
+      "render": false
+    }
+  ],
   "reference": {
     "original_filename": "IMG_9944.MP4",
     "sha256": "49f349b155783aabfd3a55e3191daf1ebfb5f71111f7f9063d5359ac2d5f0427",
@@ -105,5 +349,10 @@
     "origin": "Generated for this ad; unbranded car in dark red-accented workshop",
     "sha256": "01dec95eef3c50e1442cbca8376c6888f78c928a6180ca78937cb3d2ac6c1f64",
     "is_real_client_case": false
-  }
+  },
+  "voiceover_volume": 1,
+  "voice_end": 25.36,
+  "voice_trim": false,
+  "atmosphere": "audio/atmosphere-auto-service.wav",
+  "icon_mode": "original_brandmark_css_crop"
 }

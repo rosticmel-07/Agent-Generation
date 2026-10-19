@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "language": "uk",
+  "duration": 25.75675,
+  "source_audio_sha256": "4910c850dd065dedf0d840d36366e0432883d07ddeb9b6d4122e4ea5f27895f1",
+  "method": "Whisper small independent ASR word windows reconciled ordinally with forced canonical DTW;50display units",
+  "review_status": "reviewed_against_source_asr_and_actual_video_frames",
+  "notes": [
+    "Estimated20ms boundary grid. No human listening claim.",
+    "Full original recording retained, without trim, tempo or pitch changes.",
+    "Standalone quote punctuation merged into previous word without extending its spoken duration. Telegram-бот is one display unit.",
+    "Published timing uses independent ASR word windows after ordinal comparison with the canonical forced alignment; fixes zero-duration для and speech-start drift caused by punctuation.",
+    "STO/Bridge/Facebook/Instagram spellings come from user-accepted script; raw ASR kept unchanged."
+  ],
+  "words": [
+    {
+      "id": 0,
+      "text": "Поки",
+      "start": 0.0,
+      "end": 0.26,
+      "probability": 0.8825303316116333
+    },
+    {
+      "id": 1,
+      "text": "ти",
+      "start": 0.26,
+      "end": 0.4,
+      "probability": 0.8731284737586975
+    },
+    {
+      "id": 2,
+      "text": "ремонтуєш",
+      "start": 0.4,
+      "end": 0.92,
+      "probability": 0.9741897463798523
+    },
+    {
+      "id": 3,
+      "text": "авто,",
+      "start": 0.92,
+      "end": 1.12,
+      "probability": 0.9740231931209564
+    },
+    {
+      "id": 4,
+      "text": "клієнт",
+      "start": 1.24,
+      "end": 1.68,
+      "probability": 0.7723536193370819
+    },
+    {
+      "id": 5,
+      "text": "знову",
+      "start": 1.68,
+      "end": 1.92,
+      "probability": 0.9911800026893616
+    },
+    {
+      "id": 6,
+      "text": "питає:",
+      "start": 1.92,
+      "end": 2.3,
+      "probability": 0.9862468540668488
+    },
+    {
+      "id": 7,
+      "text": "«Яка",
+      "start": 2.68,
+      "end": 2.98,
+      "probability": 0.7793630659580231
+    },
+    {
+      "id": 8,
+      "text": "ціна?",
+      "start": 2.98,
+      "end": 3.26,
+      "probability": 0.8901265660921732
+    },
+    {
+      "id": 9,
+      "text": "Як",
+      "start": 3.7,
+      "end": 4.0,
+      "probability": 0.9883561730384827
+    },
+    {
+      "id": 10,
+      "text": "записатися?»",
+      "start": 4.0,
+      "end": 4.64,
+      "probability": 0.9974204301834106
+    },
+    {
+      "id": 11,
+      "text": "Лендінг",
+      "start": 5.2,
+      "end": 5.88,
+      "probability": 0.8709968477487564
+    },
+    {
+      "id": 12,
+      "text": "під",
+      "start": 5.88,
+      "end": 6.02,
+      "probability": 0.9480556845664978
+    },
+    {
+      "id": 13,
+      "text": "одну",
+      "start": 6.02,
+      "end": 6.4,
+      "probability": 0.8346837957700094
+    },
+    {
+      "id": 14,
+      "text": "послугу.",
+      "start": 6.4,
+      "end": 7.1,
+      "probability": 0.8705792650580406
+    },
+    {
+      "id": 15,
+      "text": "Багатосторінковий",
+      "start": 7.46,
+      "end": 8.3,
+      "probability": 0.8670171414102826
+    },
+    {
+      "id": 16,
+      "text": "сайт",
+      "start": 8.3,
+      "end": 8.62,
+      "probability": 0.9931675791740417
+    },
+    {
+      "id": 17,
+      "text": "для",
+      "start": 8.62,
+      "end": 9.2,
+      "probability": 0.8834386467933655
+    },
+    {
+      "id": 18,
+      "text": "всього",
+      "start": 9.2,
+      "end": 9.54,
+      "probability": 0.9527347683906555
+    },
+    {
+      "id": 19,
+      "text": "автосервісу.",
+      "start": 9.54,
+      "end": 10.4,
+      "probability": 0.9579943120479584
+    },
+    {
+      "id": 20,
+      "text": "Telegram-бот",
+      "start": 10.66,
+      "end": 11.42,
+      "probability": 0.7605924308300018
+    },
+    {
+      "id": 21,
+      "text": "для",
+      "start": 11.42,
+      "end": 12.1,
+      "probability": 0.9318661689758301
+    },
+    {
+      "id": 22,
+      "text": "звернень.",
+      "start": 12.1,
+      "end": 12.7,
+      "probability": 0.9440297484397888
+    },
+    {
+      "id": 23,
+      "text": "Сайт",
+      "start": 13.06,
+      "end": 13.34,
+      "probability": 0.9417171478271484
+    },
+    {
+      "id": 24,
+      "text": "із",
+      "start": 13.34,
+      "end": 13.48,
+      "probability": 0.7555316090583801
+    },
+    {
+      "id": 25,
+      "text": "рекламою",
+      "start": 13.48,
+      "end": 13.94,
+      "probability": 0.7943091988563538
+    },
+    {
+      "id": 26,
+      "text": "у",
+      "start": 13.94,
+      "end": 14.06,
+      "probability": 0.9330487847328186
+    },
+    {
+      "id": 27,
+      "text": "Facebook",
+      "start": 14.06,
+      "end": 14.46,
+      "probability": 0.8138928830623626
+    },
+    {
+      "id": 28,
+      "text": "та",
+      "start": 14.46,
+      "end": 14.66,
+      "probability": 0.9924721717834473
+    },
+    {
+      "id": 29,
+      "text": "Instagram",
+      "start": 14.66,
+      "end": 15.18,
+      "probability": 0.9238972544670105
+    },
+    {
+      "id": 30,
+      "text": "щоб",
+      "start": 15.68,
+      "end": 15.86,
+      "probability": 0.9599180817604065
+    },
+    {
+      "id": 31,
+      "text": "про",
+      "start": 15.86,
+      "end": 16.1,
+      "probability": 0.9951104521751404
+    },
+    {
+      "id": 32,
+      "text": "тебе",
+      "start": 16.1,
+      "end": 16.26,
+      "probability": 0.8916754722595215
+    },
+    {
+      "id": 33,
+      "text": "дізналися.",
+      "start": 16.26,
+      "end": 16.92,
+      "probability": 0.9871887862682343
+    },
+    {
+      "id": 34,
+      "text": "У",
+      "start": 17.24,
+      "end": 17.36,
+      "probability": 0.9597381949424744
+    },
+    {
+      "id": 35,
+      "text": "Bridge",
+      "start": 17.36,
+      "end": 17.6,
+      "probability": 0.7360405822594961
+    },
+    {
+      "id": 36,
+      "text": "Agency",
+      "start": 17.6,
+      "end": 18.1,
+      "probability": 0.7216008722782135
+    },
+    {
+      "id": 37,
+      "text": "підберемо",
+      "start": 18.1,
+      "end": 18.64,
+      "probability": 0.9923726558685303
+    },
+    {
+      "id": 38,
+      "text": "інструменти",
+      "start": 18.64,
+      "end": 19.2,
+      "probability": 0.9447012941042582
+    },
+    {
+      "id": 39,
+      "text": "під",
+      "start": 19.2,
+      "end": 19.36,
+      "probability": 0.992552638053894
+    },
+    {
+      "id": 40,
+      "text": "твою",
+      "start": 19.36,
+      "end": 19.66,
+      "probability": 0.9524318277835846
+    },
+    {
+      "id": 41,
+      "text": "задачу.",
+      "start": 19.66,
+      "end": 20.16,
+      "probability": 0.9453908205032349
+    },
+    {
+      "id": 42,
+      "text": "Напиши",
+      "start": 20.44,
+      "end": 20.86,
+      "probability": 0.9787915945053101
+    },
+    {
+      "id": 43,
+      "text": "«СТО»",
+      "start": 20.86,
+      "end": 21.72,
+      "probability": 0.45531570017337797
+    },
+    {
+      "id": 44,
+      "text": "у",
+      "start": 21.72,
+      "end": 21.8,
+      "probability": 0.8616586327552795
+    },
+    {
+      "id": 45,
+      "text": "приватні",
+      "start": 21.8,
+      "end": 22.16,
+      "probability": 0.9489838282267252
+    },
+    {
+      "id": 46,
+      "text": "повідомлення",
+      "start": 22.16,
+      "end": 22.78,
+      "probability": 0.9821529507637023
+    },
+    {
+      "id": 47,
+      "text": "обговоримо",
+      "start": 23.2,
+      "end": 23.9,
+      "probability": 0.9864179939031601
+    },
+    {
+      "id": 48,
+      "text": "твій",
+      "start": 23.9,
+      "end": 24.46,
+      "probability": 0.9706995089848837
+    },
+    {
+      "id": 49,
+      "text": "автосервіс.",
+      "start": 24.46,
+      "end": 25.36,
+      "probability": 0.9879695057868958
+    }
+  ],
+  "source_container_duration": 25.756688,
+  "normalized_pcm_duration": 25.75675
+}

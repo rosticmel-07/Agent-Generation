@@ -1,0 +1,21 @@
+{
+  "source": "public/audio/voiceover-auto-service.mp3",
+  "output": "public/audio/voiceover-auto-service-mix.wav",
+  "method": "FFmpeg two-pass loudnorm; separate 24-bit/48 kHz mono WAV",
+  "voice_time_stretch": false,
+  "voice_pitch_shift": false,
+  "voice_trim": false,
+  "source_measurements": {
+    "input_i": "-21.06",
+    "input_tp": "-1.67",
+    "input_lra": "2.50",
+    "input_thresh": "-31.61",
+    "output_i": "-17.40",
+    "output_tp": "-2.00",
+    "output_lra": "2.60",
+    "output_thresh": "-27.95",
+    "normalization_type": "dynamic",
+    "target_offset": "0.40"
+  },
+  "filter": "loudnorm=I=-17:TP=-2:LRA=11:measured_I=-21.06:measured_TP=-1.67:measured_LRA=2.50:measured_thresh=-31.61:offset=0.40:linear=true"
+}
