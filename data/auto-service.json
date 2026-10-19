@@ -1,0 +1,109 @@
+{
+  "status": "layout_draft_waiting_for_voice_and_original_icon",
+  "fps": 60,
+  "duration": 30,
+  "timing_status": "provisional_not_audio_aligned",
+  "width": 1080,
+  "height": 1920,
+  "voiceover": null,
+  "original_voiceover": null,
+  "icon": null,
+  "icon_status": "Inline visual reference seen; original image file not available to renderer. PDF logo is a layout-only stand-in.",
+  "services_verification": {
+    "status": "historical_user_pdf_only",
+    "requested_url": "https://www.bridgeagency.com.ua/#services",
+    "checked_at": "2026-10-19",
+    "live_result": "Cloud egress proxy403; current live page NOT verified",
+    "source": "User-provided homepage screenshot PDF,2026-10-09",
+    "source_images": [
+      "public/brand/home-1.png",
+      "public/brand/home-2.png"
+    ],
+    "prices_used": false
+  },
+  "services": [
+    {
+      "id": "landing",
+      "title": [
+        "Лендінг",
+        "під послугу"
+      ]
+    },
+    {
+      "id": "website",
+      "title": [
+        "Сайт",
+        "для бізнесу"
+      ]
+    },
+    {
+      "id": "bot",
+      "title": [
+        "Telegram-бот"
+      ]
+    },
+    {
+      "id": "ads",
+      "title": [
+        "Сайт",
+        "+ реклама"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0,
+      "end": 4
+    },
+    {
+      "id": "questions",
+      "start": 4,
+      "end": 7.5
+    },
+    {
+      "id": "website",
+      "start": 7.5,
+      "end": 11.5
+    },
+    {
+      "id": "bot",
+      "start": 11.5,
+      "end": 15.5
+    },
+    {
+      "id": "services",
+      "start": 15.5,
+      "end": 21
+    },
+    {
+      "id": "route",
+      "start": 21,
+      "end": 27
+    },
+    {
+      "id": "message",
+      "start": 27,
+      "end": 30
+    }
+  ],
+  "captions": [],
+  "reference": {
+    "original_filename": "IMG_9944.MP4",
+    "sha256": "49f349b155783aabfd3a55e3191daf1ebfb5f71111f7f9063d5359ac2d5f0427",
+    "dimensions": [
+      880,
+      1904
+    ],
+    "fps": 60,
+    "duration": 36.183333,
+    "observed": "Floating device mockups, large masked headings, scene-to-scene camera motion, particles, service showcase. Do not reuse footage, audio, green palette, competitor branding or fake platform controls."
+  },
+  "creative_device": "One request travels from advertising to service page to Telegram; Bridge icon is the transition hub. No guaranteed leads or fictional client outcomes.",
+  "illustration": {
+    "file": "illustrations/auto-service/diagnostics.png",
+    "origin": "Generated for this ad; unbranded car in dark red-accented workshop",
+    "sha256": "01dec95eef3c50e1442cbca8376c6888f78c928a6180ca78937cb3d2ac6c1f64",
+    "is_real_client_case": false
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "status": "layout_only_not_audio_aligned",
+  "icon": "Original file pending; existing PDF logo used only as stand-in",
+  "center_x": 540,
+  "checks": [
+    {
+      "name": "00-first-frame",
+      "frame": 0,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 569.4375,
+          "center": 540
+        },
+        {
+          "name": "workshop",
+          "left": 138,
+          "right": 942,
+          "bottom": 1380,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Ти під авто.",
+          "width": 503.671875,
+          "available": 804
+        },
+        {
+          "text": "Клієнт чекає?",
+          "width": 606.90625,
+          "available": 804
+        },
+        {
+          "text": "Скільки коштує",
+          "width": 379,
+          "available": 722
+        },
+        {
+          "text": "діагностика?",
+          "width": 325.875,
+          "available": 722
+        },
+        {
+          "text": "Коли можна під’їхати?",
+          "width": 481.109375,
+          "available": 690
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "01-hook",
+      "frame": 168,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 569.4375,
+          "center": 540
+        },
+        {
+          "name": "workshop",
+          "left": 138,
+          "right": 942,
+          "bottom": 1380,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Ти під авто.",
+          "width": 503.671875,
+          "available": 804
+        },
+        {
+          "text": "Клієнт чекає?",
+          "width": 606.90625,
+          "available": 804
+        },
+        {
+          "text": "Скільки коштує",
+          "width": 379,
+          "available": 722
+        },
+        {
+          "text": "діагностика?",
+          "width": 325.875,
+          "available": 722
+        },
+        {
+          "text": "Коли можна під’їхати?",
+          "width": 481.109375,
+          "available": 690
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "02-questions",
+      "frame": 387,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 549.25,
+          "center": 540
+        },
+        {
+          "name": "messages",
+          "left": 138,
+          "right": 942,
+          "bottom": 1350,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Запити в чатах.",
+          "width": 599.375,
+          "available": 804
+        },
+        {
+          "text": "Робота — у тебе.",
+          "width": 670.625,
+          "available": 804
+        },
+        {
+          "text": "Яка вартість?",
+          "width": 395.703125,
+          "available": 804
+        },
+        {
+          "text": "Які послуги є?",
+          "width": 412.359375,
+          "available": 804
+        },
+        {
+          "text": "Як записатися?",
+          "width": 450.015625,
+          "available": 804
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "03-website",
+      "frame": 618,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 544.78125,
+          "center": 540
+        },
+        {
+          "name": "website",
+          "left": 138,
+          "right": 942,
+          "bottom": 1400,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Послуги — на сайті.",
+          "width": 783.28125,
+          "available": 804
+        },
+        {
+          "text": "Запит — поруч.",
+          "width": 608.90625,
+          "available": 804
+        },
+        {
+          "text": "Твій автосервіс",
+          "width": 426,
+          "available": 802
+        },
+        {
+          "text": "Діагностика • Ремонт",
+          "width": 488.078125,
+          "available": 730
+        },
+        {
+          "text": "Обслуговування авто",
+          "width": 477.546875,
+          "available": 730
+        },
+        {
+          "text": "Залишити запит",
+          "width": 396.390625,
+          "available": 722
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "04-bot",
+      "frame": 858,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 544.78125,
+          "center": 540
+        },
+        {
+          "name": "telegram",
+          "left": 138,
+          "right": 942,
+          "bottom": 1400,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Звернення — в боті.",
+          "width": 800.1875,
+          "available": 804
+        },
+        {
+          "text": "Без плутанини.",
+          "width": 587.15625,
+          "available": 804
+        },
+        {
+          "text": "Бот автосервісу",
+          "width": 362.84375,
+          "available": 794
+        },
+        {
+          "text": "Що потрібно перевірити?",
+          "width": 517.65625,
+          "available": 730
+        },
+        {
+          "text": "Діагностика авто",
+          "width": 352.84375,
+          "available": 730
+        },
+        {
+          "text": "Залиш номер для зв’язку",
+          "width": 505.296875,
+          "available": 730
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "05-services",
+      "frame": 1161,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 522.375,
+          "center": 540
+        },
+        {
+          "name": "services",
+          "left": 138,
+          "right": 942,
+          "bottom": 1400,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Рішення під задачу.",
+          "width": 703.640625,
+          "available": 804
+        },
+        {
+          "text": "Твій бізнес — у центрі.",
+          "width": 799.859375,
+          "available": 804
+        },
+        {
+          "text": "Лендінг",
+          "width": 174.28125,
+          "available": 376
+        },
+        {
+          "text": "під послугу",
+          "width": 251.03125,
+          "available": 376
+        },
+        {
+          "text": "Сайт",
+          "width": 99.015625,
+          "available": 376
+        },
+        {
+          "text": "для бізнесу",
+          "width": 258.390625,
+          "available": 376
+        },
+        {
+          "text": "Telegram-бот",
+          "width": 274.03125,
+          "available": 376
+        },
+        {
+          "text": "Сайт",
+          "width": 99.015625,
+          "available": 376
+        },
+        {
+          "text": "+ реклама",
+          "width": 217.796875,
+          "available": 376
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "06-route",
+      "frame": 1512,
+      "groups": [
+        {
+          "name": "title",
+          "left": 138,
+          "right": 942,
+          "bottom": 562.71875,
+          "center": 540
+        },
+        {
+          "name": "request-route",
+          "left": 138,
+          "right": 942,
+          "bottom": 1390,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Одна заявка.",
+          "width": 555.28125,
+          "available": 804
+        },
+        {
+          "text": "Зрозумілий шлях.",
+          "width": 753.4375,
+          "available": 804
+        },
+        {
+          "text": "Реклама",
+          "width": 210.828125,
+          "available": 804
+        },
+        {
+          "text": "Сайт із послугами",
+          "width": 441.875,
+          "available": 804
+        },
+        {
+          "text": "Звернення в Telegram",
+          "width": 538.78125,
+          "available": 804
+        }
+      ],
+      "fonts": true
+    },
+    {
+      "name": "07-message",
+      "frame": 1746,
+      "groups": [
+        {
+          "name": "final-icon",
+          "left": 450,
+          "right": 630,
+          "bottom": 595,
+          "center": 540
+        },
+        {
+          "name": "cta",
+          "left": 138,
+          "right": 942,
+          "bottom": 945,
+          "center": 540
+        },
+        {
+          "name": "cta-place",
+          "left": 138,
+          "right": 942,
+          "bottom": 1031,
+          "center": 540
+        },
+        {
+          "name": "cta-reason",
+          "left": 138,
+          "right": 942,
+          "bottom": 1286.875,
+          "center": 540
+        }
+      ],
+      "text": [
+        {
+          "text": "Напиши «СТО»",
+          "width": 691.046875,
+          "available": 804
+        },
+        {
+          "text": "у приватні повідомлення",
+          "width": 606.796875,
+          "available": 804
+        },
+        {
+          "text": "Підберемо рішення",
+          "width": 448.71875,
+          "available": 804
+        },
+        {
+          "text": "для твого бізнесу",
+          "width": 405.546875,
+          "available": 804
+        }
+      ],
+      "fonts": true
+    }
+  ],
+  "visual_review": {
+    "status": "passed_layout_only",
+    "frames": 8,
+    "notes": [
+      "Reviewed eight phone-size layouts, plus updated full-resolution hero and website after generated photo replacement.",
+      "Original icon and new narration not yet present; final captions/timing unverified.",
+      "Fourteen earlier MP4s SHA verified unchanged."
+    ]
+  }
+}

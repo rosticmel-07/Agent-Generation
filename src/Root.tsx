@@ -8,6 +8,8 @@ import {BridgeTwoOffers} from './BridgeTwoOffers';
 import {BridgePhotosChoice} from './BridgePhotosChoice';
 import {BridgeCleaning} from './BridgeCleaning';
 import {BridgeCleaningPremium} from './BridgeCleaningPremium';
+import {BridgeAutoService} from './BridgeAutoService';
+import autoServicePlan from '../data/auto-service.json';
 import landingPlan from '../data/landing-150.json';
 import adClickPlan from '../data/ad-click.json';
 import directQuestionsPlan from '../data/direct-questions.json';
@@ -19,6 +21,8 @@ import './style.css';
 
 export const Root: React.FC = () => (
   <>
+  <Composition id="BridgeAutoService" component={BridgeAutoService} width={1080} height={1920}
+    fps={autoServicePlan.fps} durationInFrames={Math.round(autoServicePlan.duration * autoServicePlan.fps)}/>
   <Composition
     id="BridgeCleaningPremium"
     component={BridgeCleaningPremium}
